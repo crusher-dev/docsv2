@@ -23,18 +23,18 @@ module.exports = {
   projectName: 'ionic-docs',
   themeConfig: {
     colorMode: {
-      defaultMode: 'light',
+      defaultMode: 'dark',
     },
     navbar: {
       hideOnScroll: true,
       logo: {
-        alt: 'Site Logo',
-        src: `/logos/ionic-text-docs-dark.svg`,
-        srcDark: `/logos/ionic-text-docs-light.svg`,
+        alt: 'Crusher Logo',
+        src: `/logos/logo.svg`,
+        srcDark: `/logos/logo.svg`,
         href: '/',
         target: '_self',
-        width: 139,
-        height: 28,
+        width: 78,
+        height: 24,
       },
       items: [
         {
@@ -62,22 +62,6 @@ module.exports = {
           position: 'left',
         },
         {
-          type: 'cta',
-          position: 'left',
-          text: 'Ionic v6.0.0 Upgrade Guide',
-          href: `/intro/upgrading-to-ionic-6`,
-        },
-        {
-          type: 'docsVersionDropdown',
-          position: 'right',
-          dropdownItemsAfter: [
-            { to: 'https://ionicframework.com/docs/v4/components', label: 'v4', target: '_blank' },
-            { to: 'https://ionicframework.com/docs/v3/', label: 'v3', target: '_blank' },
-          ],
-          // dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
-          dropdownActiveClassDisabled: true,
-        },
-        {
           type: 'search',
           position: 'right',
         },
@@ -100,18 +84,6 @@ module.exports = {
             {
               href: 'https://www.meetup.com/topics/ionic-framework/',
               label: 'Meetups',
-              target: '_blank',
-              rel: null,
-            },
-            {
-              href: 'https://blog.ionicframework.com/',
-              label: 'Blog',
-              target: '_blank',
-              rel: null,
-            },
-            {
-              href: 'https://twitter.com/ionicframework',
-              label: 'Twitter',
               target: '_blank',
               rel: null,
             },
@@ -146,30 +118,6 @@ module.exports = {
         {
           type: 'separator',
           position: 'right',
-        },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-          dropdownItemsBefore: [],
-          dropdownItemsAfter: [
-            {
-              href: 'https://ionicframework.com/translate',
-              label: 'Translate',
-              target: '_blank',
-              rel: null,
-            },
-          ],
-          className: 'icon-link language navbar__item',
-        },
-        {
-          type: 'iconLink',
-          position: 'right',
-          icon: {
-            alt: 'twitter logo',
-            src: `/logos/twitter.svg`,
-            href: 'https://twitter.com/Ionicframework',
-            target: '_blank',
-          },
         },
         {
           type: 'iconLink',

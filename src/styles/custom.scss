@@ -49,7 +49,7 @@ html[data-theme='light'] {
 
   --ifm-link-color: var(--c-blue-90);
   //rgb value is c-blue-90
-  --ifm-link-hover-color: rgba(27, 109, 255, 0.8);
+  --ifm-link-hover-color: rgba(111, 50, 255, 0.8);
 
   --ifm-background-surface-color: var(--token-primary-bg-c);
 
@@ -62,10 +62,11 @@ html[data-theme='light'] {
 }
 
 html[data-theme='dark'] {
-  --token-primary-bg-c: #03060b;
+  --token-primary-bg-c: #080809;
   --token-secondary-bg-c: #13171c;
 
-  --ifm-link-color: var(--c-blue-70);
+  --ifm-link-color: #A87EFF;
+  --ifm-color-primary: #8166b9;
   //rgb value is c-blue-70
   --ifm-link-hover-color: rgba(77, 141, 255, 0.8);
 
