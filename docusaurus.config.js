@@ -10,20 +10,21 @@ module.exports = {
   baseUrl: `${BASE_URL}/`,
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ja'],
+    locales: ['en'],
     localeConfigs: {
       en: { label: 'English' },
-      ja: { label: '日本語' },
     },
   },
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/meta/favicon-96x96.png',
+  favicon: 'img/meta/favicon.png',
   organizationName: 'ionic-team',
   projectName: 'ionic-docs',
   themeConfig: {
+    autoCollapseSidebarCategories: true,
     colorMode: {
       defaultMode: 'dark',
+      disableSwitch: true,
     },
     navbar: {
       hideOnScroll: true,
@@ -56,43 +57,12 @@ module.exports = {
           position: 'left',
         },
         {
-          type: 'doc',
-          docId: 'native',
-          label: 'Native',
-          position: 'left',
-        },
-        {
           type: 'search',
           position: 'right',
         },
         {
-          label: 'Community',
-          position: 'right',
-          items: [
-            {
-              href: 'https://ionicframework.com/community',
-              label: 'Community Hub',
-              target: '_blank',
-              rel: null,
-            },
-            {
-              href: 'https://forum.ionicframework.com/',
-              label: 'Forum',
-              target: '_blank',
-              rel: null,
-            },
-            {
-              href: 'https://www.meetup.com/topics/ionic-framework/',
-              label: 'Meetups',
-              target: '_blank',
-              rel: null,
-            },
-          ],
-          className: 'navbar__link--community',
-        },
-        {
-          label: 'Support',
-          position: 'right',
+          label: 'Others',
+          position: 'left',
           items: [
             {
               href: 'https://ionicframework.com/support',
@@ -139,6 +109,7 @@ module.exports = {
             target: '_blank',
           },
         },
+
       ],
     },
     tagManager: {

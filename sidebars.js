@@ -3,13 +3,13 @@ module.exports = {
     {
       type: 'category',
       label: 'Getting Started',
-      collapsed: false,
+      collapsed: true,
       items: ['index', 'intro/upgrading-to-ionic-6', 'intro/environment', 'intro/cli', 'intro/cdn', 'intro/next'],
     },
     {
       type: 'category',
       label: 'Developing',
-      collapsed: false,
+      collapsed: true,
       items: [
         'developing/starting',
         'developing/previewing',
@@ -24,13 +24,13 @@ module.exports = {
     {
       type: 'category',
       label: 'Layout',
-      collapsed: false,
+      collapsed: true,
       items: ['layout/structure', 'layout/grid', 'layout/global-stylesheets', 'layout/css-utilities'],
     },
     {
       type: 'category',
       label: 'Theming',
-      collapsed: false,
+      collapsed: true,
       items: [
         'theming/basics',
         'theming/platform-styles',
@@ -46,7 +46,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Angular',
-      collapsed: false,
+      collapsed: true,
       items: [
         'angular/overview',
         {
@@ -77,7 +77,7 @@ module.exports = {
     {
       type: 'category',
       label: 'React',
-      collapsed: false,
+      collapsed: true,
       items: [
         'react',
         'react/quickstart',
@@ -110,7 +110,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Vue',
-      collapsed: false,
+      collapsed: true,
       items: [
         'vue/overview',
         'vue/quickstart',
@@ -144,13 +144,13 @@ module.exports = {
     {
       type: 'category',
       label: 'Utilities',
-      collapsed: false,
+      collapsed: true,
       items: ['utilities/animations', 'utilities/gestures'],
     },
     {
       type: 'category',
       label: 'Deployment',
-      collapsed: false,
+      collapsed: true,
       items: [
         'deployment/app-store',
         'deployment/play-store',
@@ -161,13 +161,13 @@ module.exports = {
     {
       type: 'category',
       label: 'Techniques',
-      collapsed: false,
+      collapsed: true,
       items: ['techniques/security'],
     },
     {
       type: 'category',
       label: 'Troubleshooting',
-      collapsed: false,
+      collapsed: true,
       items: [
         'troubleshooting/debugging',
         'troubleshooting/build',
@@ -179,7 +179,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Core Concepts',
-      collapsed: false,
+      collapsed: true,
       items: [
         'core-concepts/fundamentals',
         'core-concepts/cross-platform',
@@ -190,13 +190,13 @@ module.exports = {
     {
       type: 'category',
       label: 'Contributing',
-      collapsed: false,
+      collapsed: true,
       items: ['contributing/how-to-contribute', 'contributing/coc'],
     },
     {
       type: 'category',
       label: 'Reference',
-      collapsed: false,
+      collapsed: true,
       items: [
         'reference/glossary',
         'reference/versioning',
@@ -217,97 +217,97 @@ module.exports = {
     {
       type: 'category',
       label: 'Getting Started',
-      collapsed: false,
+      collapsed: true,
       items: ['components'],
     },
     {
       type: 'category',
       label: 'Action Sheet',
-      collapsed: false,
+      collapsed: true,
       items: ['api/action-sheet'],
     },
     {
       type: 'category',
       label: 'Accordion',
-      collapsed: false,
+      collapsed: true,
       items: ['api/accordion', 'api/accordion-group'],
     },
     {
       type: 'category',
       label: 'Alert',
-      collapsed: false,
+      collapsed: true,
       items: ['api/alert'],
     },
     {
       type: 'category',
       label: 'Badge',
-      collapsed: false,
+      collapsed: true,
       items: ['api/badge'],
     },
     {
       type: 'category',
       label: 'Breadcrumb',
-      collapsed: false,
+      collapsed: true,
       items: ['api/breadcrumb', 'api/breadcrumbs'],
     },
     {
       type: 'category',
       label: 'Button',
-      collapsed: false,
+      collapsed: true,
       items: ['api/button', 'api/ripple-effect'],
     },
     {
       type: 'category',
       label: 'Card',
-      collapsed: false,
+      collapsed: true,
       items: ['api/card', 'api/card-content', 'api/card-header', 'api/card-subtitle', 'api/card-title'],
     },
     {
       type: 'category',
       label: 'Checkbox',
-      collapsed: false,
+      collapsed: true,
       items: ['api/checkbox'],
     },
     {
       type: 'category',
       label: 'Chip',
-      collapsed: false,
+      collapsed: true,
       items: ['api/chip'],
     },
     {
       type: 'category',
       label: 'Content',
-      collapsed: false,
+      collapsed: true,
       items: ['api/app', 'api/content'],
     },
     {
       type: 'category',
       label: 'Date & Time Pickers',
-      collapsed: false,
+      collapsed: true,
       items: ['api/datetime', 'api/picker'],
     },
     {
       type: 'category',
       label: 'Floating Action Button',
-      collapsed: false,
+      collapsed: true,
       items: ['api/fab', 'api/fab-button', 'api/fab-list'],
     },
     {
       type: 'category',
       label: 'Grid',
-      collapsed: false,
+      collapsed: true,
       items: ['api/grid', 'api/col', 'api/row'],
     },
     {
       type: 'category',
       label: 'Infinite Scroll',
-      collapsed: false,
+      collapsed: true,
       items: ['api/infinite-scroll', 'api/infinite-scroll-content'],
     },
     {
       type: 'category',
       label: 'Icons',
-      collapsed: false,
+      collapsed: true,
       items: [
         {
           type: 'link',
@@ -319,13 +319,13 @@ module.exports = {
     {
       type: 'category',
       label: 'Input',
-      collapsed: false,
+      collapsed: true,
       items: ['api/input', 'api/textarea'],
     },
     {
       type: 'category',
       label: 'Item',
-      collapsed: false,
+      collapsed: true,
       items: [
         'api/item',
         'api/item-divider',
@@ -340,13 +340,13 @@ module.exports = {
     {
       type: 'category',
       label: 'List',
-      collapsed: false,
+      collapsed: true,
       items: ['api/list', 'api/list-header', 'api/virtual-scroll'],
     },
     {
       type: 'category',
       label: 'Media',
-      collapsed: false,
+      collapsed: true,
       items: [
         'api/avatar',
         {
@@ -361,121 +361,121 @@ module.exports = {
     {
       type: 'category',
       label: 'Menu',
-      collapsed: false,
+      collapsed: true,
       items: ['api/menu', 'api/menu-button', 'api/menu-toggle', 'api/split-pane'],
     },
     {
       type: 'category',
       label: 'Modal',
-      collapsed: false,
+      collapsed: true,
       items: ['api/modal', 'api/backdrop'],
     },
     {
       type: 'category',
       label: 'Navigation',
-      collapsed: false,
+      collapsed: true,
       items: ['api/nav', 'api/nav-link'],
     },
     {
       type: 'category',
       label: 'Popover',
-      collapsed: false,
+      collapsed: true,
       items: ['api/popover'],
     },
     {
       type: 'category',
       label: 'Progress Indicators',
-      collapsed: false,
+      collapsed: true,
       items: ['api/loading', 'api/progress-bar', 'api/skeleton-text', 'api/spinner'],
     },
     {
       type: 'category',
       label: 'Radio',
-      collapsed: false,
+      collapsed: true,
       items: ['api/radio', 'api/radio-group'],
     },
     {
       type: 'category',
       label: 'Range',
-      collapsed: false,
+      collapsed: true,
       items: ['api/range'],
     },
     {
       type: 'category',
       label: 'Refresher',
-      collapsed: false,
+      collapsed: true,
       items: ['api/refresher', 'api/refresher-content'],
     },
     {
       type: 'category',
       label: 'Reorder',
-      collapsed: false,
+      collapsed: true,
       items: ['api/reorder', 'api/reorder-group'],
     },
     {
       type: 'category',
       label: 'Routing',
-      collapsed: false,
+      collapsed: true,
       items: ['api/router', 'api/router-link', 'api/router-outlet', 'api/route', 'api/route-redirect'],
     },
     {
       type: 'category',
       label: 'Searchbar',
-      collapsed: false,
+      collapsed: true,
       items: ['api/searchbar'],
     },
     {
       type: 'category',
       label: 'Segment',
-      collapsed: false,
+      collapsed: true,
       items: ['api/segment', 'api/segment-button'],
     },
     {
       type: 'category',
       label: 'Select',
-      collapsed: false,
+      collapsed: true,
       items: ['api/select', 'api/select-option'],
     },
     {
       type: 'category',
       label: 'Slides',
-      collapsed: false,
+      collapsed: true,
       items: ['api/slides', 'api/slide'],
     },
     {
       type: 'category',
       label: 'Tabs',
-      collapsed: false,
+      collapsed: true,
       items: ['api/tabs', 'api/tab', 'api/tab-bar', 'api/tab-button'],
     },
     {
       type: 'category',
       label: 'Toast',
-      collapsed: false,
+      collapsed: true,
       items: ['api/toast'],
     },
     {
       type: 'category',
       label: 'Toggle',
-      collapsed: false,
+      collapsed: true,
       items: ['api/toggle'],
     },
     {
       type: 'category',
       label: 'Toolbar',
-      collapsed: false,
+      collapsed: true,
       items: ['api/toolbar', 'api/header', 'api/footer', 'api/title', 'api/buttons', 'api/back-button'],
     },
     {
       type: 'category',
       label: 'Typography',
-      collapsed: false,
+      collapsed: true,
       items: ['api/text'],
     },
     {
       type: 'category',
       label: 'Resources',
-      collapsed: false,
+      collapsed: true,
       items: ['api'],
     },
   ],
@@ -484,7 +484,7 @@ module.exports = {
     {
       type: 'category',
       label: 'CLI Documentation',
-      collapsed: false,
+      collapsed: true,
       items: [
         'cli',
         'cli/configuration',
@@ -500,7 +500,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Command Reference',
-      collapsed: false,
+      collapsed: true,
       items: [
         {
           type: 'autogenerated',
@@ -514,7 +514,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Getting Started',
-      collapsed: false,
+      collapsed: true,
       items: [
         'native',
         'native-community',
@@ -529,7 +529,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Plugins',
-      collapsed: false,
+      collapsed: true,
       items: [
         {
           type: 'autogenerated',

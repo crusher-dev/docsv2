@@ -177,3 +177,86 @@ iframe {
 .cordova-ee-card p {
   margin: 1rem 0 0;
 }
+
+.Card-container {
+  background: #101012;
+}
+
+#__docusaurus .menu__link{
+  padding: 7px 8px;
+}
+
+#__docusaurus [class^=sidebar_] {
+  margin-top: 49px;
+}
+
+.token.selector, .token.char, .token.function, .token.builtin, .token.inserted {
+  color: #cae667;
+}
+
+.DocSearch-Button-Keys{
+  display: none !important;
+}
+
+a[hred="https://ionicframework.com/advisory"]{
+  background: #8173ff;
+  height: 43px;
+  align-self: center !important;
+  border-radius: 6px;
+}
+
+#__docusaurus [class^=searchBox_] {
+  flex-grow: 1;
+  max-width: 18rem !important;
+}
+
+.search_middle{
+  align-self: center!important;
+  width: 244px;
+    margin-left: 115px;
+}
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+  align-self: center;
+  width: 387px;
+  margin-left: 156px;
+}
+
+.testing_button{
+  color: #fff;
+  cursor: pointer;
+  height: 36px;
+  border-radius: 4px;
+  background: linear-gradient(0deg, rgba(255, 223, 223, 0.06), rgba(255, 223, 223, 0.06)), linear-gradient(180deg, #9C6AFF 0%, #6951FF 100%), radial-gradient(105.21% 109.66% at 39.15% 7.78%, #B871FF 29.17%, #5C80FF 100%);
+border-radius: 5px;
+align-self: center;
+
+width: 120px;
+
+font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 17px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-left: 20px;
+
+
+}
+
+
+:root {
+  --ifm-background-color: var(--token-primary-bg-c);
+  --ifm-navbar-link-hover-color: initial;
+  --ifm-navbar-padding-vertical: 0;
+  --ifm-navbar-item-padding-vertical: 0;
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI emoji";
+  --ifm-font-family-monospace: "gilroy";
+  --ifm-menu-link-sublist-icon: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04Ljk5OTg4IDVMNC45OTk4OCAxTDAuOTk5ODc4IDUiIHN0cm9rZT0iIzAzMDYwQiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+  --z-sidebar: 2000;
+  --z-backdrop: 1100;
+}
