@@ -182,12 +182,14 @@ iframe {
   background: #101012;
 }
 
-#__docusaurus .menu__link{
-  padding: 7px 8px;
+.card_src-components-global-DocsCard-styles-module[href]:hover {
+    box-shadow: none !important;
+    border-color: #646464;
+    text-decoration: none;
 }
 
-#__docusaurus [class^=sidebar_] {
-  margin-top: 49px;
+#__docusaurus .menu__link{
+  padding: 7px 8px;
 }
 
 .token.selector, .token.char, .token.function, .token.builtin, .token.inserted {
@@ -208,6 +210,7 @@ a[hred="https://ionicframework.com/advisory"]{
 #__docusaurus [class^=searchBox_] {
   flex-grow: 1;
   max-width: 18rem !important;
+  padding-right: 0!important;
 }
 
 .search_middle{
@@ -259,4 +262,16 @@ font-weight: 500;
   --ifm-menu-link-sublist-icon: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04Ljk5OTg4IDVMNC45OTk4OCAxTDAuOTk5ODc4IDUiIHN0cm9rZT0iIzAzMDYwQiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
   --z-sidebar: 2000;
   --z-backdrop: 1100;
+}
+#__docusaurus [class^=docSidebarContainer] > a {
+  border-bottom: 1px solid #2f2f2f;
+  height: 61px;
+}
+#__docusaurus [class^=docSidebarContainer] {
+  border-inline-end: 0px solid var(--sidebar-border-c);
+}
+
+#__docusaurus [class^=sidebar_] {
+  padding-top: 49px;
+  border-right: 1px solid #2f2f2f;
 }
