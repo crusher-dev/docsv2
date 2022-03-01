@@ -276,9 +276,12 @@ function Navbar() {
               onChange={colorModeToggle.toggle}
             />
           )}
+          <a href="https://crusher.dev">
           <div className="testing_button">
             Start testing
           </div>
+          </a>
+
           {!hasSearchNavbarItem && <SearchBar />}
         </div>
       </div>

@@ -62,8 +62,11 @@ html[data-theme='light'] {
 }
 
 html[data-theme='dark'] {
-  --token-primary-bg-c: #080809;
-  --token-secondary-bg-c: #13171c;
+  --token-primary-bg-c: #0c0e10;
+  --token-secondary-bg-c: #0c0e10;
+
+
+  --code-block-bg-c: #171b20;
 
   --ifm-link-color: #A87EFF;
   --ifm-color-primary: #8166b9;
@@ -179,7 +182,7 @@ iframe {
 }
 
 .Card-container {
-  background: #101012;
+  background: #131618;
 }
 
 .card_src-components-global-DocsCard-styles-module[href]:hover {
@@ -274,4 +277,21 @@ font-weight: 500;
 #__docusaurus [class^=sidebar_] {
   padding-top: 49px;
   border-right: 1px solid #2f2f2f;
+}
+
+.markdown > header + p + p, .markdown > header + p {
+  font-size: .95rem;
+}
+
+.markdown p, .markdown li, .markdown td, .markdown tr {
+  font-size: .95rem;
+}
+
+.markdown h1:first-child {
+  --ifm-h1-font-size: 2.2rem;
+
+}
+
+.markdown p, .markdown li, .markdown .tabs-container {
+  line-height: 170%;
 }

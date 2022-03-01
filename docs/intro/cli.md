@@ -1,64 +1,80 @@
 ---
-title: Installing Ionic
-sidebar_label: CLI Installation
+title: What is Crusher
+sidebar_label: What is Crusher
 ---
 
 import AppWizard from '@components/page/intro/AppWizard';
 
 <head>
-  <title>How to Install The Ionic Framework CLI to Build Mobile Apps</title>
+  <title>What is Crusher?</title>
   <meta
     name="description"
-    content="The Ionic CLI is the preferred method of installation—offering a wide range of dev tools and help options. Learn how to install Ionic and begin building apps."
+    content="How crusher works? How it's different from other solutions like playwright, selenium, cypress?"
   />
 </head>
 
-Ionic apps are created and developed primarily through the Ionic [command-line](../reference/glossary.md#cli) utility. The Ionic CLI is the preferred method of installation, as it offers a wide range of dev tools and help options along the way. It is also the main tool through which to run the app and connect it to other services, such as Appflow.
+Crusher is low-code framework to create fast and reliable e2e tests for web apps and websites.
+It's easy to integrate in your project and powerful to handle both simple and complex use cases.
 
-<AppWizard />
+Just create reliable e2e tests in mins and run it when you push new changes.
 
-## Install the Ionic CLI
 
-Before proceeding, make sure your computer has [Node.js](../reference/glossary.md#node) installed. See [these instructions](environment.md) to set up an environment for Ionic.
 
-Install the Ionic CLI with npm:
+## Who uses Crusher?
+Crusher is used by Engineers, QAs, product manager, founder. It's a robust tool for everyone involved in product development.
 
-```shell
-$ npm install -g @ionic/cli
-```
 
-If there was a previous installation of the Ionic CLI, it will need to be uninstalled due to a change in package name.
 
-```shell
-$ npm uninstall -g ionic
-$ npm install -g @ionic/cli
+Product team use crusher for variety of use cases
 
-```
 
-:::note
-The `-g` option means _install globally_. When packages are installed globally, `EACCES` permission errors can occur.
-Consider setting up npm to operate globally without elevated permissions. See [Resolving Permission Errors](../developing/tips.md#resolving-permission-errors) for more information.
-:::
+1.) **Developers looking to ship software fast**, without waiting for QA approval or fixing bugs again and again.
 
-## Start an App
 
-Create an Ionic app using one of the pre-made app templates, or a blank one to start fresh. The three most common starters are the `blank` starter, `tabs` starter, and `sidemenu` starter. Get started with the `ionic start` command:
 
-```shell
-$ ionic start
-```
+2.) **QA Manager doing manual QA** looking to automate their workflow.
 
-![start app thumbnails](/img/installation/start-app-thumbnails.png)
 
-To learn more about starting Ionic apps, see the [Starting Guide](../developing/starting.md).
 
-## Run the App
+3.) **VP/Manager** who want their team to focus on shipping software and not on fixing bugs.
 
-The majority of Ionic app development can be spent right in the browser using the `ionic serve` command:
 
-```shell
-$ cd myApp
-$ ionic serve
-```
 
-There are a number of other ways to run an app, it's recommended to start with this workflow. To develop and test apps on devices and emulators, see the [Running an App Guide](../developing/previewing.md).
+4.) **Founder or Product owner** to make sure their users get best version of the apps.
+
+Ultimately, using Crusher will help you ship fast, and without bugs. Everyone gets to be happy in the end.
+
+## What can you do with Crusher?
+
+There are variety of stuff crusher can do
+
+1.) **Write functional test:** Create e2e functional test in few mins
+
+2.) **Create UI and text assertion:** Test UI and add text assertion.
+
+3.) **Multibrowser support.** Run test in multiple browsers.
+
+4.) **CI integration:** Run test from local machine or CI
+
+5.) **Monitor production** for stability.
+
+6.) **Chain tests together.** Run test in sequence
+
+7.) **Extensbility**: Use custom code to test complex use cases
+
+8.) **Concurrency:** Run all the test in parallel and decrease your test build time significantly.
+
+9.) T**est on multiple configurations:** Create test in one place and run it on multiple configurations.
+
+
+## What sets us apart?
+
+There are three features that set us apart
+
+1.) **Low-code approach 🎯** to create test. Create both simple and powerful tests.
+
+2.) **Blazing fast test creation**. You can literally create test in <2 mins.
+
+3.) **E2E integrated tool**. Plug and play solution for all your testing need.
+
+4.) **Developer first** and **[Open source](https://github.com/crusherdev/crusher) approach**.

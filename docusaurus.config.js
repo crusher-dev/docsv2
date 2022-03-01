@@ -3,10 +3,10 @@ const path = require('path');
 const BASE_URL = '/docs';
 
 module.exports = {
-  title: 'Ionic Documentation',
+  title: 'Crusher Documentation',
   tagline:
-    'Ionic is the app platform for web developers. Build amazing mobile, web, and desktop apps all with one shared code base and open web standards',
-  url: 'https://ionicframework.com',
+    'Crusher is low-code testing platform, build test remarkably fast. Ship high quality product, faster than ever before.',
+  url: 'https:/crusher.dev',
   baseUrl: `${BASE_URL}/`,
   i18n: {
     defaultLocale: 'en',
@@ -18,8 +18,8 @@ module.exports = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/meta/favicon.png',
-  organizationName: 'ionic-team',
-  projectName: 'ionic-docs',
+  organizationName: 'crusherdev',
+  projectName: 'crusher-docs',
   themeConfig: {
     autoCollapseSidebarCategories: true,
     colorMode: {
@@ -27,7 +27,7 @@ module.exports = {
       disableSwitch: true,
     },
     navbar: {
-      hideOnScroll: true,
+      hideOnScroll: false,
       logo: {
         alt: 'Crusher Logo',
         src: `/logos/logo.svg`,
@@ -95,7 +95,7 @@ module.exports = {
           icon: {
             alt: 'github logo',
             src: `/logos/github.svg`,
-            href: 'https://github.com/ionic-team/ionic-framework',
+            href: 'https://github.com/crusherdev/crusher',
             target: '_blank',
           },
         },
@@ -146,22 +146,7 @@ module.exports = {
         routeBasePath: '/',
         sidebarPath: require.resolve('./sidebars.js'),
         editUrl: ({ versionDocsDirPath, docPath, locale }) => {
-          if (locale != 'en') {
-            return 'https://crowdin.com/project/ionic-docs';
-          }
-          if ((match = docPath.match(/api\/(.*)\.md/)) != null) {
-            return `https://github.com/ionic-team/ionic-framework/edit/main/core/src/components/${match[1]}/readme.md`;
-          }
-          if ((match = docPath.match(/cli\/commands\/(.*)\.md/)) != null) {
-            return `https://github.com/ionic-team/ionic-cli/edit/develop/packages/@ionic/cli/src/commands/${match[1].replace(
-              '-',
-              '/'
-            )}.ts`;
-          }
-          if ((match = docPath.match(/native\/(.*)\.md/)) != null) {
-            return `https://github.com/ionic-team/ionic-native/edit/master/src/@awesome-cordova-plugins/plugins/${match[1]}/index.ts`;
-          }
-          return `https://github.com/ionic-team/ionic-docs/edit/main/${versionDocsDirPath}/${docPath}`;
+          return `https://github.com/crusher-dedv/crusher-docs/edit/main/${versionDocsDirPath}/${docPath}`;
         },
         exclude: ['README.md'],
         lastVersion: 'current',
