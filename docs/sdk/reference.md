@@ -9,11 +9,11 @@ code.
 Accessed through `crusherSdk.page`
 
 1. `.screenshot({timeout?: number; name?: string;})`
-2. `.$(elementSelector, { waitUntil: "visible" | "in-dom" | null, timeout?: number })`
+2. `.querySelector(elementSelector, { waitUntil: "visible" | "in-dom" | null, timeout?: number })`
 3. `.evaluate(([...args]) => any, arguments, {timeout?: number})`
 4. `.waitForFunction(js_code, {timeout?: number})` : Waits for the js_code to return true, until timeout
 5. `.exposeFunction(func_name, (..args => any))` : Exposes the javascript function code in the webpage’s window. It can be helpful in communication between webpage and test-runner server.
-6. `.url()`: Returns current url of the window
+6. `.url()`: Returns current url of the page
 7. `.waitForNavigation(url: string, {timeout?: number})`
 8. `.navigate(url, {timeout?: number})`
 9. `.runTemplate(templateId)` : In-future
