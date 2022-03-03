@@ -45,12 +45,6 @@ module.exports = {
           position: 'left',
         },
         {
-          type: 'doc',
-          docId: 'intro/cdn',
-          label: 'CLI',
-          position: 'left',
-        },
-        {
           type: 'search',
           position: 'right',
         },
