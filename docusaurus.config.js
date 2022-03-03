@@ -38,24 +38,24 @@ module.exports = {
         height: 24,
       },
       items: [
-        {
-          type: 'doc',
-          docId: 'index',
-          label: 'Guide',
-          position: 'left',
-        },
-        {
-          type: 'doc',
-          docId: 'components',
-          label: 'Components',
-          position: 'left',
-        },
-        {
-          type: 'doc',
-          docId: 'cli',
-          label: 'CLI',
-          position: 'left',
-        },
+        // {
+        //   type: 'doc',
+        //   docId: 'index',
+        //   label: 'Guide',
+        //   position: 'left',
+        // },
+        // {
+        //   type: 'doc',
+        //   docId: 'components',
+        //   label: 'Components',
+        //   position: 'left',
+        // },
+        // {
+        //   type: 'doc',
+        //   docId: 'cli',
+        //   label: 'CLI',
+        //   position: 'left',
+        // },
         {
           type: 'search',
           position: 'right',
@@ -65,23 +65,17 @@ module.exports = {
           position: 'left',
           items: [
             {
-              href: 'https://ionicframework.com/support',
+              href: 'mailto:himanshu@crusher.dev',
               label: 'Help Center',
               target: '_blank',
               rel: null,
             },
             {
-              href: 'https://ionic.zendesk.com/',
+              href: 'mailto:himanshu@crusher.dev',
               label: 'Customer Support',
               target: '_blank',
               rel: null,
-            },
-            {
-              href: 'https://ionicframework.com/advisory',
-              label: 'Enterprise Advisory',
-              target: '_blank',
-              rel: null,
-            },
+            }
           ],
           className: 'navbar__link--support',
         },
