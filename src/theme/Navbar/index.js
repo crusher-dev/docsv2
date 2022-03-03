@@ -177,6 +177,10 @@ function NavbarMobileSidebar({sidebarShown, toggleSidebar}) {
         </button>
       </div>
 
+      <div>
+
+      </div>
+
       <div
         className={clsx('navbar-sidebar__items', {
           'navbar-sidebar__items--show-secondary': secondaryMenu.shown,
@@ -230,8 +234,19 @@ function Navbar() {
         [styles.navbarHideable]: hideOnScroll,
         [styles.navbarHidden]: hideOnScroll && !isNavbarVisible,
       })}>
-      <div className="navbar__inner">
-        <div className="navbar__items">
+        <div className="navbar_mobile">
+        <Logo
+          className="navbar__brand_mobile"
+          imageClassName="navbar__logo"
+          titleClassName="navbar__title"
+          />
+
+        {searchItem.map((item, i) => {
+            return (
+              <NavbarItem {...item} key={i} />
+            )
+        })}
+
           {(items?.length > 0 || activeDocPlugin) && (
             <button
               aria-label="Navigation bar toggle"
@@ -243,11 +258,11 @@ function Navbar() {
               <IconMenu />
             </button>
           )}
-          <Logo
-            className="navbar__brand"
-            imageClassName="navbar__logo"
-            titleClassName="navbar__title"
-          />
+
+      </div>
+
+      <div className="navbar__inner navbar_desktop">
+        <div className="navbar__items">
           {leftItems.map((item, i) => (
             <NavbarItem {...item} key={i} />
           ))}
@@ -257,7 +272,6 @@ function Navbar() {
         </div>
         <div className="navbar__items navbar__items--right">
         {searchItem.map((item, i) => {
-            console.log(item)
             return (
               <NavbarItem {...item} key={i} />
             )

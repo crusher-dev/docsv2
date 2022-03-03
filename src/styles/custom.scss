@@ -24,6 +24,22 @@
 @use './components/theme-toggle';
 @use './components/toc';
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+	font-family:
+	'Ubuntu',
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji' !important;
+}
+
+
 :root {
   --ifm-background-color: var(--token-primary-bg-c);
 
@@ -31,8 +47,11 @@
   --ifm-navbar-padding-vertical: 0;
   --ifm-navbar-item-padding-vertical: 0;
 
-  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+  --ifm-font-family-base: 'Ubuntu',-apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI emoji';
+
+    --ifm-heading-font-family: 'Ubuntu',-apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI emoji'!important;
   --ifm-font-family-monospace: 'SFMono-Regular', 'Roboto Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04Ljk5OTg4IDVMNC45OTk4OCAxTDAuOTk5ODc4IDUiIHN0cm9rZT0iIzAzMDYwQiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K');
@@ -42,6 +61,8 @@
   --z-backdrop: 1100;
   //#endregion
 }
+
+
 
 html[data-theme='light'] {
   --token-primary-bg-c: #fff;
@@ -62,8 +83,8 @@ html[data-theme='light'] {
 }
 
 html[data-theme='dark'] {
-  --token-primary-bg-c: #0c0e10;
-  --token-secondary-bg-c: #0c0e10;
+  --token-primary-bg-c: #0a0b0e;
+  --token-secondary-bg-c: #0a0b0e;
 
 
   --code-block-bg-c: #171b20;
@@ -76,7 +97,7 @@ html[data-theme='dark'] {
   --ifm-background-surface-color: var(--token-primary-bg-c);
 
   --ifm-navbar-background-color: var(--token-primary-bg-c);
-  --ifm-navbar-shadow: 0 1px 0 0 var(--c-gray-90);
+  --ifm-navbar-shadow: 0 1px 0 0 #1c1c1c;
 
   --ifm-heading-color: #fff;
   --ifm-font-color-base: var(--c-carbon-10);
@@ -84,6 +105,7 @@ html[data-theme='dark'] {
   --ifm-dropdown-background-color: var(--token-secondary-bg-c);
 
   --ifm-menu-link-sublist-icon-filter: invert(100%);
+  --toc-separator-c: #1c1c1c !important;
 }
 
 html {
@@ -267,7 +289,7 @@ font-weight: 500;
   --z-backdrop: 1100;
 }
 #__docusaurus [class^=docSidebarContainer] > a {
-  border-bottom: 1px solid #2f2f2f;
+  border-bottom: 1px solid #1c1c1c;
   height: 61px;
 }
 #__docusaurus [class^=docSidebarContainer] {
@@ -276,7 +298,7 @@ font-weight: 500;
 
 #__docusaurus [class^=sidebar_] {
   padding-top: 49px;
-  border-right: 1px solid #2f2f2f;
+  border-right: 1px solid #1c1c1c;
 }
 
 .markdown > header + p + p, .markdown > header + p {
@@ -288,7 +310,7 @@ font-weight: 500;
 }
 
 .markdown h1:first-child {
-  --ifm-h1-font-size: 2.2rem;
+  --ifm-h1-font-size: 2rem;
 
 }
 
