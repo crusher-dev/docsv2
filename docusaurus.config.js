@@ -71,7 +71,7 @@ module.exports = {
               rel: null,
             },
             {
-              href: 'mailto:himanshu@crusher.dev',
+              href: 'mailto:utkarsh@crusher.dev',
               label: 'Customer Support',
               target: '_blank',
               rel: null,
