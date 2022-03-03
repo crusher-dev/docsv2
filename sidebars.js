@@ -40,7 +40,6 @@ module.exports = {
           collapsed: true,
           items: [
             "sdk/guides/writing-custom-code",
-            "sdk/guides/mocking-api-routes",
             "sdk/guides/add-assertions"
           ]
         },

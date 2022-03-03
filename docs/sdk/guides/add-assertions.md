@@ -1,5 +1,5 @@
 ---
-title: Mocking API Routes - Crusher SDK
+title: Add assertions - Crusher SDK
 sidebar_label: Custom Assertions
 ---
 Hello, world!

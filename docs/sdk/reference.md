@@ -2,10 +2,8 @@
 title: Crusher SDK Reference
 sidebar_label: Reference
 ---
-This page contains API refeence for the crusher SDK, which can be used while writing custom
-code.
-
-** Page Actions **
+This page contains API reference for the crusher SDK, which can be used while writing custom code.
+## Page Actions ##
 Accessed through `crusherSdk.page`
 
 1. `.screenshot({timeout?: number; name?: string;})`
@@ -18,7 +16,7 @@ Accessed through `crusherSdk.page`
 8. `.navigate(url, {timeout?: number})`
 9. `.runTemplate(templateId)` : In-future
 
-** Element Actions **
+## Element Actions ##
 
 Operation over DOM element instances, i.e after `crusherSdk.page.$(selector)`:
 
@@ -28,7 +26,7 @@ Operation over DOM element instances, i.e after `crusherSdk.page.$(selector)`:
 4. `.evaluate((element, [...args]) => any, arguments, { timeout?: number; }): Promise<ElementInstance | JsonValue>`
 5. `.scrollIntoView()`
 
-** Assertions **
+## Assertions
 - This will follow the jest standard API’s, i.e `expect(var).toContain(””)`
 - `expect(var).toBe(value)` - Equal object instance
 - `expect(var).not.toBe(value)` - Negative assertion
@@ -36,9 +34,7 @@ Operation over DOM element instances, i.e after `crusherSdk.page.$(selector)`:
 - `expect(image_screenshot_path).toMatchBaseline({ overrideBaseline?: null | number })` - Custom method for comparing to baseline
 - `expect([]).toContain(”item”)` :- Assertion for array to check if it contains an item
 
-Any new assertions should be added only in-case they can’t be supported by the above assertions. The end-goal is to keep the API simple
-
-** Utilities **
+## Utilities
 
 1. `.sleep(timeInMs)`: Waits and pauses execution for the specified interval
 2. `.fetch(url, options)`: Makes request in the node-process and returns the response. Can be useful to avoid CORS related errors. This is different from running network request in the browser itself. If you are looking for how to run network request in browser itself with cookies, checkout this section
