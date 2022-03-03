@@ -1,6 +1,6 @@
 const path = require('path');
 
-const BASE_URL = '/docs';
+const BASE_URL = '/';
 
 module.exports = {
   title: 'Crusher Documentation',

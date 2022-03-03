@@ -4,10 +4,9 @@ sidebar_label: Create a test
 ---
 
 <head>
-  <title>Ionic Framework Packages: CDN, Angular, Vue, and React</title>
+  <title>Create a test - Crusher docs</title>
   <meta
     name="description"
-    content="View our different packages that can be used to quickly start using Ionic Framework or Ionicons CDN in a test environment, Angular, Vue, React, or none at all."
   />
 </head>
 
