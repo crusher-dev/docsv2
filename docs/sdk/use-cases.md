@@ -3,8 +3,7 @@ title: Crusher SDK Use-cases
 sidebar_label: Use-cases
 ---
 
-Different usecases are
-##
+Different use-cases where SDK can be helpful:
 
 - Use of *context* variables, to perform complex flows.
 - Interacting with some JS library (third-party or otherwise)

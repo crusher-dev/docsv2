@@ -7,7 +7,10 @@ to create complex workflows.
 
 ## Custom Code
 After selecting the custom code action from the sidebar, a modal will with editor
-will open up
+will open up.
+
+<img src={require('@site/static/img/custom-code/modal.png').default} />
+
 
 All the custom-code and logic would go inside the `validate()` function in the editor.
 This function is then executed in a sandbox environment (for security) and determines
@@ -27,11 +30,11 @@ object if found. By default, it will wait for 30s for the element to be appear a
 
 ```
 // Waits automatically till the element is visible, with default timeout (30s)
-let element = await crusherSdk.page.querySelector("selector"); 
+let element = await crusherSdk.page.querySelector("selector");
 
 // Waits automatically till the element is visible, with 5s timeout
-let element = await crusherSdk.page.querySelector("selector", { timeout: 5000 }); 
-    
+let element = await crusherSdk.page.querySelector("selector", { timeout: 5000 });
+
 // Doesn't wait, returns null if no element found
 let element = await crusherSdk.page.querySelector("selector", { waitUntil: null })
 ```
@@ -40,7 +43,7 @@ let element = await crusherSdk.page.querySelector("selector", { waitUntil: null 
 For reference, https://docs.crusher.dev/skd/reference#element.click
 ```
 // Waits automatically till the element is visible, with default timeout (30s)
-let element = await crusherSdk.page.querySelector("selector"); 
+let element = await crusherSdk.page.querySelector("selector");
 await element.click();
 ```
 
@@ -48,7 +51,7 @@ await element.click();
 For reference, https://docs.crusher.dev/skd/reference#element.hover
 ```
 // Waits automatically till the element is visible, with default timeout (30s)
-let element = await crusherSdk.page.querySelector("selector"); 
+let element = await crusherSdk.page.querySelector("selector");
 await element.click();
 ```
 

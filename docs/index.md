@@ -29,7 +29,7 @@ We're devs writing code for 10 years, and have always finding testing to be bori
 We're changing it with new approach, where we reverse engineer different engines to allow you to create test easily.
 
 It works flawlessy with web technologies like, [React](react.md), and [Vue](vue/overview.md), etc.
-
+<!--
 Get started with testing [installing Ionic](intro/cli.md) or following our [Concept](intro/next.md#build-your-first-app) to learn the main concepts.
 
 <intro-end />
@@ -61,12 +61,12 @@ Get started with testing [installing Ionic](intro/cli.md) or following our [Conc
 
 </DocsCards>
 
-<br/>
+<br/> -->
 
-For other reference, you can go to
+<!-- For other reference, you can go to
 
 - Self host guide
-- Company handbook
+- Company handbook -->
 
 <!-- ## Overview
 

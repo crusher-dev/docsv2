@@ -1,6 +1,6 @@
 ---
-title: What is Crusher
-sidebar_label: What is Crusher
+title: What is Crusher?
+sidebar_label: What is Crusher?
 ---
 
 import AppWizard from '@components/page/intro/AppWizard';

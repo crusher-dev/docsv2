@@ -46,44 +46,13 @@ module.exports = {
         },
         {
           type: 'doc',
-          docId: 'components',
-          label: 'Components',
-          position: 'left',
-        },
-        {
-          type: 'doc',
-          docId: 'cli',
+          docId: 'intro/cdn',
           label: 'CLI',
           position: 'left',
         },
         {
           type: 'search',
           position: 'right',
-        },
-        {
-          label: 'Others',
-          position: 'left',
-          items: [
-            {
-              href: 'https://ionicframework.com/support',
-              label: 'Help Center',
-              target: '_blank',
-              rel: null,
-            },
-            {
-              href: 'https://ionic.zendesk.com/',
-              label: 'Customer Support',
-              target: '_blank',
-              rel: null,
-            },
-            {
-              href: 'https://ionicframework.com/advisory',
-              label: 'Enterprise Advisory',
-              target: '_blank',
-              rel: null,
-            },
-          ],
-          className: 'navbar__link--support',
         },
         {
           type: 'separator',
@@ -99,17 +68,6 @@ module.exports = {
             target: '_blank',
           },
         },
-        {
-          type: 'iconLink',
-          position: 'right',
-          icon: {
-            alt: 'discord logo',
-            src: `/logos/discord.svg`,
-            href: 'https://ionic.link/discord',
-            target: '_blank',
-          },
-        },
-
       ],
     },
     tagManager: {
