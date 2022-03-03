@@ -10,7 +10,7 @@ import DocsCard from '@components/global/DocsCard';
 import DocsCards from '@components/global/DocsCards';
 
 <head>
-  <title>Open-Source UI Toolkit to Create Your Own Mobile or Desktop Apps</title>
+  <title>Crusher Docs</title>
   <meta
     name="description"
     content="Ionic Framework is an open-source UI toolkit to create your own mobile and desktop apps using web technologies with integrations for popular frameworks."
