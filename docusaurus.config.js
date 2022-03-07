@@ -50,12 +50,12 @@ module.exports = {
         //   label: 'Components',
         //   position: 'left',
         // },
-        // {
-        //   type: 'doc',
-        //   docId: 'cli',
-        //   label: 'CLI',
-        //   position: 'left',
-        // },
+        {
+          type: 'doc',
+          docId: 'cli',
+          label: 'CLI',
+          position: 'left',
+        },
         {
           type: 'search',
           position: 'right',
@@ -74,16 +74,16 @@ module.exports = {
             target: '_blank',
           },
         },
-        {
-          type: 'iconLink',
-          position: 'right',
-          icon: {
-            alt: 'discord logo',
-            src: `/logos/discord.svg`,
-            href: 'https://ionic.link/discord',
-            target: '_blank',
-          },
-        },
+        // {
+        //   type: 'iconLink',
+        //   position: 'right',
+        //   icon: {
+        //     alt: 'discord logo',
+        //     src: `/logos/discord.svg`,
+        //     href: 'https://ionic.link/discord',
+        //     target: '_blank',
+        //   },
+        // },
 
       ],
     },
