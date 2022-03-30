@@ -1,5 +1,5 @@
 ---
-title: Using CLI in Project
+title: Using CLI within Project
 ---
 
 <head>
