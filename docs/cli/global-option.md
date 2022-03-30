@@ -1,5 +1,5 @@
 ---
-title: Using CLI in Project
+title: Global options
 ---
 
 <head>

@@ -70,4 +70,4 @@ Adds utility classes to hide any element based on the breakpoint, see [CSS Utili
 
 ## Usage
 
-Refer to [Ionic Packages](../intro/cdn.md) for how to include the global stylesheets based on the framework and [CSS Utilities](css-utilities.md) for how to use the optional utilities.
+Refer to [Ionic Packages](../intro/getting-started-crusher.md) for how to include the global stylesheets based on the framework and [CSS Utilities](css-utilities.md) for how to use the optional utilities.

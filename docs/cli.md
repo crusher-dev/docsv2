@@ -32,7 +32,7 @@ $ npx crusher-cli test:run
  The Crusher CLI works with node > v10
 
 
-:::note
+:::tip
 You can also use `npm install crusher-cli` or `yarn add crusher-cli`, but it is not recommeded as we provide continuous updates to improce  experience
 :::
 

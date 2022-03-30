@@ -4,7 +4,7 @@ module.exports = {
       type: 'category',
       label: 'Getting Started',
       collapsed: true,
-      items: ['index','intro/cdn', 'intro/cli'],
+      items: ['index','intro/getting-started-crusher', 'intro/cli', 'intro/components'],
     },
     {
       type: 'category',
@@ -301,13 +301,8 @@ module.exports = {
       items: [
         'cli',
         'cli/configuration',
-        'cli/livereload',
-        'cli/using-a-proxy',
-        {
-          type: 'link',
-          label: 'Changelog',
-          href: 'https://github.com/ionic-team/ionic-cli/blob/develop/packages/@ionic/cli/CHANGELOG.md',
-        },
+        'cli/global-option',
+        'cli/project-options',
       ],
     },
     {

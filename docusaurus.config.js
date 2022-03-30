@@ -17,7 +17,7 @@ module.exports = {
   },
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/meta/favicon.png',
+  favicon: 'https://app.crusher.dev/assets/img/favicon.png',
   organizationName: 'crusherdev',
   projectName: 'crusher-docs',
   themeConfig: {
