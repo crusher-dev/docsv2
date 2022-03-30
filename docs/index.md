@@ -14,15 +14,15 @@ import CrusherFeatures from '@components/page/index';
   <title>Crusher Docs</title>
   <meta
     name="description"
-    content="Ionic Framework is an open-source UI toolkit to create your own mobile and desktop apps using web technologies with integrations for popular frameworks."
+    content="Crusher.dev"
   />
-  <link rel="canonical" href="https://ionicframework.com/docs" />
-  <link rel="alternate" href="https://ionicframework.com/docs" hreflang="x-default" />
-  <link rel="alternate" href="https://ionicframework.com/docs" hreflang="en" />
-  <meta property="og:url" content="https://ionicframework.com/docs" />
+  <link rel="canonical" href="https://docs.crusher.dev/" />
+  <link rel="alternate" href="https://docs.crusher.dev/" hreflang="x-default" />
+  <link rel="alternate" href="https://docs.crusher.dev/" hreflang="en" />
+  <meta property="og:url" content="https://docs.crusher.dev/" />
 </head>
 
-Crusher is low-code testing tool. We're making web testing reliable and effortless.
+Crusher is a low-code testing tool. We're making web testing reliable and effortless.
 
 We aspire to make Crusher solves your general testing need. You'll be seamlessly able to
 
@@ -31,7 +31,7 @@ We aspire to make Crusher solves your general testing need. You'll be seamlessly
 -  <a href="google.com" style={{fontSize: "1rem"}}>Integrating it in your project</a>
 -  <a href="google.com" style={{fontSize: "1rem"}}>Debug tests</a>
 
-We're different from tools like Cypress, Selenium and solution. We're trying to make opinionated software to make testing easy.
+We're different from tools like Cypress, Selenium, and solution. We're trying to make opinionated software to make testing easy.
 
 ### Features
 - 🔮 Low-code test creation. Seamless for most use cases, for advanced use case write code.

@@ -6,7 +6,7 @@ title: Global options
   <title>Basic usage | Maintain a Global Configuration File</title>
   <meta
     name="description"
-    content="Set and print configuration values from project config files and the global CLI config file with Ionic CLI. Read to learn more about Capacitor configuration."
+    content="Crusher.dev"
   />
 </head>
 

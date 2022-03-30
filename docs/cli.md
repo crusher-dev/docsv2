@@ -7,7 +7,7 @@ sidebar_label: Overview
   <title>Cruhser CLI : Crusher Docs</title>
   <meta
     name="description"
-    content="The Ionic command-line interface (CLI) is the go-to tool for developing Ionic apps. Install our framework globally with npm."
+    content="Crusher.dev"
   />
 </head>
 
