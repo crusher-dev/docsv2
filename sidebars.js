@@ -33,7 +33,7 @@ module.exports = {
       collapsed: true,
       items: [
         'cli',
-        'cli/configuration',
+        'cli/using-cli-in-project',
         'cli/global-option',
         'cli/project-options',
       ],

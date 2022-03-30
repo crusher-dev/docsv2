@@ -10,6 +10,11 @@ title: Project Options
   />
 </head>
 
+:::tip Start
+ If project is not appearing, select a new project.
+:::
+
+
 When running crusher-cli for the first time, we need to link your project. You can choose to create a new project, or setup existing project.
 
 Crusher seamlessly integrates with git enabled project.
