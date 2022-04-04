@@ -64,7 +64,7 @@ export default function LayeredColorsSelect({ ...props }) {
     <div
       {...props}
       ref={el}
-      className={clsx(styles.layeredColorsSelect, styles[`layeredColorsSelect${isDarkTheme ? 'Dark' : 'Dark'}`])}
+      className={clsx(styles.layeredColorsSelect, styles[`layeredColorsSelect${isDarkTheme ? 'Dark' : 'Light'}`])}
     >
       <div className={styles.selectRow}>
         <ColorDot color={`var(--ion-color-${color})`} />

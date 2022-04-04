@@ -13,6 +13,12 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Setting up',
+      collapsed: true,
+      items: ["setting-up/invite-team-members", "setting-up/manage-alerts"]
+    },
+    {
+      type: 'category',
       label: 'Integration',
       collapsed: true,
       items: ['integrations/with-vercel', 'integrations/with-netlify', 'integrations/with-heroku', 'integrations/with-ci-cd'],
