@@ -1,28 +1,27 @@
 module.exports = {
   docs: [
     {
-      type: 'category',
-      label: 'Getting Started',
-      collapsed: true,
-      items: ['index','intro/getting-started-crusher', 'intro/cli', 'intro/components'],
+      type: "doc",
+      label: "Overview",
+      id: "index",
     },
     {
       type: 'category',
-      label: 'SDK',
+      label: 'Getting Started',
+      collapsed: false,
+      items: ['getting-started/what-is-crusher', 'getting-started/how-crusher-works', 'getting-started/create-your-first-test', 'getting-started/using-cli-within-project'],
+    },
+    {
+      type: 'category',
+      label: 'Integration',
       collapsed: true,
-      items: [
-        'sdk/use-cases',
-        'sdk/reference',
-        {
-          type: 'category',
-          label: 'Guides',
-          collapsed: true,
-          items: [
-            "sdk/guides/writing-custom-code",
-            "sdk/guides/add-assertions"
-          ]
-        },
-      ],
+      items: ['integrations/with-vercel', 'integrations/with-netlify', 'integrations/with-heroku', 'integrations/with-ci-cd'],
+    },
+    {
+      type: 'category',
+      label: 'Advanced',
+      collapsed: true,
+      items: ['advanced/custom-code-usecases', 'advanced/making-network-requests', 'advanced/working-with-emails', 'advanced/writing-custom-selectors'],
     },
   ],
 

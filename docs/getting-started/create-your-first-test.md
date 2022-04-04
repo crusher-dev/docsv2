@@ -1,6 +1,6 @@
 ---
-title: Create a test
-sidebar_label: Create a test
+title: Create your first test
+sidebar_label: Create your first test
 ---
 
 
