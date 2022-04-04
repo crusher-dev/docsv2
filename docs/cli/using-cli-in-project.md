@@ -63,7 +63,7 @@ To know more about this command, [check this out](https://docs.crusher.dev/cli/c
 $ npx crusher-cli whoami
 ```
 
-If you ever forget which account you are connected to, run this command to find out your identity 🤔
+If you ever forget which account you are connected to, you can run this command to find out your identity 🤔
 
 ## Get Info about crusher project
 
