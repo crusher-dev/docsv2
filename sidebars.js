@@ -13,6 +13,12 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Development',
+      collapsed: true,
+      items: ['development/installation-guide'],
+    },
+    {
+      type: 'category',
       label: 'Setting up',
       collapsed: true,
       items: ["setting-up/invite-team-members", "setting-up/manage-alerts"]
