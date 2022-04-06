@@ -16,7 +16,7 @@ export default function ColorInput({ color, setColor, ...props }) {
         'color-input',
         styles.colorInput,
         props.className,
-        styles[`colorInput${isDarkTheme ? 'Dark' : 'Light'}`]
+        styles[`colorInput${isDarkTheme ? 'Dark' : 'Dark'}`]
       )}
     >
       <div className={styles.colorPickerWrapper} style={{ '--background-c': color } as any}>

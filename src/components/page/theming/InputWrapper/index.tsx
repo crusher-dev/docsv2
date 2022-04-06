@@ -15,7 +15,7 @@ export default function InputWrapper({ ...props }) {
         props.className,
         'input-wrapper',
         styles.inputWrapper,
-        styles[`inputWrapper${isDarkTheme ? 'Dark' : 'Light'}`]
+        styles[`inputWrapper${isDarkTheme ? 'Dark' : 'Dark'}`]
       )}
     />
   );
