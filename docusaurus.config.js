@@ -25,6 +25,7 @@ module.exports = {
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       hideOnScroll: false,
