@@ -9,3 +9,18 @@ index 233efa9..069f8a5 100644
    <head>
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+diff --git a/node_modules/@docusaurus/core/lib/client/templates/ssr.html.template.js b/node_modules/@docusaurus/core/lib/client/templates/ssr.html.template.js
+index c2c47a7..4decf15 100644
+--- a/node_modules/@docusaurus/core/lib/client/templates/ssr.html.template.js
++++ b/node_modules/@docusaurus/core/lib/client/templates/ssr.html.template.js
+@@ -6,8 +6,8 @@
+  */
+ 
+ module.exports = `
+-<!DOCTYPE html>
+-<html <%~ it.htmlAttributes %>>
++<!DOCTYPE html >
++<html <%~ it.htmlAttributes %> data-theme="dark">>
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
