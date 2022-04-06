@@ -15,7 +15,8 @@
     "serve": "docusaurus serve",
     "prestart": "npm run generate-markdown",
     "start": "docusaurus start",
-    "swizzle": "docusaurus swizzle --danger"
+    "swizzle": "docusaurus swizzle --danger",
+    "postinstall": "patch-package"
   },
   "browserslist": {
     "production": [
