@@ -180,7 +180,7 @@
 }
 
 html[data-theme='light'] .release-tag:hover {
-  background: var(--accent-color-800);
+  background: var(--accent-color-100);
 }
 
 html[data-theme='dark'] .release-tag:hover {

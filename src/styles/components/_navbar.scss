@@ -1,9 +1,19 @@
 html[data-theme='light'] {
-  --navbar-link-c: var(--c-indigo-80);
+  --navbar-link-c: var(--c-gray-0);
 
-  --navbar-separator-bg-c: var(--c-indigo-40);
+  --navbar-separator-bg-c: var(--c-carbon-80);
 
-  --ifm-dropdown-background-color: var(--token-secondary-bg-c);
+  .navbar {
+    .dropdown {
+      .navbar__link {
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    .icon-link {
+      filter: brightness(0) invert(1);
+    }
+  }
 }
 
 html[data-theme='dark'] {
