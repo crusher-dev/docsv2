@@ -1,0 +1,11 @@
+diff --git a/node_modules/@docusaurus/core/lib/client/templates/index.html.template.ejs b/node_modules/@docusaurus/core/lib/client/templates/index.html.template.ejs
+index 233efa9..069f8a5 100644
+--- a/node_modules/@docusaurus/core/lib/client/templates/index.html.template.ejs
++++ b/node_modules/@docusaurus/core/lib/client/templates/index.html.template.ejs
+@@ -1,5 +1,5 @@
+ <!DOCTYPE html>
+-<html lang="en">
++<html lang="en" data-theme="dark">
+   <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
