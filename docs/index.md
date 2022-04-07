@@ -75,7 +75,7 @@ It's like we have tried to make ecosystem complex, it's more or less the same st
 - What is Crusher?
 - Crusher high level overview.
 - Source code on Github
-- How to crusher to test your project
+- How to use crusher to test your project
 - Deploying Crusher on AWS, docker.
 
 

@@ -1,9 +1,8 @@
 html[data-theme='light'] {
-  --sidebar-category-c: var(--c-gray-100);
-  --sidebar-border-c: var(--c-gray-0);
+  --sidebar-category-c: var(--c-gray-0);
+  --sidebar-border-c: var(--c-gray-90);
 
-  --ifm-menu-color-background-active: var(--c-blue-0);
-  --ifm-menu-color: var(--c-indigo-80);
+  --ifm-menu-color: var(--c-gray-20);
 }
 
 html[data-theme='dark'] {
