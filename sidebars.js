@@ -15,7 +15,7 @@ module.exports = {
       type: 'category',
       label: 'Development',
       collapsed: true,
-      items: ['development/installation-guide'],
+      items: ['development/installation-guide','running-test-locally'],
     },
     {
       type: 'category',
