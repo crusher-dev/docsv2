@@ -45,6 +45,7 @@ module.exports = {
       items: [
         'cli',
         'cli/using-cli-in-project',
+        'cli/custom-host',
         'cli/global-option',
         'cli/project-options',
       ],
