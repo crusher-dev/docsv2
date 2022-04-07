@@ -53,8 +53,6 @@ $ npx crusher-cli test:run
 
 This will run all the tests present in your project and return the results after they are finished. This will be how it&#39;ll look,
 
-![](https://static.slab.com/prod/uploads/v5vh9nsq/posts/images/Lr8n5UpSdXw51x3C8zrfpxn1.png)
-
 To know more about this command, [check this out](https://docs.crusher.dev/cli/commands#testRun).
 
 ## Get info about the authenticated user
