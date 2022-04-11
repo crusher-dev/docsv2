@@ -9,7 +9,7 @@ to create complex workflows.
 After selecting the custom code action from the sidebar, a modal will with editor
 will open up.
 
-<img src={require('@site/static/img/custom-code/modal.png').default} />
+<img style={{margin: "24}} src={require('@site/static/img/custom-code/modal.png').default} />
 
 
 All the custom-code and logic would go inside the `validate()` function in the editor.
