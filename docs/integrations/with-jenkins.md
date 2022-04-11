@@ -35,6 +35,8 @@ The above `JenkinsFile` is doing the following things,
 
 ## Getting token and project id
 
+<img src={require('@site/static/img/integration/ci-cli-command.png').default} />
+
 To get your user token and project id,
 
 1. Open Crusher and go to Settings &gt; Integrations
