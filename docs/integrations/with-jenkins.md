@@ -21,7 +21,7 @@ pipeline {
         stage('Test') {
             steps {
                 // run crusher tests
-                sh 'npx crusher-cli test:run --token=adsfsjkdfjksd --project-id=32'
+                sh 'npx crusher-cli test:run --token=<random_token_here> --project-id=<your_project_id>'
             }
         }
     }
