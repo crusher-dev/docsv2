@@ -27,7 +27,7 @@ module.exports = {
       type: 'category',
       label: 'Integration',
       collapsed: true,
-      items: ['integrations/with-vercel', 'integrations/with-netlify', 'integrations/with-heroku', 'integrations/with-ci-cd'],
+      items: ['integrations/with-vercel', 'integrations/with-netlify', 'integrations/with-heroku', 'integrations/with-ci-cd', 'integrations/with-jenkins'],
     },
     {
       type: 'category',
