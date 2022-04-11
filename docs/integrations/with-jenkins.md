@@ -38,4 +38,4 @@ To get your user token and project id,
 
 1. Open Crusher and go to `Settings>Integrations`
 1. Copy the command from the `CI/CD` command box.
-1. Replace the command with this.
+1. Replace the command with the newly copied command.
