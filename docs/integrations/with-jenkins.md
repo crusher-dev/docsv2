@@ -6,7 +6,7 @@ Integration with Jenkins can be done easily with the help of `crusher-cli`.  Thi
 
 ## Example repo
 
-For reference, you can take a look at the [example repo](/integrations/with-jenkins) which uses jenkins to trigger crusher tests.
+For reference, you can take a look at the [example repo](https://github.com/crusherdev/crusher-jenkins) which uses jenkins to trigger crusher tests.
 
 ## JenkinsFile
 
@@ -31,7 +31,7 @@ pipeline {
 The above `JenkinsFile` is doing the following things,
 
 1. Using `node:12.14.0` docker image as a base to prepare a basic node environment. (Needed for `crusher-cli`)
-1. Triggering tests through `crusher-cli`  [test:run](https://docs.crusher.dev/cli/commands/test:run) command in your project from `—token` and -`-project-id` passed. (Look at how to get the token and project id)
+1. Triggering tests through `crusher-cli`  [test:run](/cli/commands/test:run) command in your project from `—token` and -`-project-id` passed. (Look at how to get the token and project id)
 
 ## Getting token and project id
 To get your user token and project id,
