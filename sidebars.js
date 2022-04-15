@@ -15,7 +15,7 @@ module.exports = {
       type: 'category',
       label: 'Development',
       collapsed: true,
-      items: ['development/installation-guide','running-test-locally'],
+      items: ['development/installation-guide'],
     },
     {
       type: 'category',
@@ -27,7 +27,7 @@ module.exports = {
       type: 'category',
       label: 'Integration',
       collapsed: true,
-      items: ['integrations/with-vercel', 'integrations/with-ci-cd'],
+      items: ['integrations/with-vercel', 'integrations/with-ci-cd','integrations/with-jenkins'],
     },
     {
       type: 'category',
