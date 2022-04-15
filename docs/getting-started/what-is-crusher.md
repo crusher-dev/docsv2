@@ -25,7 +25,7 @@ Crusher is used by Engineers, QAs, product manager, founder. It's a robust tool 
 
 
 
-Product team use crusher for variety of use cases
+Team use crusher for variety of use cases, like:
 
 
 1.) **Developers looking to ship software fast**, without waiting for QA approval or fixing bugs again and again.
@@ -43,6 +43,12 @@ Product team use crusher for variety of use cases
 4.) **Founder or Product owner** to make sure their users get best version of the apps.
 
 Ultimately, using Crusher will help you ship fast, and without bugs. Everyone gets to be happy in the end.
+
+
+:::info Info
+Crusher is designed mainly for Devs/QA, and to offer a better testing workflow. At certain times, you might need to dev support;
+We're happy to help in those cases.
+:::
 
 ## What can you do with Crusher?
 

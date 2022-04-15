@@ -21,7 +21,7 @@ module.exports = {
       type: 'category',
       label: 'Setting up',
       collapsed: true,
-      items: ["setting-up/invite-team-members", "setting-up/manage-alerts"]
+      items: [ "setting-up/manage-alerts"]
     },
     {
       type: 'category',

@@ -1,9 +1,11 @@
 ---
 title: Integration Crusher tests with Vercel
-sidebar_label: With Vercel
+sidebar_label: With Vercel/Netlify
 ---
 
-Crusher can integrate seamlessly with preview environments like Vercel.
+
+Crusher can integrate seamlessly with preview environments like Vercel. This tutorial is also valid for similar services like Netlify.
+
 A new test build is created whenever new build is deployed on Vercel.
 
 This make sure your latest build is fully available without issue and bugs.
@@ -12,13 +14,20 @@ This can integrate with almost all major web frameworks.
 
 ## Setup
 
-1.) Copy the command token from your crusher setting page.
+1.) Go to [*Crusher Settings Page > Integration*](https://app.crusher.dev/settings/project/integrations).
 
-2.) Go to vercel's project and Settings>General>Build & Development Settings.
+2.) Copy command in CI/CD section.
 
-3.) Override the default build command. To 
+
+3.) Go to vercel's project and *Settings > General > Build & Development Settings*.
+
+4.) Override the default build command. To   
+`  
+your build command  && [command-your-copied]
 `
-your build command  && crusher command
-`
 
-4.) Save change and trigger a nerw build.
+5.) Save your changes and trigger a new build to verify.
+
+:::info Info
+Integrate with Github to see status checks on commits & pull requests.
+:::
