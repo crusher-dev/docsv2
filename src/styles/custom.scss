@@ -145,7 +145,7 @@ html[data-theme='dark'] {
   --token-primary-bg-c: #0a0b0e;
   --token-secondary-bg-c: #0a0b0e;
 
-
+  --markdown-text-intro-c: #cccccc !important;
   --code-block-bg-c: #171b20;
 
   --ifm-link-color: #A87EFF;
@@ -272,9 +272,7 @@ iframe {
     text-decoration: none;
 }
 
-#__docusaurus .menu__link{
-  padding: 7px 8px;
-}
+
 
 .token.selector, .token.char, .token.function, .token.builtin, .token.inserted {
   color: #cae667;
@@ -360,7 +358,7 @@ font-weight: 500;
 }
 
 #__docusaurus [class^=sidebar_] {
-  padding-top: 49px;
+  padding: 49px 0px 0px 0px !important;
   border-right: 1px solid #1c1c1c;
   background: #0c0c0e;
   padding-inline-end: 16px;
@@ -369,14 +367,46 @@ font-weight: 500;
   width: 280px !important;
 }
 
+.menu__link--active:not(.menu__link--sublist) {
+  background: rgb(255 255 255 / 5%);
+  border-radius: 0;
+}
+
+#__docusaurus .menu__link--sublist {
+  padding-left: 16px !important;
+  padding-right: 12px !important;
+}
+
+#__docusaurus .menu__link{
+  padding: 8px 16px;
+  letter-spacing: .2px
+}
+#__docusaurus .menu__list-item .menu__list .menu__link {
+  padding-left: 37px;
+}
+
+#__docusaurus .theme-doc-sidebar-item-category-level-1 > .menu__link {
+  font-size: .88rem;
+}
+
 .markdown > header + p + p, .markdown > header + p {
   font-size: .98rem;
-  letter-spacing: .12px;
+  letter-spacing: 0.2px;
+  line-height: 180%;
 }
 
 .markdown p, .markdown li, .markdown td, .markdown tr {
   font-size: .98rem;
-  letter-spacing: .12px;
+  letter-spacing: 0.2px;
+  line-height: 180%;
+}
+
+#__docusaurus .menu__link:not(.menu__link--active:not(.menu__link--sublist)) {
+  color: #ccc;
+}
+
+.menu__list-item--collapsed .menu__link--sublist:after {
+  zoom: .73;
 }
 
 .markdown h1 {
@@ -453,3 +483,4 @@ pre[class*=language-] {
 .admonition .admonition-content p code {
   margin: 0 8px;
 }
+
