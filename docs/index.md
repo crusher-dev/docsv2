@@ -22,65 +22,51 @@ import CrusherFeatures from '@components/page/index';
   <meta property="og:url" content="https://docs.crusher.dev/" />
 </head>
 
-Crusher is a low-code testing tool. We're making web testing reliable and effortless.
+Crusher is a low-code testing platform to create reliable e2e tests for web apps and websites. It's easy to integrate into your project and powerful to handle both simple and complex use cases.
 
-We aspire to make Crusher solves your general testing need. You'll be seamlessly able to
+We aspire to take the pain out of testing and make it easy to create reliable e2e tests for your web app. With Crusher, you'll seamlessly be able to
 
--  <a href="google.com" style={{fontSize: "1rem"}}>Create a e2e web test</a>
--  <a href="google.com" style={{fontSize: "1rem"}}>Run your test</a>
--  <a href="google.com" style={{fontSize: "1rem"}}>Integrating it in your project</a>
--  <a href="google.com" style={{fontSize: "1rem"}}>Debug tests</a>
-
-We're different from tools like Cypress, Selenium, and solution. We're trying to make opinionated software to make testing easy.
+-  <a href="./create-your-first-test" style={{fontSize: "1rem"}}>Create and Run e2e web test</a>
+-  <a href="/integrations/with-vercel" style={{fontSize: "1rem"}}>Integrating it into your project</a>
+-  <a href="/setting-up/manage-alerts" style={{fontSize: "1rem"}}>Setup alerts when things go wrong</a>
 
 ### Features
-- 🔮 Low-code test creation. Seamless for most use cases, for advanced use case write code.
-- Central report and management for team
-- Multi browser support (in beta). Multi version will come soon.
-- All-in-one testing solution.
-- Super fast and scalable.
-- Built on open source.
-- Open core and Free to use for individual devs. We have spend tons on effort on building it and want to be incentivized by it.
+- **Low-code test creation**: Covers most use cases; more advanced use cases are supported via custom code.
+- Central reporting and management for team
+- Multi-browser support (in beta). Multi version will come soon.
+- All-in-one testing solution
+- Super fast and scalable
+- Open core and free to use for individual devs
 
 
-Mostly you will find most features that help you test websites. If it's not there, [file an issue on Github](https://github.com/crusherdev/crusher/issues/new/choose).
+Most of the features that you will need are already covered by us. If it's not there, [file an issue on Github](https://github.com/crusherdev/crusher/issues/new/choose).
 
 ### Core principles of Crusher
 <CrusherFeatures/>
 
-
-P.S.- QA = Devs who focuses on testing
-
-
 ### Mission
 
-- Making life of devs easier. Instead of fixing bugs or shipping slowly, they can focus on things that matter and rejuvenate.
+- Making the life of devs easier: Instead of writing tests, write code.
 
-- Increasing confidence to ship. Making deploying on friday cool again.
+- Increasing confidence to ship: We're making sure that you're always on the right track.
 
-- Making testing cool, it's currently boring, flaky. No one wants to do it yet.
+- Making testing cool: Currently, it's both boring and flaky.
 
 
 ### Opinionated
 
-We're opinionated in certain way, Testing is already too complex, there are tons of slugs for simplest of things
+We're opinionated in a certain way, Testing is already too complex, there are tons of slugs for the simplest of things. For example, black box testing, sanity testing, regression testing, e2e testing, smoke testing etc.
 
-For eg- Black box testing, sanity testing, smoke testing, regression testing, e2e testing, etc.
-
-It's like we have tried to make ecosystem complex, it's more or less the same stuff. And we're here to change it.
-
-
+It's like we're trying to make the ecosystem complex, when it's more or less the same stuff. We want to change this
 #### Helpful links
 
-- What is Crusher?
-- Crusher high level overview.
-- Source code on Github
-- How to use crusher to test your project
-- Deploying Crusher on AWS, docker.
-
+- [What is Crusher?](/getting-started/what-is-crusher)
+- [Crusher high level overview](/getting-started/how-crusher-works)
+- [Source code on Github](https://github.com/crusherdev/crusher)
+- [How to use crusher to test your project](http://localhost:3003/getting-started/create-your-first-test)
 
 ### License
 
-The Core of crusher is license under MIT license. If you're solo-developer, you can use it unlimited for lifetime.
+The core of Crusher is licensed under the MIT license. If you're a solo developer, you can use it for free.
 
-The ee parts, focued on bigger times is license by Crusher but it's source available.
+The `ee` version of Crusher is licensed by Crusher but its source is available.
