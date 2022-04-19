@@ -1,21 +1,22 @@
 ---
 title: "test:run"
 sidebar_label: "test:run"
+slug: "test_run"
 ---
 
 
-Record and create tests effortlessly
+Run tests in your project
 
 ```shell
 $ test:run [options]
 ```
 
-`crusher-cli test:create` will open up a recorder and allow you to record your test.
+`crusher-cli test:run` will run the saved tests in your project and display the results.
 ## Examples
 
 ```shell
 $ npx crusher-cli test:run
-$ npx crusher-cli test:run
+$ npx crusher-cli test:run --host staging.test-app.com
 ```
 
 ## Options
