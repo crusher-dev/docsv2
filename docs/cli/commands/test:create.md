@@ -1,6 +1,7 @@
 ---
 title: "test:create"
 sidebar_label: "test:create"
+slug: "test_create"
 ---
 
 

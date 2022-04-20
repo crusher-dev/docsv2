@@ -94,11 +94,11 @@
   {
     "name": "test:run",
     "namespace": ["crusher-cli"],
-    "summary": "Record and create tests effortlessly",
-    "description": "`crusher-cli test:create` will open up a recorder and allow you to record your test.",
+    "summary": "Run tests in your project",
+    "description": "`crusher-cli test:run` will run the saved tests in your project and display the results.",
     "footnotes": [],
     "groups": [],
-    "exampleCommands": ["npx crusher-cli test:run", "npx crusher-cli test:run"],
+    "exampleCommands": ["npx crusher-cli test:run", "npx crusher-cli test:run --host staging.test-app.com"],
     "aliases": [],
     "inputs": [],
     "options": [

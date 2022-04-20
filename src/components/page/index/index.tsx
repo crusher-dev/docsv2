@@ -17,7 +17,7 @@ export default function CrusherFeatures(props) {
 
       <div className='row'>
         <div className='item'>
-            <Terminal/> <span className='item-name' style={{marginLeft: 21}}>Build for developers</span>
+            <Terminal/> <span className='item-name' style={{marginLeft: 21}}>Built for developers</span>
         </div>
         <div className='item' style={{marginLeft: 30}}>
             <Gear/> <span className='item-name' style={{marginLeft:28}}>Extendable & customizable</span>
