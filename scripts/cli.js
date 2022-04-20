@@ -39,6 +39,11 @@ function renderFrontmatter({ name }) {
     sidebar_label: shortName,
   };
 
+  if (name === "test:run") {
+    frontmatter.slug = "test_run";
+  } else if (name === "test:create") {
+    frontmatter.slug = "test_create";
+  }
   return `---
 ${Object.entries(frontmatter)
   .map(([key, value]) => `${key}: ${typeof value === 'string' ? `"${value.replace('"', '\\"')}"` : value}`)

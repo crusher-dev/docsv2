@@ -20,34 +20,6 @@ $ init [options]
 $ npx crusher-cli init
 ```
 
-## Options
-
-
-<table className="reference-table">
-  
-      <thead>
-        <tr>
-          <th colSpan="2">
-            <h3><a href="#option-name" id="option-name">
-  --name
-  <span class="option-spec"> =&lt;Current Date&gt;</span>
-</a></h3>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        
-              <tr>
-                <th>Description</th>
-                <td><p>The name of the test</p>
-</td>
-              </tr>
-              
-      </tbody>
-</table>
-
-
-
 ## Advanced Options
 
 
