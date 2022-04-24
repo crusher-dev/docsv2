@@ -4,15 +4,15 @@ sidebar_label: "whoami"
 ---
 
 
-
+Returns info about the authenticated user
 
 ```shell
-$ whoami [options]
+whoami [options]
 ```
 
-`crusher-cli test:logout` will log you out of crusher.
+`crusher-cli whoami` will return details of the current authenticated user.
 ## Examples
 
 ```shell
-$ npx crusher-cli logout
+npx crusher-cli whoami
 ```

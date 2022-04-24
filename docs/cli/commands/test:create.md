@@ -1,21 +1,22 @@
 ---
 title: "test:create"
 sidebar_label: "test:create"
+slug: "test_create"
 ---
 
 
 Record and create tests effortlessly
 
 ```shell
-$ test:create [options]
+test:create [options]
 ```
 
 `crusher-cli test:create` will open up a recorder and allow you to record your test.
 ## Examples
 
 ```shell
-$ npx crusher-cli test:create
-$ npx crusher-cli test:create --name Hello world
+npx crusher-cli test:create
+npx crusher-cli test:create --name Hello world
 ```
 
 ## Options

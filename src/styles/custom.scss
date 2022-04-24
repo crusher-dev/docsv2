@@ -25,10 +25,49 @@
 @use './components/toc';
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Inter:wght@200;400;500;700;800&display=swap');
+
+//@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+//
+//@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Gilroy-Regular.woff2") format('woff2');
+}
+
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/Gilroy-Medium.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/Gilroy-SemiBold.woff2") format('woff2');
+}
+
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/Gilroy-Bold.woff2") format('woff2');
+}
+
 
 body {
-	font-family:
-	'Ubuntu',
+	font-family: 'Gilroy',
 		-apple-system, /* Firefox supports this but not yet `system-ui` */
 		'Segoe UI',
 		Roboto,
@@ -37,6 +76,18 @@ body {
 		sans-serif,
 		'Apple Color Emoji',
 		'Segoe UI Emoji' !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Ubuntu',
+    -apple-system, /* Firefox supports this but not yet `system-ui` */
+    'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji' !important;
 }
 
 
@@ -94,7 +145,7 @@ html[data-theme='dark'] {
   --token-primary-bg-c: #0a0b0e;
   --token-secondary-bg-c: #0a0b0e;
 
-
+  --markdown-text-intro-c: #cccccc !important;
   --code-block-bg-c: #171b20;
 
   --ifm-link-color: #A87EFF;
@@ -221,9 +272,7 @@ iframe {
     text-decoration: none;
 }
 
-#__docusaurus .menu__link{
-  padding: 7px 8px;
-}
+
 
 .token.selector, .token.char, .token.function, .token.builtin, .token.inserted {
   color: #cae667;
@@ -295,6 +344,10 @@ font-weight: 500;
   --ifm-menu-link-sublist-icon: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04Ljk5OTg4IDVMNC45OTk4OCAxTDAuOTk5ODc4IDUiIHN0cm9rZT0iIzAzMDYwQiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
   --z-sidebar: 2000;
   --z-backdrop: 1100;
+  --admonition-bar-info-c-bg: #365893 !important;
+  --admonition-bar-tip-c-bg: #060e08 !important;
+  --admonition-bar-c-bg: #2c5637!important;
+  --admonition-bar-tip-c-bg: #369150 !important;
 }
 #__docusaurus [class^=docSidebarContainer] > a {
   border-bottom: 1px solid #1c1c1c;
@@ -305,16 +358,55 @@ font-weight: 500;
 }
 
 #__docusaurus [class^=sidebar_] {
-  padding-top: 49px;
+  padding: 49px 0px 0px 0px !important;
   border-right: 1px solid #1c1c1c;
+  background: #0c0c0e;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
+
+  width: 280px !important;
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background: rgb(255 255 255 / 5%);
+  border-radius: 0;
+}
+
+#__docusaurus .menu__link--sublist {
+  padding-left: 16px !important;
+  padding-right: 12px !important;
+}
+
+#__docusaurus .menu__link{
+  padding: 8px 16px;
+  letter-spacing: .2px
+}
+#__docusaurus .menu__list-item .menu__list .menu__link {
+  padding-left: 37px;
+}
+
+#__docusaurus .theme-doc-sidebar-item-category-level-1 > .menu__link {
+  font-size: .88rem;
 }
 
 .markdown > header + p + p, .markdown > header + p {
   font-size: .98rem;
+  letter-spacing: 0.2px;
+  line-height: 180%;
 }
 
 .markdown p, .markdown li, .markdown td, .markdown tr {
   font-size: .98rem;
+  letter-spacing: 0.2px;
+  line-height: 180%;
+}
+
+#__docusaurus .menu__link:not(.menu__link--active:not(.menu__link--sublist)) {
+  color: #ccc;
+}
+
+.menu__list-item--collapsed .menu__link--sublist:after {
+  zoom: .73;
 }
 
 .markdown h1 {
@@ -352,4 +444,46 @@ font-weight: 500;
 
 .markdown p, .markdown li, .markdown .tabs-container {
   line-height: 170%;
+}
+
+pre[class*=language-] {
+  padding: 0.25em 0.5em;
+}
+
+.alert {
+  //padding: 12px 32px;
+  padding: 16px 24px;
+  margin: 24px 0px;
+}
+
+.admonition-info {
+  border: 1px solid var(--admonition-bar-c-bg);
+}
+
+.admonition-tip{
+  border: 1px solid var(--admonition-bar-c-bg);
+  background: #09140c;
+}
+
+.admonition h5 {
+  font-size: 1rem;
+}
+
+.admonition::before {
+
+  width: 0px !important;
+
+}
+
+
+.admonition-content > p{
+  font-size: .9rem;
+}
+
+.admonition .admonition-content p code {
+  margin: 0 8px;
+}
+
+.toc-wrapper{
+  padding-left: 0;
 }

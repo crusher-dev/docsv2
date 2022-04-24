@@ -28,7 +28,7 @@ Crusher makes creating a test super easy. You can integrate and create your firs
 Crusher can integrate in your git repo seamlessly. In your git repo, run
 
 ```shell
-$ npx crusher-cli test:create
+npx crusher-cli test:create
 ```
 
 
@@ -53,7 +53,7 @@ Download and install native recorder. This is recommeded if you're not a develop
 Once you have created your first test, you can run it with CLI directly.
 
 ```shell
-$ npx crusher-cli test:run
+npx crusher-cli test:run
 ```
 
 Or use GUI to run test

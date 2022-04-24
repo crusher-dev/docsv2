@@ -19,7 +19,7 @@ Crusher seamlessly integrates with git-enabled projects.
 To get started, the first thing you need to do is initialize and link your project with crusher.  To do that, go to your project directory and run this command,
 
 ```shell
-$ npx crusher-cli init
+npx crusher-cli init
 ```
 
 Running this command will start the following process,
@@ -35,7 +35,7 @@ During the setup, we will save configuration files at `~/.crusher/config.json` (
 ## Creating a test
 
 ```shell
-$ npx crusher-cli test:create
+npx crusher-cli test:create
 ```
 
 This will open up the recorder where you can start recording your test. When you are done click on &quot;Verify &amp; Save&quot;.
@@ -48,7 +48,7 @@ To know more about this command, [check out this doc](https://docs.crusher.dev/c
 ## Running tests
 
 ```shell
-$ npx crusher-cli test:run
+npx crusher-cli test:run
 ```
 
 This will run all the tests present in your project and return the results after they are finished. This will be how it&#39;ll look,
@@ -58,7 +58,7 @@ To know more about this command, [check this out](https://docs.crusher.dev/cli/c
 ## Get info about the authenticated user
 
 ```shell
-$ npx crusher-cli whoami
+npx crusher-cli whoami
 ```
 
 If you ever forget which account you are connected to, you can run this command to find out your identity 🤔
@@ -66,7 +66,7 @@ If you ever forget which account you are connected to, you can run this command 
 ## Get Info about crusher project
 
 ```shell
-$ npx crusher-cli info
+npx crusher-cli info
 ```
 
 This command will return crusher project info if you are inside a project connected to the crusher.
@@ -74,7 +74,7 @@ This command will return crusher project info if you are inside a project connec
 ## Logout
 
 ```shell
-$ npx crusher-cli logout
+npx crusher-cli logout
 ```
 
 To log out, simply run this command.

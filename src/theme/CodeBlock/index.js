@@ -52,6 +52,8 @@ export default function CodeBlock({
     setTimeout(() => setShowCopied(false), 2000);
   };
 
+  const isShell = language === "shell";
+
   return (
     <Highlight
       {...defaultProps}
@@ -72,7 +74,8 @@ export default function CodeBlock({
               tabIndex={0}
               className={clsx(className, styles.codeBlock, 'thin-scrollbar')}
               style={style}>
-              <code className={styles.codeBlockLines}>
+    
+              <code className={styles.codeBlockLines} style={{paddingLeft: isShell ? "2rem" : "0rem"}}>
                 {tokens.map((line, i) => {
                   if (line.length === 1 && line[0].content === '\n') {
                     line[0].content = '';
@@ -82,6 +85,10 @@ export default function CodeBlock({
                     line,
                     key: i,
                   });
+                  lineProps.style = {
+                    ...lineProps.style,
+                    position: "relative"
+                  }
 
                   if (highlightLines.includes(i)) {
                     lineProps.className += ' docusaurus-highlight-code-line';
@@ -89,6 +96,9 @@ export default function CodeBlock({
 
                   return (
                     <span key={i} {...lineProps}>
+                    {isShell && (
+                      <code style={{position: 'absolute', top: "65%", transform: "translateY(-50%)", left: "-1.1rem", userSelect: "none"}}>$</code>
+                    )}
                       {line.map((token, key) => (
                         <span
                           key={key}

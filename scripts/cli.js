@@ -39,6 +39,11 @@ function renderFrontmatter({ name }) {
     sidebar_label: shortName,
   };
 
+  if (name === "test:run") {
+    frontmatter.slug = "test_run";
+  } else if (name === "test:create") {
+    frontmatter.slug = "test_create";
+  }
   return `---
 ${Object.entries(frontmatter)
   .map(([key, value]) => `${key}: ${typeof value === 'string' ? `"${value.replace('"', '\\"')}"` : value}`)
@@ -53,7 +58,7 @@ function renderIntro({ description, summary, name }) {
 ${summary}
 
 \`\`\`shell
-$ ${name} [options]
+${name} [options]
 \`\`\`
 
 ${description}`;
@@ -68,7 +73,7 @@ function renderExamples({ exampleCommands }) {
 ## Examples
 
 \`\`\`shell
-${exampleCommands.map((command) => `$ ${command}`).join('\n')}
+${exampleCommands.map((command) => `${command}`).join('\n')}
 \`\`\`
 `;
 }
