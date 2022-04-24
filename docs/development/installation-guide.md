@@ -26,7 +26,7 @@ The source code has been built and tested on **Ubuntu** and **macOS**. We haven'
 To get started, follow the steps below:
 
 1. **Install node_modules and initialize the project**
-```bash
+```shell
 yarn install
 yarn setup:ee
 ```
@@ -35,7 +35,7 @@ The first step is to install all the project dependencies and initialize the pro
 - `yarn setup:ee` will initialize the project for EE edition
 
 2. **Configure Environment Variables**
-```bash
+```shell
 vi .env
 ```
 We store all the environment variables in `.env` file, which is created if it doesn't exist when you are initializing the project. You only need to configure the below three values, to get started
@@ -47,13 +47,13 @@ REDIS_CONNECTION_STRING=redis://localhost:6379
 See [Environment Variables](#environment-variables), if you want to know about all the environmental variables available for configuration.
 
 3. **Run DB migrations**
-```bash
+```shell
 yarn db:migration
 ```
 This will initialize all the tables in the newly created Postgres database from `db/schema.sql`
 
 4. **Start all the services**
-```bash
+```shell
 pm2 start
 ```
 
