@@ -26,6 +26,7 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 import {ThemeClassNames, docVersionSearchTag} from '@docusaurus/theme-common';
 import Head from '@docusaurus/Head';
+import {css} from "@emotion/css";
 
 type DocPageContentProps = {
   readonly currentDocRoute: DocumentRoute;
@@ -137,12 +138,22 @@ function DocPageContent({
               )}>
               <MDXProvider components={MDXComponents}>{children}</MDXProvider>
             </div>
+
+
           </main>
+
+          <div className={style}>sdf</div>
         </div>
       </div>
     </Layout>
   );
 }
+
+const style = css`
+  background: #0E0F12;
+  width: 100%;
+  height: 100px;
+`
 
 function DocPage(props: Props): JSX.Element {
   const {

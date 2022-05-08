@@ -26,7 +26,7 @@ Crusher is a low-code testing tool. We're making web testing reliable and effort
 
 We aspire to make Crusher solves your general testing need. You'll be seamlessly able to
 
--  <a href="google.com" style={{fontSize: "1rem"}}>Create a e2e web test</a>
+-  <a href="/getting-started/create-your-first-test" style={{fontSize: "1rem"}}>Create a e2e web test</a>
 -  <a href="google.com" style={{fontSize: "1rem"}}>Run your test</a>
 -  <a href="google.com" style={{fontSize: "1rem"}}>Integrating it in your project</a>
 -  <a href="google.com" style={{fontSize: "1rem"}}>Debug tests</a>
