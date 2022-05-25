@@ -116,6 +116,23 @@ h1,h2,h3,h4,h5,h6{
 
 
 
+// html[data-theme='light'] {
+//   --token-primary-bg-c: #fff;
+//   --token-secondary-bg-c: #fff;
+
+//   --ifm-link-color: var(--c-blue-90);
+//   //rgb value is c-blue-90
+//   --ifm-link-hover-color: rgba(27, 109, 255, 0.8);
+
+//   --ifm-background-surface-color: var(--token-primary-bg-c);
+
+//   --ifm-navbar-background-color: var(--token-primary-bg-c);
+//   --ifm-navbar-shadow: 0 1px 0 0 var(--c-gray-0);
+
+//   --ifm-heading-color: var(--c-carbon-100);
+//   --ifm-code-background: var(--c-indigo-10);
+//   --ifm-font-color-base: var(--c-carbon-90);
+// }
 html[data-theme='light'] {
   --token-primary-bg-c: #101010;
   --token-secondary-bg-c: #0a0b0e;
@@ -522,4 +539,10 @@ pre[class*=language-] {
 
 .toc-wrapper{
   padding-left: 0;
+}
+
+
+.navbar__toggle {
+  -webkit-appearance: button;
+  margin-left: auto;
 }

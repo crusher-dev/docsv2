@@ -23,7 +23,7 @@ module.exports = {
   themeConfig: {
     autoCollapseSidebarCategories: true,
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: 'light',
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
