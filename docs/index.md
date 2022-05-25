@@ -27,6 +27,7 @@ Crusher is a low-code testing platform to create reliable e2e tests for web apps
 We aspire to take the pain out of testing and make it easy to create reliable e2e tests for your web app. With Crusher, you'll seamlessly be able to
 
 -  <a href="/getting-started/create-your-first-test" style={{fontSize: "1rem"}}>Create and Run e2e web test</a>
+
 -  <a href="/integrations/with-vercel" style={{fontSize: "1rem"}}>Integrating it into your project</a>
 -  <a href="/setting-up/manage-alerts" style={{fontSize: "1rem"}}>Setup alerts when things go wrong</a>
 

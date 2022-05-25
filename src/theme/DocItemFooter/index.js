@@ -86,14 +86,9 @@ React.useEffect(() => {
         </div>
       </div>
       </div>
-      <div>
-      <div className="helpful-edit-section">
-        <div>Was this doc helpful to you?</div>
-        <div><a href={editUrl}>Edit this page</a></div>
-      </div>
-        {FeedbackOption()}
-      </div>
 
+
+      <div style={{marginTop: 32, fontWeight: 600}}>Have questions?</div>
       <div>
 
         <div id="comments"></div>

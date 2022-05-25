@@ -116,7 +116,7 @@ h1,h2,h3,h4,h5,h6{
 
 
 html[data-theme='light'] {
-  --token-primary-bg-c: #0a0b0e;
+  --token-primary-bg-c: #101010;
   --token-secondary-bg-c: #0a0b0e;
 
 
@@ -142,7 +142,7 @@ html[data-theme='light'] {
 }
 
 html[data-theme='dark'] {
-  --token-primary-bg-c: #0a0b0e;
+  --token-primary-bg-c: #101010;
   --token-secondary-bg-c: #0a0b0e;
 
   --markdown-text-intro-c: #cccccc !important;
@@ -360,7 +360,7 @@ font-weight: 500;
 #__docusaurus [class^=sidebar_] {
   padding: 49px 0px 0px 0px !important;
   border-right: 1px solid #1c1c1c;
-  background: #0c0c0e;
+  background: #101010 ;
   padding-inline-end: 16px;
   padding-inline-start: 16px;
 
