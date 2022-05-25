@@ -53,38 +53,14 @@ module.exports = {
         // },
         {
           type: 'doc',
-          docId: 'cli',
-          label: 'CLI',
+          docId: 'getting-started/what-is-crusher',
+          label: 'Home',
           position: 'left',
-        },
+        }, 
         {
           type: 'search',
           position: 'right',
-        },
-        {
-          type: 'separator',
-          position: 'right',
-        },
-        {
-          type: 'iconLink',
-          position: 'right',
-          icon: {
-            alt: 'github logo',
-            src: `/logos/github.svg`,
-            href: 'https://github.com/crusherdev/crusher',
-            target: '_blank',
-          },
-        },
-        // {
-        //   type: 'iconLink',
-        //   position: 'right',
-        //   icon: {
-        //     alt: 'discord logo',
-        //     src: `/logos/discord.svg`,
-        //     href: 'https://ionic.link/discord',
-        //     target: '_blank',
-        //   },
-        // },
+        }
 
       ],
     },

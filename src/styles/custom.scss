@@ -110,6 +110,7 @@ h1,h2,h3,h4,h5,h6{
   //#region ----------- Z Indices ------------
   --z-sidebar: 2000;
   --z-backdrop: 1100;
+  --ifm-navbar-height: 3.35rem !important;
   //#endregion
 }
 
@@ -291,8 +292,29 @@ a[hred="https://ionicframework.com/advisory"]{
 
 #__docusaurus [class^=searchBox_] {
   flex-grow: 1;
-  max-width: 18rem !important;
+  max-width: 14rem !important;
   padding-right: 0!important;
+  flex-grow: 1;
+    max-width: 3.4rem !important;
+    padding-right: 0 !important;
+    padding-left: 24px;
+    
+}
+
+#__docusaurus [class^=searchBox_] .DocSearch-Button-Placeholder{
+  display: none
+  ;
+}
+
+#__docusaurus .DocSearch-Button {
+  background: #ffffff17;
+  width: 36px;
+  display: flex;
+  justify-content: center;  
+}
+
+#__docusaurus .navbar__link{
+  font-size: 12.8px;
 }
 
 .search_middle{
@@ -318,7 +340,7 @@ a[hred="https://ionicframework.com/advisory"]{
 border-radius: 5px;
 align-self: center;
 
-width: 120px;
+width: 108px;
 
 font-weight: 500;
     font-size: 0.875rem;
@@ -351,7 +373,7 @@ font-weight: 500;
 }
 #__docusaurus [class^=docSidebarContainer] > a {
   border-bottom: 1px solid #1c1c1c;
-  height: 61px;
+  height: calc( var(--ifm-navbar-height) + 1px);
 }
 #__docusaurus [class^=docSidebarContainer] {
   border-inline-end: 0px solid var(--sidebar-border-c);
