@@ -14,19 +14,19 @@ This can integrate with almost all major web frameworks.
 
 ## Setup
 
-1.) Go to [*Crusher Settings Page > Integration*](https://app.crusher.dev/settings/project/integrations).
+1. Go to [`Settings > Integration`](https://app.crusher.dev/settings/project/integrations)
 
-2.) Copy command in CI/CD section.
+2. Copy command in CI/CD section.
 
 
-3.) Go to vercel's project and *Settings > General > Build & Development Settings*.
+3. Go to vercel's project and `Settings > General > Build & Development Settings`
 
-4.) Override the default build command. To   
-`  
+4. Override the default build command. To
+`
 your build command  && [command-your-copied]
 `
 
-5.) Save your changes and trigger a new build to verify.
+5. Save your changes and trigger a new build to verify.
 
 :::info Info
 Integrate with Github to see status checks on commits & pull requests.

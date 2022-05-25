@@ -142,7 +142,20 @@ function DocPageContent({
 
           </main>
 
-          <div className={style}>sdf</div>
+          <div className={style}>
+
+
+              <div className="row">
+                <div
+                  className={mainStyle}>
+                  sad
+                </div>
+                <div className={sidebarStyle}>
+                  asd
+                </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </Layout>
@@ -152,7 +165,19 @@ function DocPageContent({
 const style = css`
   background: #0E0F12;
   width: 100%;
-  height: 100px;
+  height: 400px;
+  padding: 40px 0;
+  overflow: hidden;
+`
+
+const sidebarStyle = css`
+  width: 204px;
+  margin-right: 82px;
+`
+
+const mainStyle = css`
+  width: 748px !important;
+  margin: 0 auto;
 `
 
 function DocPage(props: Props): JSX.Element {

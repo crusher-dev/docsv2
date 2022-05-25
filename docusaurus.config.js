@@ -122,7 +122,7 @@ module.exports = {
         routeBasePath: '/',
         sidebarPath: require.resolve('./sidebars.js'),
         editUrl: ({ versionDocsDirPath, docPath, locale }) => {
-          return `https://github.com/crusher-dedv/crusher-docs/edit/main/${versionDocsDirPath}/${docPath}`;
+          return `https://github.com/crusherdev/docsv2/edit/main/${versionDocsDirPath}/${docPath}`;
         },
         exclude: ['README.md'],
         lastVersion: 'current',

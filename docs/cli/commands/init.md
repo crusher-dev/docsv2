@@ -10,43 +10,15 @@ sidebar_label: "init"
 Initializes crusher in your project
 
 ```shell
-$ init [options]
+init [options]
 ```
 
 `crusher-cli test:init` will setup crusher configs in your project.
 ## Examples
 
 ```shell
-$ npx crusher-cli init
+npx crusher-cli init
 ```
-
-## Options
-
-
-<table className="reference-table">
-  
-      <thead>
-        <tr>
-          <th colSpan="2">
-            <h3><a href="#option-name" id="option-name">
-  --name
-  <span class="option-spec"> =&lt;Current Date&gt;</span>
-</a></h3>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        
-              <tr>
-                <th>Description</th>
-                <td><p>The name of the test</p>
-</td>
-              </tr>
-              
-      </tbody>
-</table>
-
-
 
 ## Advanced Options
 

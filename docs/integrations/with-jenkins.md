@@ -6,7 +6,7 @@ Integration with Jenkins can be done easily with the help of `crusher-cli`.  Thi
 
 ## Example repo
 
-For reference, you can take a look at the [example repo](/integrations/with-jenkins) which uses jenkins to trigger crusher tests.
+For reference, you can take a look at the [example repo](https://github.com/crusherdev/crusher-jenkins) which uses jenkins to trigger crusher tests.
 
 ## JenkinsFile
 
@@ -21,7 +21,7 @@ pipeline {
         stage('Test') {
             steps {
                 // run crusher tests
-                sh 'npx crusher-cli test:run --token=adsfsjkdfjksd --project-id=32'
+                sh 'npx crusher-cli test:run --token=<random_token_here> --project-id=<your_project_id>'
             }
         }
     }
@@ -31,14 +31,11 @@ pipeline {
 The above `JenkinsFile` is doing the following things,
 
 1. Using `node:12.14.0` docker image as a base to prepare a basic node environment. (Needed for `crusher-cli`)
-1. Triggering tests through `crusher-cli`  [test:run](https://docs.crusher.dev/cli/commands/test:run) command in your project from `—token` and -`-project-id` passed. (Look at how to get the token and project id)
+1. Triggering tests through `crusher-cli`  [test:run](/cli/commands/test:run) command in your project from `—token` and -`-project-id` passed. (Look at how to get the token and project id)
 
 ## Getting token and project id
-
-<img src={require('@site/static/img/integration/ci-cli-command.png').default} />
-
 To get your user token and project id,
 
-1. Open Crusher and go to Settings &gt; Integrations
-1. Copy the command from the &quot;CI/CD&quot; command box.
-1. Replace the command with this.
+1. Open Crusher and go to `Settings>Integrations`
+1. Copy the command from the `CI/CD` command box.
+1. Replace the command with the newly copied command.

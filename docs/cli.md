@@ -21,13 +21,13 @@ You can create test locally and run them on crusher server with few commands.
 
 To create a test
 ```shell
-$ npx crusher-cli test:create
+npx crusher-cli test:create
 ```
 
 And run test with
 
 ```shell
-$ npx crusher-cli test:run
+npx crusher-cli test:run
 ```
  The Crusher CLI works with node > v10
 
@@ -41,9 +41,9 @@ You can also use `npm install crusher-cli` or `yarn add crusher-cli`, but it is 
 To get help just write
 
 ```shell
-$ npx crusher-cli  --help
-$ npx crusher-cli  <command> --help
-$ npx crusher-cli  <command> <subcommand> --help
+npx crusher-cli  --help
+npx crusher-cli  <command> --help
+npx crusher-cli  <command> <subcommand> --help
 ```
 
 <!-- TODO: image? -->

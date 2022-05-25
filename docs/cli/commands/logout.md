@@ -4,15 +4,15 @@ sidebar_label: "logout"
 ---
 
 
-Logout
+Logout the current authenticated user
 
 ```shell
-$ logout [options]
+logout [options]
 ```
 
-`crusher-cli test:logout` will log you out of crusher.
+`crusher-cli logout` will log you out of crusher.
 ## Examples
 
 ```shell
-$ npx crusher-cli logout
+npx crusher-cli logout
 ```
