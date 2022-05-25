@@ -155,7 +155,6 @@ function DocPageContent({
 const style = css`
   background: #0a0a0b;
   width: 100%;
-  height: 400px;
   padding: 32px 0;
   overflow: hidden;
 `
@@ -292,6 +291,10 @@ const bottomContainer = css`
     padding: 48px 0 20px 0;
     border-top: 1px solid #ffffff08;
     margin-top: 32px !important;
+
+    @media only screen and (max-width: 600px) {
+      padding: 20px 0 20px 0 !important;
+    }
 `
 
 
@@ -392,7 +395,7 @@ function FooterDoc() {
      <div className={footerBottomSidebar}>
 
       <div className='first-block'>
-              <div className='menu-heading'>Social</div>
+              <div className='menu-heading'>Other</div>
               <div className='menu-item'>
                  Join discord
               </div>
