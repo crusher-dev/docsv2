@@ -13,9 +13,9 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Development',
+      label: 'Deploy crusher',
       collapsed: true,
-      items: ['development/installation-guide'],
+      items: ['development/installation-guide', 'development/setting-up-development-env'],
     },
     {
       type: 'category',

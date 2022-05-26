@@ -196,7 +196,7 @@ const subMenu = css`
 border-bottom: 1px solid #1C1C1C;
 border-top: 1px solid #1C1C1C;
 height: 40px;
-padding-left: 100px;
+padding-left: 92px;
 justify-content: space-between;
 padding-right: 30px;
 
