@@ -39,9 +39,15 @@
   user-select: none;
   padding: 0.4rem 0.5rem;
   position: absolute;
+  top: 1rem;
   right: calc(var(--ifm-pre-padding) / 2);
-  top: calc(var(--ifm-pre-padding) / 2);
+  /* top: calc(var(--ifm-pre-padding) / 2); */
   transition: opacity 200ms ease-in-out;
+
+  font-size: 13.5px;
+  display: flex;
+  align-items: center;
+
 }
 
 .codeBlockTitle:hover + .codeBlockContent .copyButton,

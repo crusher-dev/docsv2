@@ -153,8 +153,8 @@ function DocPageContent({
           <Navbar />
           <div className={subMenu}>
              <div className='linksbox'>
-              <div className='active'>Using Crusher</div>
-                <div>CLI</div>
+              <div className='active'><a href="/" style={{color: '#fff'}}>Using Crusher</a></div>
+                <div><a href="/cli" style={{color: '#fff'}}>CLI</a></div>
              </div>
 
              <div className='github-button'>

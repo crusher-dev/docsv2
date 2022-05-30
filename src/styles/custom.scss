@@ -107,10 +107,13 @@ h1,h2,h3,h4,h5,h6{
 
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04Ljk5OTg4IDVMNC45OTk4OCAxTDAuOTk5ODc4IDUiIHN0cm9rZT0iIzAzMDYwQiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K');
 
+
+  --ifm-font-color-base: #fefefe;
   //#region ----------- Z Indices ------------
   --z-sidebar: 2000;
   --z-backdrop: 1100;
   --ifm-navbar-height: 3.35rem !important;
+  --ifm-heading-vertical-rhythm-bottom: 1;
   //#endregion
 }
 
@@ -464,34 +467,34 @@ font-weight: 500;
 
 .markdown h1 {
   --ifm-h1-font-size: 2rem !important;
-
+  color: #e8e8e8;
 }
 
 .markdown h2 {
   font-size: 1.7rem !important;
-
+  color: #e8e8e8;
 }
 
 
 .markdown h3 {
   font-size: 1.6rem;
-
+  color: #e8e8e8;
 }
 
 
 .markdown h4 {
   font-size: 1.4rem;
-
+  color: #e8e8e8;
 }
 
 .markdown h5 {
   font-size: 1.25rem;
-
+  color: #e8e8e8;
 }
 
 .markdown h6 {
   font-size: 1rem;
-
+  color: #e8e8e8;
 }
 
 
@@ -546,4 +549,21 @@ pre[class*=language-] {
 .navbar__toggle {
   -webkit-appearance: button;
   margin-left: auto;
+}
+
+pre[class*=language-] {
+border: 1px solid #ffffff14;
+    background: #ffffff0a;
+}
+
+.token.operator, .token.string, .token.entity, .token.url, .token.attr-value, .language-css .token.string, .style .token.string, .token.variable {
+  color: #ff88fa;
+}
+
+:not(pre) > code {
+  background: none !important;
+}
+
+.admonition-tip,.alert {
+  border-radius: 12px;
 }

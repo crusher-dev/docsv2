@@ -3,7 +3,7 @@ const path = require('path');
 const BASE_URL = '';
 
 module.exports = {
-  title: 'Crusher Documentation',
+  title: 'Crusher Docs',
   tagline:
     'Crusher is low-code testing platform, build test remarkably fast. Ship high quality product, faster than ever before.',
   url: 'https:/crusher.dev',
@@ -23,7 +23,7 @@ module.exports = {
   themeConfig: {
     autoCollapseSidebarCategories: true,
     colorMode: {
-      defaultMode: 'light',
+      defaultMode: 'dark',
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
@@ -73,9 +73,9 @@ module.exports = {
       additionalLanguages: ['shell-session', 'http'],
     },
     algolia: {
-      appId: 'O9QSL985BS',
-      apiKey: 'ceb5366064b8fbf70959827cf9f69227',
-      indexName: 'ionicframework',
+      appId: '2IUNW2DWDR',
+      apiKey: 'c69996a42bcad17c5a007b291a08b3b7',
+      indexName: 'crusher_docs',
       contextualSearch: true,
     },
   },
