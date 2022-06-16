@@ -400,13 +400,30 @@ font-weight: 500;
 }
 
 #__docusaurus [class^=sidebar_] {
-  padding: 49px 0px 0px 0px !important;
-  border-right: 1px solid #1c1c1c;
-  background: #101010 ;
+  padding: 80px 12px 0px 12px !important;
+  border-right: none;
+  background: #101010;
   padding-inline-end: 16px;
   padding-inline-start: 16px;
+  width: 272px !important;
+}
 
-  width: 280px !important;
+#__docusaurus .menu__link {
+  padding: 8px 14px;
+  letter-spacing: 0.2px;
+  margin-bottom: 2px;
+}
+
+
+#__docusaurus .menu__list-item .menu__list .menu__link {
+  padding-left: 29px !important;
+}
+
+#__docusaurus .menu__list-item .menu__list .menu__link{
+  border-radius: 6px;
+}
+.spacer{
+  display: none;
 }
 #__docusaurus [class^=docSidebarContainer]{
   width: 280px !important;

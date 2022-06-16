@@ -151,7 +151,7 @@ function DocPageContent({
         <div>
           {/* CUSTOM CODE - navbar placement */}
           <Navbar />
-          <div className={subMenu}>
+          {/* <div className={subMenu}>
              <div className='linksbox'>
               <div className='active'><a href="/" style={{color: '#fff'}}>Using Crusher</a></div>
                 <div><a href="/cli" style={{color: '#fff'}}>CLI</a></div>
@@ -160,7 +160,7 @@ function DocPageContent({
              <div className='github-button'>
                <GithubSVG style={{marginRight: 8}}></GithubSVG>Github
              </div>
-           </div>
+           </div> */}
           <main
             className={clsx(styles.docMainContainer, {
               [styles.docMainContainerEnhanced]:
