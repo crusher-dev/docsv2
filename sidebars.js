@@ -19,6 +19,12 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Guides',
+      collapsed: true,
+      items: ['guides/setting-up-services'],
+    },
+    {
+      type: 'category',
       label: 'Setting up',
       collapsed: true,
       items: [ "setting-up/manage-alerts"]
