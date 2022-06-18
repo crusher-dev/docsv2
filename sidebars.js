@@ -15,7 +15,7 @@ module.exports = {
       type: 'category',
       label: 'Deploy crusher',
       collapsed: true,
-      items: ['development/docker-deploy-locally', 'development/setting-up-development-env'],
+      items: ['development/docker-deploy-locally', 'development/setting-up-development-env','development/architecture'],
     },
     {
       type: 'category',

@@ -415,6 +415,14 @@ font-weight: 500;
 }
 
 
+#__docusaurus .menu__link {
+  border-radius: 6px;
+}
+
+.menu__link--active {
+  color: #bc52f0;
+}
+
 #__docusaurus .menu__list-item .menu__list .menu__link {
   padding-left: 29px !important;
 }
