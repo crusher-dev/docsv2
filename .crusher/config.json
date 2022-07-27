@@ -5,6 +5,5 @@
     "name": "frontend",
     "url": "http://localhost:3001/",
     "intercept": "localhost:3001"
-  }
-  ]
+   }]
 }

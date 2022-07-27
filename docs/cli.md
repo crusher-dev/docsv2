@@ -1,6 +1,6 @@
 ---
 title: Crusher CLI
-sidebar_label: Overview
+sidebar_label: 🧑‍🚀 Overview
 ---
 
 <head>

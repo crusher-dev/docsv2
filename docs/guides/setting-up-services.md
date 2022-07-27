@@ -1,66 +1,63 @@
 ---
 title: 🔌 Network configuration for development & environment
-sidebar_label: 🔌 Setup network config
+sidebar_label: 🔌 Setup proxy config
 ---
 
-You will usually run in following problem
+Cloud environment often offers faster test execution in isolated environment. To run test, we should expose our local service to crusher test agents for use case such as
 
-1.) **Testing local development after making changes** eg. Running test on localhost:3000
+1.) **Testing local development** eg. Running test on localhost:3000
 
 2.) **Setting up configuration for different env**. i.e. You created test on localhost:3000, now want to run it on https://example.com
 
+## Setup crusher proxy config to run test locally
 
-To resolve these issue, crusher has networking option. While running test
+In `project_dir/.crusher/config.js` add following code.
 
-1.) We create tunnel powered by Cloudflare.
+Add proxy config key, for eg - here's sample code for localhost:3000
 
-2.) Replace baseURL and dependednt services
-
-## Setup config to run test locally
-
-
-```js
-
-network: {
-  frontend: {
-   currentURL: "localhost:3000",
-   otherURL: [3001], // <-- Aliases for your networj
-   prodUrl "https://app.crusher.dev"
+```json
+"proxy": [{
+    "name": "frontend",
+    "url": "http://localhost:3000/",
+    "intercept": "localhost:3000"
   }
-}
-..
+]
 ```
 
-While running test locally in cloud mode. 
-1.) We will create tunnel for localhost:3000
+Check  [ sample config file](https://github.com/crusherdev/docsv2/blob/ft-new/.crusher/config.json) with proxy. After that restart crusher
 
-2.) Replace localhost:30001 & https://app.crusher.dev with URL given by cloudflare.
+**Crusher will do following :-**
 
+1.) Create local tunnel using cloudflare argo. 
 
-#### Configuration for backend services
+2.) Test runner will use that tunnel to run test, and intercept request made to localhost:3001 and replace it with cloudflare tunnel.
 
-```js
+## Use your own tunnel
+You can also use your own tunneling solution such as ngrok or localtunnel.
 
-network: {
-  backend: {
-   currentURL: "localhost:8000",
-   otherURL: [3002], // <-- Aliases for your networj
-   prodUrl "https://backend.crusher.dev"
+Here's following proxy config.
+
+```
+"proxy": [{
+    "name": "frontend",
+    "url": "http://localhost:3000/",
+    "intercept": "localhost:3000"
   }
-}
-..
+]
 ```
 
-We will replace backend at test runtime. If you're using build time configuration, read this doc.
-
-#### Using tunnel configuration at build time
-
-## Running test on production
-
-## References
-
-## Best Practices
+**Note:-** Internal proxy is much faster/reliable than any localtunnel solution.
 
 ## FAQ
 
+** Is using proxy required?**
 
+If you're running test locally, No. If you're running test on cloud, and want to test local env then you need expose it to crusher test agent's.
+
+** I am not able to page after using proxy?**
+
+Wait for few seconds. There might be DNS caching at some levels.
+
+** Is proxy secure?**
+
+Proxy is e2e secured by cloudflare argo. If you have business use case, get in touch to learn more.

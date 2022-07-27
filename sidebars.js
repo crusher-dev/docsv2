@@ -2,7 +2,7 @@ module.exports = {
   docs: [
     {
       type: "doc",
-      label: "Overview",
+      label: "🧑‍🚀 Overview",
       id: "index",
     },
     {
@@ -13,13 +13,13 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Deploy crusher',
+      label: '🧱 Deploy crusher',
       collapsed: true,
       items: ['development/docker-deploy-locally', 'development/setting-up-development-env','development/architecture'],
     },
     {
       type: 'category',
-      label: 'Guides',
+      label: '💡 Guides',
       collapsed: true,
       items: ['guides/setting-up-services'],
     },
