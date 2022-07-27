@@ -1,6 +1,6 @@
 ---
-title: 🔌 Network configuration for development & environment
-sidebar_label: 🔌 Setup proxy config
+title: 🔌 Proxy config for local dev & environment
+sidebar_label: 🔌 Setup proxy for local dev 
 ---
 
 Cloud environment often offers faster test execution in isolated environment. To run test, we should expose our local service to crusher test agents for use case such as
