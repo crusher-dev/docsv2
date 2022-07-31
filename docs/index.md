@@ -1,6 +1,6 @@
 ---
 title: Introduction to Crusher
-sidebar_label: 🧑‍🚀  Overview
+sidebar_label: 🦖  Overview
 slug: /
 image: /img/meta/open-graph.png
 hide_table_of_contents: false
