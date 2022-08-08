@@ -2,42 +2,42 @@ module.exports = {
   docs: [
     {
       type: "doc",
-      label: "🦖 Overview",
+      label: "🦖 Overview",
       id: "index",
     },
     {
       type: 'category',
-      label: '🧑‍🚀 Getting Started',
+      label: '🧑‍🚀 Getting Started',
       collapsed: false,
       items: ['getting-started/what-is-crusher', 'getting-started/how-crusher-works', 'getting-started/create-your-first-test', 'getting-started/using-cli-within-project'],
     },
     {
       type: 'category',
-      label: '🧱 Deploy crusher',
+      label: '🧱 Deploy crusher',
       collapsed: true,
       items: ['development/docker-deploy-locally', 'development/setting-up-development-env','development/architecture'],
     },
     {
       type: 'category',
-      label: '💡 Guides',
+      label: '💡 Guides',
       collapsed: true,
       items: ['guides/setting-up-services'],
     },
     {
       type: 'category',
-      label: '🏄 Setting up',
+      label: '🏄 Setting up',
       collapsed: true,
       items: [ "setting-up/manage-alerts"]
     },
     {
       type: 'category',
-      label: '⚽  Integration',
+      label: '⚽ Integration',
       collapsed: true,
       items: ['integrations/with-vercel', 'integrations/with-ci-cd','integrations/with-jenkins'],
     },
     {
       type: 'category',
-      label: '🏄‍♂️  Advanced',
+      label: '🏄‍♂️ Advanced',
       collapsed: true,
       items: ['advanced/custom-code-usecases', 'advanced/making-network-requests', 'advanced/working-with-emails', 'advanced/writing-custom-selectors'],
     },

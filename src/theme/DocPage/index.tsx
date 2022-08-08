@@ -447,7 +447,6 @@ function FooterDoc() {
    
       <div className='userImageBlock'>
         <img src="https://avatars.githubusercontent.com/u/6849438?v=4" className='userImage'/>
-        <img src="https://avatars.githubusercontent.com/u/6849438?v=4" className='userImage'/>
       </div>
 
       </div>
@@ -461,22 +460,28 @@ function FooterDoc() {
           <div style={{display: 'flex'}}>
             <div className='first-block'>
               <div className='menu-heading'>Reference</div>
-              <div className='menu-item'>
+              {/* <div className='menu-item'>
                  <EditSVG style={{marginRight: 12}}/> Edit this page
-              </div>
+              </div> */}
               <div className='menu-item'>
+                 <a  style={linkStyle} href="https://github.com/crusherdev/crusher/issues/new/choose">
                  <QuestionSVG style={{marginRight: 12}}/> Raise an issue
+                 </a>
               </div>
             </div>
 
             <div className='second-block'>
               <div className='menu-heading'>Get involved</div>
               <div className='menu-item'>
+              <a style={linkStyle} href="https://github.com/crusherdev/crusher/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.yml">
                  <EditSVG style={{marginRight: 12}}/> Request a feature
+                 </a>
               </div>
+              <a style={linkStyle} href="mailto:himanshu@crusher.dev?subject=Regarding Crusher" css={linkCss}>
               <div className='menu-item'>
                  <QuestionSVG style={{marginRight: 12}}/> Get in touch
               </div>
+              </a>
             </div>
             
           </div>
@@ -487,11 +492,13 @@ function FooterDoc() {
 
       <div className='first-block'>
               <div className='menu-heading'>Other</div>
-              <div className='menu-item'>
+              {/* <div className='menu-item'>
                  Join discord
-              </div>
+              </div> */}
               <div className='menu-item'>
+                <a href="https://github.com/crusherdev/crusher" style={linkStyle}>
                   Follow on Github
+                 </a>
               </div>
             </div>
        </div>
@@ -519,6 +526,14 @@ function QuestionSVG(props) {
   );
 }
 
+
+const linkCss = css`
+  color: #d7dde1;
+`
+
+const linkStyle = {
+  "color": "#d7dde1",
+}
 
 
 
