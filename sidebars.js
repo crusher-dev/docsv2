@@ -41,6 +41,12 @@ module.exports = {
       collapsed: true,
       items: ['advanced/custom-code-usecases', 'advanced/making-network-requests', 'advanced/working-with-emails', 'advanced/writing-custom-selectors'],
     },
+    {
+      type: 'category',
+      label: 'Mis',
+      collapsed: true,
+      items: ['advanced/faq'],
+    },
   ],
 
   cli: [
