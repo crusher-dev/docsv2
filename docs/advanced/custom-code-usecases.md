@@ -40,7 +40,7 @@ let element = await crusherSdk.page.querySelector("selector", { waitUntil: null 
 ```
 
 ### Clicking on element ###
-For reference, https://docs.crusher.dev/skd/reference#element.click
+For reference, https://docs.crusher.dev/sdk/reference#element.click
 ```
 // Waits automatically till the element is visible, with default timeout (30s)
 let element = await crusherSdk.page.querySelector("selector");
@@ -48,15 +48,7 @@ await element.click();
 ```
 
 ### Hover on element ###
-For reference, https://docs.crusher.dev/skd/reference#element.hover
-```
-// Waits automatically till the element is visible, with default timeout (30s)
-let element = await crusherSdk.page.querySelector("selector");
-await element.click();
-```
-
-### Hover on element ###
-For reference, https://docs.crusher.dev/skd/reference#element.hover
+For reference, https://docs.crusher.dev/sdk/reference#element.hover
 ```
 await element.hover();
 ```
