@@ -73,7 +73,7 @@ export default function CodeBlock({
               /* eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex */
               tabIndex={0}
               className={clsx(className, styles.codeBlock, 'thin-scrollbar')}
-              style={style}>
+              style={!isShell ? {...(style || {}), padding: "0.25em"} : { ...(style || {}) }}>
     
               <code className={styles.codeBlockLines} style={{paddingLeft: isShell ? "2rem" : "0rem"}}>
                 {tokens.map((line, i) => {

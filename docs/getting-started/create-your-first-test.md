@@ -39,10 +39,10 @@ This is the recommended way for developers. Make sure you've npx/nodejs installe
 <div style={{fontSize: 12, marginBottom: 24}}>Estimated time: 3 mins</div>
 
 
-| Operation System | How to install? | Download Link |
-|--|--|--|
-|  MacOS (Dmg) | [Guide](/docs/how-to/installing-crusher-recorder#how-to-install-dmg-on-mac-os)  | [Download](https://github.com/crusherdev/crusher-downloads/releases/download/0.99/crusher-recorder.dmg) |
-|  Linux (Deb)| [Guide](/docs/how-to/installing-crusher-recorder#how-to-install-deb)  | [Download](https://github.com/crusherdev/crusher-downloads/releases/download/0.99/crusher-recorder.deb) |
+| Operation System| Download Link
+|--|--|
+|  MacOS (Dmg) | [Download](https://github.com/crusherdev/crusher-downloads/releases/tag/v1.0.32)
+|  Linux (Deb)| [Download](https://github.com/crusherdev/crusher-downloads/releases/tag/v1.0.32)
 
 
 Download and install native recorder. This is recommeded if you're not a developers or don't have access to the repo.

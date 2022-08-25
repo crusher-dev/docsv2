@@ -18,22 +18,28 @@ Crusher support linux (ubuntu majorly) and MacOS as of now for development
 
 ### Setting up local environment
 
-#### 1.) Clone the repo.
-```
-git@github.com:crusherdev/crusher.git
+<h6>1) Clone the repo</h6>
+
+``` shell
+git clone https://github.com/crusherdev/crusher.git
 ```
 
-#### 2.) Install packages. This will install node_modules and might take 3-4 mins on first run.
-```bash
-yarn install
-yarn setup:ee
+<h6 style={{display: "flex", alignItems: "center"}}>
+    <span>2) Install packages</span>
+    <div style={{marginLeft: "auto", fontSize: "0.7em"}}>Estimated time: 3 mins</div>
+</h6>
+
+``` shell
+pnpm install
+pnpm setup:ee
 ```
 There are two ways you can initialize your project, depending on which edition you want to work on:
-- `yarn setup:oss` will initialize the project for OSS edition
-- `yarn setup:ee` will initialize the project for EE edition
+- `pnpm setup:oss` will initialize the project for OSS edition
+- `pnpm setup:ee` will initialize the project for EE edition
 
-#### 3._ **Configure Environment Variables**
-```bash
+<h6>3) Configure Environment Variables</h6>
+
+``` shell
 nano .env
 ```
 We store environment variables in `.env` file. Just configure three values to get started
@@ -44,15 +50,17 @@ REDIS_CONNECTION_STRING=redis://localhost:6379
 ```
 See [Environment Variables](#environment-variables), if you want to know about all the environmental variables available for configuration.
 
-#### 4.) **Run DB migrations**
-```bash
-yarn db:migration
+<h6>4) Run DB migrations</h6>
+
+``` shell
+pnpm db:migration
 ```
 
 This will bootstrap db from `db/schema.sql` or run any pending migrations.
 
- #### 5. **Start all the services**
-```
+<h6>5) Start all the services</h6>
+
+``` shell
 pm2 start
 ```
 
@@ -60,7 +68,7 @@ Go ahead and try to open  [http://localhost:3000](`http://localhost:3000`). If y
 
 To check the status you can use following commands to see status, see logs and kill all services.
 
-```
+``` shell
 pm2 status 
 pm2 logs -f service_name
 pm2 stop
