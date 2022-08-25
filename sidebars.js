@@ -43,7 +43,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Mis',
+      label: 'Other',
       collapsed: true,
       items: ['advanced/faq'],
     },
