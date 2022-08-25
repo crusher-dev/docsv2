@@ -3,7 +3,7 @@ title: 🐳 Docker deploy
 sidebar_label: 🐳 Docker deploy
 ---
 
-We've tried to make it super easy to install Crusher locally. This is the best option if you're looking to try Crusher locally.
+We want to make it super easy for anyone to install Crusher locally. This is the best option if you're looking to try Crusher locally.
 
 :::tip
 If you want to use Crusher regularly, either deploy crusher on server or use Crusher Cloud. With this your assests and service is always publicly available.

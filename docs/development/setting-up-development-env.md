@@ -6,15 +6,16 @@ sidebar_label: 🧱 Developing locally
 Crusher is integrated system based on javascript environment. We've made it very simple to contribute and fix a bugs
 
 ### Prerequisites
-Make sure you've node >14 installed. We use monorepo structure using yarn workspace. And use typescript for static typing.
+Make sure you've `node > 14` installed. We use monorepo structure and use typescript for static typing.
 
 We also use two data services
 
-1.) *Redis. For storing jobs and queuing data. <a href="https://redis.io/docs/getting-started/installation/">How to install</a>
+| Service | Use | How to install? |
+|--|--|--|
+|  Redis |  For cache & queues | [Guide](https://redis.io/docs/getting-started/installation/)  |
+|  Postgres |  As main database | [Guide](https://gist.github.com/15Dkatz/321e83c4bdd7b78c36884ce92db26d38)  |
 
-2.) Postgres. For storing data. <a href="https://gist.github.com/15Dkatz/321e83c4bdd7b78c36884ce92db26d38">How to install</a>
-
-Crusher support linux (ubuntu majorly) and MacOS as of now for development
+**Note**: Crusher only support linux (ubuntu majorly) and MacOS as of now for development
 
 ### Setting up local environment
 
