@@ -32,3 +32,11 @@ We're not replacing tester, etc. We're building better framework for them.
 
 At Crusher everyone is a builder, I started coding by using Web expression 4. I thought I was a good developers, but implementing testing seemed tough to me. 
 :::
+
+:::note Why use electron?
+Current testing is not deterministic in nature. To make it more robust and fast, we require e2e control. As part of the process, we have to make changes to blink and v8 too.
+
+
+
+Dealing with anything chromium is way too hard. And electron has awesome [build tools](https://github.com/electron/build-tools) to support it. It's not just regular web app embedded in electron.
+:::
