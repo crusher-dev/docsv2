@@ -107,16 +107,37 @@ h1,h2,h3,h4,h5,h6{
 
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04Ljk5OTg4IDVMNC45OTk4OCAxTDAuOTk5ODc4IDUiIHN0cm9rZT0iIzAzMDYwQiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K');
 
+
+  --ifm-font-color-base: #fefefe;
   //#region ----------- Z Indices ------------
   --z-sidebar: 2000;
   --z-backdrop: 1100;
+  --ifm-navbar-height: 3.35rem !important;
+  --ifm-heading-vertical-rhythm-bottom: 1;
   //#endregion
 }
 
 
 
+// html[data-theme='light'] {
+//   --token-primary-bg-c: #fff;
+//   --token-secondary-bg-c: #fff;
+
+//   --ifm-link-color: var(--c-blue-90);
+//   //rgb value is c-blue-90
+//   --ifm-link-hover-color: rgba(27, 109, 255, 0.8);
+
+//   --ifm-background-surface-color: var(--token-primary-bg-c);
+
+//   --ifm-navbar-background-color: var(--token-primary-bg-c);
+//   --ifm-navbar-shadow: 0 1px 0 0 var(--c-gray-0);
+
+//   --ifm-heading-color: var(--c-carbon-100);
+//   --ifm-code-background: var(--c-indigo-10);
+//   --ifm-font-color-base: var(--c-carbon-90);
+// }
 html[data-theme='light'] {
-  --token-primary-bg-c: #0a0b0e;
+  --token-primary-bg-c: #101010;
   --token-secondary-bg-c: #0a0b0e;
 
 
@@ -142,7 +163,7 @@ html[data-theme='light'] {
 }
 
 html[data-theme='dark'] {
-  --token-primary-bg-c: #0a0b0e;
+  --token-primary-bg-c: #101010;
   --token-secondary-bg-c: #0a0b0e;
 
   --markdown-text-intro-c: #cccccc !important;
@@ -291,8 +312,29 @@ a[hred="https://ionicframework.com/advisory"]{
 
 #__docusaurus [class^=searchBox_] {
   flex-grow: 1;
-  max-width: 18rem !important;
+  max-width: 14rem !important;
   padding-right: 0!important;
+  flex-grow: 1;
+    max-width: 3.4rem !important;
+    padding-right: 0 !important;
+    padding-left: 24px;
+    
+}
+
+#__docusaurus [class^=searchBox_] .DocSearch-Button-Placeholder{
+  display: none
+  ;
+}
+
+#__docusaurus .DocSearch-Button {
+  background: #ffffff17;
+  width: 36px;
+  display: flex;
+  justify-content: center;  
+}
+
+#__docusaurus .navbar__link{
+  font-size: 12.8px;
 }
 
 .search_middle{
@@ -318,7 +360,7 @@ a[hred="https://ionicframework.com/advisory"]{
 border-radius: 5px;
 align-self: center;
 
-width: 120px;
+width: 108px;
 
 font-weight: 500;
     font-size: 0.875rem;
@@ -351,22 +393,50 @@ font-weight: 500;
 }
 #__docusaurus [class^=docSidebarContainer] > a {
   border-bottom: 1px solid #1c1c1c;
-  height: 61px;
+  height: calc( var(--ifm-navbar-height) + 1px);
 }
 #__docusaurus [class^=docSidebarContainer] {
   border-inline-end: 0px solid var(--sidebar-border-c);
 }
 
 #__docusaurus [class^=sidebar_] {
-  padding: 49px 0px 0px 0px !important;
-  border-right: 1px solid #1c1c1c;
-  background: #0c0c0e;
+  padding: 80px 12px 0px 12px !important;
+  border-right: none;
+  background: #101010;
   padding-inline-end: 16px;
   padding-inline-start: 16px;
-
-  width: 280px !important;
+  // width: 272px !important;
+  width: 260px !important;
 }
 
+#__docusaurus .menu__link {
+  padding: 8px 14px;
+  letter-spacing: 0.2px;
+  margin-bottom: 2px;
+}
+
+
+#__docusaurus .menu__link {
+  border-radius: 6px;
+}
+
+.menu__link--active {
+  color: #bc52f0;
+}
+
+#__docusaurus .menu__list-item .menu__list .menu__link {
+  padding-left: 29px !important;
+}
+
+#__docusaurus .menu__list-item .menu__list .menu__link{
+  border-radius: 6px;
+}
+.spacer{
+  display: none;
+}
+#__docusaurus [class^=docSidebarContainer]{
+  width: 280px !important;
+}
 .menu__link--active:not(.menu__link--sublist) {
   background: rgb(255 255 255 / 5%);
   border-radius: 0;
@@ -405,40 +475,52 @@ font-weight: 500;
   color: #ccc;
 }
 
-.menu__list-item--collapsed .menu__link--sublist:after {
-  zoom: .73;
+.menu__list-item--collapsed .menu__link--sublist:after, .theme-doc-sidebar-item-category .menu__link--sublist:after {
+  zoom: .65;
+}
+
+.admonition .admonition-content p code {
+  background: #111519;
+}
+
+.admonition-content>p {
+  line-height: 200% !important;
+}
+
+.admonition-note {
+  border-radius: 12px;
 }
 
 .markdown h1 {
   --ifm-h1-font-size: 2rem !important;
-
+  color: #e8e8e8;
 }
 
 .markdown h2 {
   font-size: 1.7rem !important;
-
+  color: #e8e8e8;
 }
 
 
 .markdown h3 {
   font-size: 1.6rem;
-
+  color: #e8e8e8;
 }
 
 
 .markdown h4 {
   font-size: 1.4rem;
-
+  color: #e8e8e8;
 }
 
 .markdown h5 {
   font-size: 1.25rem;
-
+  color: #e8e8e8;
 }
 
 .markdown h6 {
   font-size: 1rem;
-
+  color: #e8e8e8;
 }
 
 
@@ -478,6 +560,7 @@ pre[class*=language-] {
 
 .admonition-content > p{
   font-size: .9rem;
+  color: #d9d8d8;
 }
 
 .admonition .admonition-content p code {
@@ -486,4 +569,72 @@ pre[class*=language-] {
 
 .toc-wrapper{
   padding-left: 0;
+}
+
+
+.navbar__toggle {
+  -webkit-appearance: button;
+  margin-left: auto;
+}
+
+pre[class*=language-] {
+border: 1px solid #ffffff14;
+    background: #ffffff0a;
+}
+
+// .token.operator, .token.string, .token.entity, .token.url, .token.attr-value, .language-css .token.string, .style .token.string, .token.variable {
+//   color: #ff88fa;
+// }
+
+.token.regex, .token.keyword, .token.important {
+  color: #BF8DFF;
+}
+
+.token.selector, .token.char, .token.function, .token.builtin, .token.inserted {
+  color: #cae667;
+}
+
+.token.plain{
+  color: #cfcfcf;
+}
+
+:not(pre) > code {
+  background: none !important;
+}
+
+.admonition-tip,.alert {
+  border-radius: 12px;
+}
+
+.token.regex, .token.keyword, .token.important {
+  color: #BF8DFF;
+}
+
+.token.string, .token.entity, .token.url, .token.attr-value, .language-css .token.string, .style .token.string, .token.variable {
+  color: #65daff;
+}
+
+.token.property, .token.attr-name, .token.boolean, .token.number, .token.constant, .token.symbol {
+  color: #BF8DFF;
+}
+
+pre[class*=language-] {
+    border: 1px solid rgba(255, 255, 255, 0.0784313725);
+    background: rgb(16 16 16);
+    padding: 0.25em 1.5em;
+    border-radius: 16px;
+}
+
+#__docusaurus .menu__link--sublist::after {
+  position: absolute;
+  right: 40px;
+  zoom: .8;
+}
+
+.menu__link{
+  position: relative;
+}
+
+.codeBlockLines_src-theme-CodeBlock-styles-module {
+  padding-left: 20px !important;
 }

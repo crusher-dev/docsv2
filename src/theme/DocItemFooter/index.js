@@ -28,6 +28,11 @@ function TagsRow(props) {
     </div>
   );
 }
+function sendMessage(message) {
+  const iframe = document.querySelector('.giscus-frame');
+  if (!iframe) return;
+  iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+}
 
 function CommunityAndFeedback({ editUrl }) {
 
@@ -40,7 +45,7 @@ React.useEffect(() => {
   script.setAttribute("data-repo", "crusherdev/docsv2")
   script.setAttribute("data-mapping", "pathname")
   script.setAttribute("data-repo-id", "R_kgDOG24pmQ")
-  script.setAttribute("data-reactions-enabled", "1")
+  script.setAttribute("data-reactions-enabled", "0")
   script.setAttribute("data-emit-metadata", "1")
   script.setAttribute("data-input-position", "top")
   script.setAttribute("crossorigin", "anonymous")
@@ -58,6 +63,7 @@ React.useEffect(() => {
   githubScript.async = true
   githubScript.defer = true
   githubJS.appendChild(githubScript)
+
 
     return () => {
       commentBox.innerHTML = ""
@@ -86,14 +92,9 @@ React.useEffect(() => {
         </div>
       </div>
       </div>
-      <div>
-      <div className="helpful-edit-section">
-        <div>Was this doc helpful to you?</div>
-        <div><a href={editUrl}>Edit this page</a></div>
-      </div>
-        {FeedbackOption()}
-      </div>
 
+
+      <div style={{marginTop: 32, fontWeight: 600}}>Have questions?</div>
       <div>
 
         <div id="comments"></div>

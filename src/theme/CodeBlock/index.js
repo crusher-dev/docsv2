@@ -124,6 +124,9 @@ export default function CodeBlock({
               })}
               className={clsx(styles.copyButton, 'clean-btn')}
               onClick={handleCopyCode}>
+               
+
+               <Copy style={{marginRight: 8}}/>
               {showCopied ? (
                 <Translate
                   id="theme.CodeBlock.copied"
@@ -134,7 +137,7 @@ export default function CodeBlock({
                 <Translate
                   id="theme.CodeBlock.copy"
                   description="The copy button label on code blocks">
-                  Copy
+                    Copy
                 </Translate>
               )}
             </button>
@@ -142,5 +145,29 @@ export default function CodeBlock({
         </div>
       )}
     </Highlight>
+  );
+}
+
+
+function Copy(props) {
+  return (
+    <svg
+      width={12}
+      height={12}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M11.112 0H4.478a.858.858 0 00-.857.857V2.87h3.901c.905 0 1.64.735 1.64 1.64v3.838h1.95a.858.858 0 00.857-.857V.857A.858.858 0 0011.112 0z"
+        fill="snow"
+        fillOpacity={0.43}
+      />
+      <path
+        d="M7.522 3.652H.889a.858.858 0 00-.858.857v6.634c0 .472.385.857.858.857h6.633a.858.858 0 00.857-.857V4.509a.858.858 0 00-.857-.857z"
+        fill="snow"
+        fillOpacity={0.43}
+      />
+    </svg>
   );
 }
