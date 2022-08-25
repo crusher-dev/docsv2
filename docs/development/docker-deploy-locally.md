@@ -36,7 +36,7 @@ git clone https://github.com/crusherdev/crusher-docker-deploy.git
 docker-compose up
 ```
   
-##### Withour Postgres/Redis
+##### Without Postgres/Redis
 
 
 2.) Change `.env` file and the start the container using
@@ -57,15 +57,4 @@ source .env && docker compose -f docker-compose-plain.yml up
 4.) (Optional) Point crusher config for endpoint.
 
 
- 
- ##### Reference
-
-***Other helpful resources after docker deploy***
-
-- Expose crusher publicly using tunnel
-
-- Host crusher on VPS server such as AWS, etc.
-
-- Import test from crusher system
-- 
- P.S.- It's not recommended to deploy Crusher in CI as it's stateful application. 
+P.S.- It's not recommended to deploy Crusher in CI as it's stateful application. 
