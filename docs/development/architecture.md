@@ -5,7 +5,7 @@ sidebar_label: 🏭 Architecture
 
 Crusher is open source testing framework, we are creating seamless testing workflow.
 
-Therefore we will try to any other standard open source tools, and change it when needed.
+Therefore we will try to use other standard open source tools, and change it when needed. We held ourselves responsbile for end user experience.
 
 
 Here's the high level architecture overview of Crusher
