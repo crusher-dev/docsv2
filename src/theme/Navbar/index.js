@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React, {useCallback, useState, useEffect} from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
 import SearchBar from '@theme/SearchBar';
@@ -19,7 +19,7 @@ import {
 import useHideableNavbar from '@theme/hooks/useHideableNavbar';
 import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
 import useWindowSize from '@theme/hooks/useWindowSize';
-import {useActivePlugin} from '@theme/hooks/useDocs';
+import { useActivePlugin } from '@theme/hooks/useDocs';
 import NavbarItem from '@theme/NavbarItem';
 import Logo from '@theme/Logo';
 import IconMenu from '@theme/IconMenu';
@@ -36,13 +36,13 @@ function useNavbarItems() {
 
 function splitNavItemsByPosition(items) {
   const leftItems = items.filter(
-    (item) => (item.position ?? DefaultNavItemPosition) === 'left' && item.type !=="search",
+    (item) => (item.position ?? DefaultNavItemPosition) === 'left' && item.type !== "search",
   );
   const rightItems = items.filter(
-    (item) => (item.position ?? DefaultNavItemPosition) === 'right' && item.type !=="search",
+    (item) => (item.position ?? DefaultNavItemPosition) === 'right' && item.type !== "search",
   );
   const searchItem = items.filter(
-    (item) => item.type ==="search",
+    (item) => item.type === "search",
   );
   return {
     leftItems,
@@ -86,9 +86,9 @@ function useMobileSidebar() {
 
 function useColorModeToggle() {
   const {
-    colorMode: {disableSwitch},
+    colorMode: { disableSwitch },
   } = useThemeConfig();
-  const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
+  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
   const toggle = useCallback(
     (e) => (e.target.checked ? setDarkTheme() : setLightTheme()),
     [setLightTheme, setDarkTheme],
@@ -100,7 +100,7 @@ function useColorModeToggle() {
   };
 }
 
-function useSecondaryMenu({sidebarShown, toggleSidebar}) {
+function useSecondaryMenu({ sidebarShown, toggleSidebar }) {
   const content = useMobileSecondaryMenuRenderer()?.({
     toggleSidebar,
   });
@@ -143,7 +143,7 @@ function useSecondaryMenu({sidebarShown, toggleSidebar}) {
   };
 }
 
-function NavbarMobileSidebar({sidebarShown, toggleSidebar}) {
+function NavbarMobileSidebar({ sidebarShown, toggleSidebar }) {
   useLockBodyScroll(sidebarShown);
   const items = useNavbarItems();
   const colorModeToggle = useColorModeToggle();
@@ -215,15 +215,15 @@ function NavbarMobileSidebar({sidebarShown, toggleSidebar}) {
 
 function Navbar() {
   const {
-    navbar: {hideOnScroll, style},
+    navbar: { hideOnScroll, style },
   } = useThemeConfig();
   const mobileSidebar = useMobileSidebar();
   const colorModeToggle = useColorModeToggle();
   const activeDocPlugin = useActivePlugin();
-  const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
+  const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll);
   const items = useNavbarItems();
   const hasSearchNavbarItem = items.some((item) => item.type === 'search');
-  const {leftItems, rightItems, searchItem} = splitNavItemsByPosition(items);
+  const { leftItems, rightItems, searchItem } = splitNavItemsByPosition(items);
   return (
     <nav
       ref={navbarRef}
@@ -234,30 +234,30 @@ function Navbar() {
         [styles.navbarHideable]: hideOnScroll,
         [styles.navbarHidden]: hideOnScroll && !isNavbarVisible,
       })}>
-        <div className="navbar_mobile">
+      <div className="navbar_mobile">
         <Logo
           className="navbar__brand_mobile"
           imageClassName="navbar__logo"
           titleClassName="navbar__title"
-          />
+        />
 
         {searchItem.map((item, i) => {
-            return (
-              <NavbarItem {...item} key={i} />
-            )
+          return (
+            <NavbarItem {...item} key={i} />
+          )
         })}
 
-          {(items?.length > 0 || activeDocPlugin) && (
-            <button
-              aria-label="Navigation bar toggle"
-              className="navbar__toggle clean-btn"
-              type="button"
-              tabIndex={0}
-              onClick={mobileSidebar.toggle}
-              onKeyDown={mobileSidebar.toggle}>
-              <IconMenu />
-            </button>
-          )}
+        {(items?.length > 0 || activeDocPlugin) && (
+          <button
+            aria-label="Navigation bar toggle"
+            className="navbar__toggle clean-btn"
+            type="button"
+            tabIndex={0}
+            onClick={mobileSidebar.toggle}
+            onKeyDown={mobileSidebar.toggle}>
+            <IconMenu />
+          </button>
+        )}
 
       </div>
 
@@ -271,7 +271,7 @@ function Navbar() {
 
         </div>
         <div className="navbar__items navbar__items--right">
-        {searchItem.map((item, i) => {
+          {searchItem.map((item, i) => {
             return (
               <NavbarItem {...item} key={i} />
             )
@@ -280,7 +280,7 @@ function Navbar() {
             return (
               <div className={item.label} >
                 <NavbarItem {...item} key={i} />
-                </div>
+              </div>
             )
           })}
           {!colorModeToggle.disabled && (
@@ -291,9 +291,9 @@ function Navbar() {
             />
           )}
           <a href="https://crusher.dev">
-          <div className="testing_button">
-            Start testing
-          </div>
+            <div className="testing_button">
+              Signup
+            </div>
           </a>
 
           {!hasSearchNavbarItem && <SearchBar />}
