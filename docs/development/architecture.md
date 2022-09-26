@@ -3,8 +3,12 @@ title: 🏭 Architecture
 sidebar_label: 🏭 Architecture
 ---
 
-Crusher is open source for small teams. We try to existing tools which are scalable and try to make workflows simple to use.
+Crusher is open source testing framework, we are creating seamless testing workflow.
 
+Therefore we will try to any other standard open source tools, and change it when needed.
+
+
+Here's the high level architecture overview of Crusher
 <a href="/img/architecture/high-level-architecture.svg" target="_blank"><img src="/img/architecture/high-level-architecture.svg"/></a>
 
 Crusher replaces many tools with one e2e framework. We're opinionated and building features to make e2e workflow easy.
@@ -15,12 +19,9 @@ At crusher, we work across various tech in following manner.
 - **Backend** - Express, typescript, routing controller, typedi, Prisma.
 - **Custom SDK powered by playwrigh**t, C++, Nodejs
 - **Test runner & Worker**
-- **Crusher recorder** - Electron, V8, Blink, C++, react, redux.
+- **Crusher recorder** - Electron, V8, Blink, C++, react, redux. This is not completely open source.
 
 
-other dependencies like bullmq, postgres, etc.
+There are also dependencies like bullmq (for job management), postgres, etc.
 
-We use monorepo architecture + typescript for shared type checking across packages. We strive to use typescript 100% but might often bypass it to develop fast. 
-
-You can contribute easily, feel free to ask how to make changes.
-
+We use monorepo architecture + typescript for shared type checking across packages. We strive to use typescript 100% but might often bypass it with any to develop fast. 
