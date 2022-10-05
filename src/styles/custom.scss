@@ -196,6 +196,11 @@ html[data-theme='dark'] {
 
   --ifm-menu-link-sublist-icon-filter: invert(100%);
   --toc-separator-c: #1c1c1c !important;
+
+  --docsearch-modal-background: #0d0d0d !important;
+  --docsearch-container-background: rgb(9 9 9 / 80%) !important;
+  --docsearch-footer-background: #181818 !important;
+  --docsearch-modal-shadow: inset 1px 1px 0 0 #1f1f1f, 0 3px 8px 0 #000309 !important;
 }
 
 html {
@@ -714,4 +719,22 @@ pre[class*=language-] {
 
 .table-of-contents__link:hover {
   color: rgb(72, 139, 255);
+}
+
+.DocSearch-Input {
+  font-size: 14px !important;
+}
+
+.DocSearch-LoadingIndicator svg,
+.DocSearch-MagnifierLabel svg {
+  height: 20px !important;
+  width: 20px !important;
+
+  path {
+    color: #AE46FF !important;
+  }
+}
+
+.DocSearch-Form {
+  border-radius: 12px !important;
 }

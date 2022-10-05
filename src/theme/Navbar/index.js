@@ -296,7 +296,8 @@ function Navbar() {
             </div>
           </a>
 
-          {!hasSearchNavbarItem && <SearchBar />}
+
+
         </div>
       </div>
 
@@ -315,5 +316,7 @@ function Navbar() {
     </nav>
   );
 }
+
+
 
 export default Navbar;
