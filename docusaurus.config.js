@@ -54,9 +54,9 @@ module.exports = {
         {
           type: 'doc',
           docId: 'getting-started/what-is-crusher',
-          label: 'Home',
+          label: 'home',
           position: 'left',
-        }, 
+        },
         {
           type: 'search',
           position: 'right',
