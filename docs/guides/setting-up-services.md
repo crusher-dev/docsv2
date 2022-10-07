@@ -22,6 +22,7 @@ In `<project_dir>/.crusher/config.js` add following code, and restart crusher
   }]
 ```
 
+
 Example: Check  [sample config file](https://github.com/crusherdev/docsv2/blob/ft-new/.crusher/config.json) with proxy. 
 
 :::info &nbsp;&nbsp; How will it work?

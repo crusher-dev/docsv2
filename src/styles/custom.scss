@@ -221,7 +221,7 @@ html {
 a {
   text-decoration: none;
 
-  color: #4e7dcf;
+  color: #4987e2;
 
   &:hover {
     text-decoration: none;
@@ -737,4 +737,8 @@ pre[class*=language-] {
 
 .DocSearch-Form {
   border-radius: 12px !important;
+}
+
+.token.atrule {
+  color: #bf8dff;
 }
