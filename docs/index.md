@@ -9,6 +9,9 @@ hide_table_of_contents: false
 import DocsCard from '@components/global/DocsCard';
 import DocsCards from '@components/global/DocsCards';
 import CrusherFeatures from '@components/page/index';
+import {UseCrusher } from './__components/list.tsx'
+
+
 
 <head>
   <title>Crusher Docs</title>
@@ -24,3 +27,5 @@ import CrusherFeatures from '@components/page/index';
 
 Crusher is all in one testing platform for developers. You can create test, integrate in project with few simple steps.
 ### use crusher
+
+<UseCrusher/>

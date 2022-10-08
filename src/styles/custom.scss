@@ -582,6 +582,11 @@ pre[class*=language-] {
   border: 1px solid var(--admonition-bar-c-bg);
 }
 
+.admonition-danger {
+  border: 1px solid #fb49aba6;
+  background: #ff00320d;
+}
+
 .admonition-tip {
   border: 1px solid var(--admonition-bar-c-bg);
   background: #09140c;
