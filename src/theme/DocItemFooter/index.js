@@ -10,10 +10,10 @@ import LastUpdated from '@theme/LastUpdated';
 import EditThisPage from '@theme/EditThisPage';
 import TagsListInline from '@theme/TagsListInline';
 import styles from './styles.module.css';
-import {ThemeClassNames} from '@docusaurus/theme-common';
+import { ThemeClassNames } from '@docusaurus/theme-common';
 import './new.css'
 import { DiscordSVG, GithubSVG } from "../../constants/svgs";
-import {css} from "@emotion/css"
+import { css } from "@emotion/css"
 
 function TagsRow(props) {
   return (
@@ -37,64 +37,64 @@ function sendMessage(message) {
 function CommunityAndFeedback({ editUrl }) {
 
 
-React.useEffect(() => {
+  React.useEffect(() => {
     const commentBox = document.querySelector("#comments")
     const script = document.createElement("script")
 
-  script.setAttribute("data-category-id", "DIC_kwDOG24pmc4COFWH")
-  script.setAttribute("data-repo", "crusherdev/docsv2")
-  script.setAttribute("data-mapping", "pathname")
-  script.setAttribute("data-repo-id", "R_kgDOG24pmQ")
-  script.setAttribute("data-reactions-enabled", "0")
-  script.setAttribute("data-emit-metadata", "1")
-  script.setAttribute("data-input-position", "top")
-  script.setAttribute("crossorigin", "anonymous")
-  script.setAttribute("data-theme","dark")
-  script.src = "https://giscus.app/client.js"
+    script.setAttribute("data-category-id", "DIC_kwDOG24pmc4COFWH")
+    script.setAttribute("data-repo", "crusherdev/docsv2")
+    script.setAttribute("data-mapping", "pathname")
+    script.setAttribute("data-repo-id", "R_kgDOG24pmQ")
+    script.setAttribute("data-reactions-enabled", "0")
+    script.setAttribute("data-emit-metadata", "1")
+    script.setAttribute("data-input-position", "top")
+    script.setAttribute("crossorigin", "anonymous")
+    script.setAttribute("data-theme", "dark")
+    script.src = "https://giscus.app/client.js"
     script.async = true
-  script.defer = true
-  commentBox.appendChild(script)
+    script.defer = true
+    commentBox.appendChild(script)
 
 
-  const githubJS = document.querySelector("#github_js")
-  const githubScript = document.createElement("script")
+    const githubJS = document.querySelector("#github_js")
+    const githubScript = document.createElement("script")
 
-  githubScript.src = "https://buttons.github.io/buttons.js"
-  githubScript.async = true
-  githubScript.defer = true
-  githubJS.appendChild(githubScript)
+    githubScript.src = "https://buttons.github.io/buttons.js"
+    githubScript.async = true
+    githubScript.defer = true
+    githubJS.appendChild(githubScript)
 
 
     return () => {
       commentBox.innerHTML = ""
-      githubJS.innerHTML=""
+      githubJS.innerHTML = ""
     }
   }, [])
   return (
     <div className="footer-container-box">
-       <div id="support-page">
-      <div className="heading">Join community for support and feedback</div>
-      <div className="second-box">
-        <div className="social-links">
+      <div id="support-page">
+        <div className="heading">Join community for support and feedback</div>
+        <div className="second-box">
+          <div className="social-links">
             <a href="https://github.com/crusherdev/crusher" target={"_blank"}>
               <div className={socialBlock}><GithubSVG /> Github</div>
 
-        </a>
-        {/* <div className={`${socialBlock} ${discordBlock}`}> <DiscordSVG/> Discord</div> */}
-        </div>
+            </a>
+            {/* <div className={`${socialBlock} ${discordBlock}`}> <DiscordSVG/> Discord</div> */}
+          </div>
           <div className={githubSupport}>
-          <img src="https://avatars.githubusercontent.com/u/7537349?s=96&v=4" height={20} width={20}/>
-            <img src="https://avatars.githubusercontent.com/u/4746156?v=4" height={20} width={20}/>
-            <span style={{marginRight: 12}}>180+ supporters</span>
+            <img src="https://avatars.githubusercontent.com/u/7537349?s=96&v=4" height={20} width={20} />
+            <img src="https://avatars.githubusercontent.com/u/4746156?v=4" height={20} width={20} />
+            <span style={{ marginRight: 12 }}>200+ supporters</span>
 
             <a class="github-button" href="https://github.com/crusherdev/crusher" data-icon="octicon-star" aria-label="Star crusherdev/crusher on GitHub">Star</a>
 
+          </div>
         </div>
       </div>
-      </div>
 
 
-      <div style={{marginTop: 32, fontWeight: 600}}>Have questions?</div>
+      <div style={{ marginTop: 32, fontWeight: 600 }}>Have questions?</div>
       <div>
 
         <div id="comments"></div>
@@ -105,7 +105,7 @@ React.useEffect(() => {
     </div>
   )
 
- }
+}
 
 const githubSupport = css`
 img{
@@ -117,7 +117,7 @@ display: flex;
 align-items: center;
 
 `
- const socialBlock = css`
+const socialBlock = css`
  display: flex;
  align-items: center;
  svg{
@@ -140,25 +140,25 @@ function FeedbackOption() {
     {
       feedback === null && (
         <div className="feedback-button-container">
-          <div className="feedback-button" onClick={setFeedback.bind(this,'yes')}>Yes</div>
-          <div className="feedback-button feedback-button-right" onClick={setFeedback.bind(this,'no')}>No</div>
+          <div className="feedback-button" onClick={setFeedback.bind(this, 'yes')}>Yes</div>
+          <div className="feedback-button feedback-button-right" onClick={setFeedback.bind(this, 'no')}>No</div>
         </div>
       )
     }
 
-  {
+    {
       feedback === "yes" && (
         <div className="feedback-response-text">
           Thanks for your feedback :D
-          </div>
+        </div>
       )
     }
 
-{
+    {
       feedback === "no" && (
         <div className="feedback-response-text">
           Please let us know how we can improve.
-          </div>
+        </div>
       )
     }
   </div>;
@@ -172,7 +172,7 @@ function EditMetaRow({
 }) {
   return (
     <div className={clsx(ThemeClassNames.docs.docFooterEditMetaRow, 'row')}>
- <CommunityAndFeedback  editUrl={editUrl}/>
+      <CommunityAndFeedback editUrl={editUrl} />
 
 
       {/* <div>{editUrl && <EditThisPage editUrl={editUrl} />}</div> */}
@@ -192,9 +192,9 @@ function EditMetaRow({
 }
 
 export default function DocItemFooter(props) {
-  const {content: DocContent} = props;
-  const {metadata} = DocContent;
-  const {editUrl, lastUpdatedAt, formattedLastUpdatedAt, lastUpdatedBy, tags} =
+  const { content: DocContent } = props;
+  const { metadata } = DocContent;
+  const { editUrl, lastUpdatedAt, formattedLastUpdatedAt, lastUpdatedBy, tags } =
     metadata;
   const canDisplayTagsRow = tags.length > 0;
   const canDisplayEditMetaRow = !!(editUrl || lastUpdatedAt || lastUpdatedBy);
