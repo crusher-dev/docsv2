@@ -2,6 +2,7 @@
 title: Making network requests through custom code
 sidebar_label: Making network requests
 ---
+
 :::note What you'll learn?
 - Making GET network requests
 - Making POST & other network requests

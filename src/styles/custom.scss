@@ -742,3 +742,8 @@ pre[class*=language-] {
 .token.atrule {
   color: #bf8dff;
 }
+
+.markdown pre code {
+  font-size: 0.773rem;
+  line-height: 200%;
+}

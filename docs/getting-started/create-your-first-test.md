@@ -14,9 +14,10 @@ import CrusherFeatures from '@components/page/index';
   />
 </head>
 
-Crusher makes creating a test super easy. You can integrate and create your first test within few mins.
+Crusher is e2e testing platform for developers/QA, that allows you to create, manage and run test for your project.
 
-<img src="https://i.imgur.com/fK6fwUk.png"/>
+
+<img src="https://i.imgur.com/fkY2m6F.png"/>
 
 
 

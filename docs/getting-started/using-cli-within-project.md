@@ -19,8 +19,8 @@ Crusher seamlessly integrates with git-enabled projects.
 
 To get started, the first thing you need to do is initialize and link your project with crusher.  To do that, go to your project directory and run this command,
 
-```shell
-npx crusher-cli init
+```bash
+> npx crusher-cli init
 ```
 
 Running this command will start the following process,
