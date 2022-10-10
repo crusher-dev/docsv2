@@ -8,7 +8,8 @@ sidebar_label: Making network requests
 - Making GET network requests
 - Making POST & other network requests
 - Using Headers with network requests
-  :::
+:::
+
   A lot of complex use-cases require the use of a network library to perform network requests. Crusher takes care of this, by providing you with a similar library node-fetch through SDK.
 
 ## Making GET Network requests

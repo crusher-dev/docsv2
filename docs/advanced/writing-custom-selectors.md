@@ -6,7 +6,7 @@ sidebar_label: Writing custom selectors
 :::note What you'll learn?
 
 - Different ways to write selectors
-  :::
+:::
   Often, when writing complex test flows or to ensure stability across tests, you'll have to write custom selectors for your test. This guide will go through different ways to write selectors and their advantages.
 
 ## Writing Selectors
