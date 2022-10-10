@@ -27,12 +27,98 @@ export const UseCrusher = ({ children, color }) => (
         </CommandInput>
 
 
+        <WorkflowList>
+            <div className="flex items-center justify-between heading-section">
+                <div className="heading">
+                    & then integrate with workflow
+                    <span className="optional">(optional)</span>
+                </div>
+                <div className="duration">3 mins</div>
+            </div>
+        </WorkflowList>
 
+        <ItemListBox>
+            <Item><ChekSVG className="check" />create few test <span className="docs">docs</span></Item>
+            <Item><ChekSVG className="check" />run crusher test with each commit <span className="docs">docs</span></Item>
+            <Item><ChekSVG className="check" />monitor production <span className="docs">docs</span></Item>
+            <Item><ChekSVG className="check" />get alerts on slack/discord <span className="docs">docs</span></Item>
+        </ItemListBox>
     </div>
 );
 
+const Item = styled.div`
+                color: #ABABAB;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                :hover{
+                    cursor: pointer;
+                    color: #ae46ff;
+                    .docs{
+                        display: block;
+                        color: #ae46ff;
+                    }
+                }
+                .check{
+                    margin-right: 12px;
+                }
+
+                .docs{
+                    display: none;
+                    margin-left:08px;
+                    font-size: 12px;
+                }
+`
 
 
+const ItemListBox = styled.div`
+
+display: flex;
+flex-direction: column;
+gap: 16px;
+margin-top: 14px;
+
+margin-left: -24px;
+width: 618px;
+max-width: 100%;
+padding:24px;
+
+background: rgba(0, 0, 0, 0.15);
+border: 1px solid #1E1F1F;
+border-radius: 20px;
+margin-bottom: 40px;
+
+`
+
+const WorkflowList = styled.div`
+margin-top: 56px;
+
+
+.heading-section{
+    width: 588px;
+    max-width: 100%;
+}
+.heading{
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #7A7A7A;
+    .optional{
+        color: #363636;
+        margin-left: 8px;
+        font-size: 13px;
+    }
+}
+
+.duration{
+    font-size: 12px;
+    font-weight: 500;
+
+    color: #363636;
+}
+    
+
+`
 
 const CommandInput = styled.div`
 
@@ -40,9 +126,9 @@ const CommandInput = styled.div`
     #command-heading{
         width: 588px;
         max-width: 100%;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 500;
-        margin-top: 20px;
+        margin-top: 32px;
    
     }
 
@@ -82,8 +168,8 @@ color: #626262;
     border: 1px solid #1E1F1F;
     border-radius: 12px;
     font-weight: 500;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 16px;
+    margin-bottom: 06px;
 
     .crusherDevLabel{
         color: rgba(184, 255, 95, 1);
@@ -93,6 +179,11 @@ color: #626262;
   .demo-video{
     letter-spacing: 0.04em;
     font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    :hover{
+        color: #ae46ff;
+    }
 
 color: #7A7A7A;
   }
@@ -133,4 +224,26 @@ function copy(text) {
     var result = document.execCommand('copy');
     document.body.removeChild(input);
     return result;
+}
+
+function ChekSVG(props) {
+    return (
+        <svg
+            width={16}
+            height={16}
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            {...props}
+        >
+            <rect
+                x={0.5}
+                y={0.5}
+                width={15}
+                height={15}
+                rx={4.5}
+                stroke="#D9D9D9"
+                strokeOpacity={0.08}
+            />
+        </svg>
+    );
 }
