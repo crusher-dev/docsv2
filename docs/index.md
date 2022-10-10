@@ -27,5 +27,9 @@ Create test using low-code or code with playwright.
 <UseCrusher />
 
 <!-- <AccordionDemo question={"Is Crusher open source?"} open={false}>
+Crusher is all in one testing platform for developers. It makes testing powerful and streless for you.
+<br/>
+Create test using low-code or code with playwright.
+<br/>
 Create test using low-code or code with playwright.
 </AccordionDemo> -->

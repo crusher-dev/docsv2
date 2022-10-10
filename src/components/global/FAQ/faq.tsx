@@ -74,10 +74,11 @@ const StyledTrigger = styled(AccordionPrimitive.Trigger, {
 
 const StyledContent = styled(AccordionPrimitive.Content, {
     overflow: "hidden",
-    fontSize: 15,
+    fontSize: 14,
     color: "#949494",
     fontFamily: "Gilroy",
     backgroundColor: "#0B0B0B",
+    lineHeight: "29px",
 
     '&[data-state="open"]': {
         animation: `${slideDown} 300ms cubic-bezier(0.87, 0, 0.13, 1)`
