@@ -26,6 +26,6 @@ Create test using low-code or code with playwright.
 
 <UseCrusher />
 
-<AccordionDemo question={"Is Crusher open source?"} open={false}>
+<!-- <AccordionDemo question={"Is Crusher open source?"} open={false}>
 Create test using low-code or code with playwright.
-</AccordionDemo>
+</AccordionDemo> -->

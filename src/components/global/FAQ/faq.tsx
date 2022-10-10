@@ -118,7 +118,6 @@ export const AccordionContent = React.forwardRef(
     )
 );
 
-// Your app...
 export const AccordionDemo = ({ question, children, open = true }) => (
     <Accordion type="single" defaultValue={"item-1"} collapsible>
         <AccordionItem value="item-1">
