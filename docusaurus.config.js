@@ -60,8 +60,7 @@ module.exports = {
         {
           type: 'search',
           position: 'right',
-        }
-
+        },
       ],
     },
     tagManager: {

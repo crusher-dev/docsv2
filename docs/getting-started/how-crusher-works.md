@@ -3,14 +3,11 @@ title: Understanding Crusher
 sidebar_label: How Crusher works?
 ---
 
-import {Blaze, Fast, Terminal} from '@components/page/index';
-
+import { Blaze, Fast, Terminal } from '@components/page/index';
 
 <head>
   <title>Create a test - Crusher docs</title>
-  <meta
-    name="description"
-  />
+  <meta name="description" />
 </head>
 
 This is an high level overview of crusher, and components. This high level overview helps in grasping how crusher works.
@@ -35,6 +32,5 @@ Low code recorder converts users action into Crusher SDK compaitable code.
 ## <Terminal style={{marginRight: 12}}/> Test executor
 
 Test executor is responsible for all operations related to your test build. It runs your test and does post processing.
-
 
 The above components work in tandem to provide high quality testing experience.

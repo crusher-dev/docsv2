@@ -18,32 +18,21 @@ It's easy to integrate in your project and powerful to handle both simple and co
 
 Just create reliable e2e tests in mins and run it when you push new changes.
 
-
-
 ## Who uses Crusher?
+
 Crusher is used by Engineers, QAs, product manager, founder. It's a robust tool for everyone involved in product development.
-
-
 
 Team use crusher for variety of use cases, like:
 
-
 1. **Developers looking to ship software fast**, without waiting for QA approval or fixing bugs again and again.
-
-
 
 2. **QA Manager doing manual QA** looking to automate their workflow.
 
-
-
 3. **VP/Manager** who want their team to focus on shipping software and not on fixing bugs.
-
-
 
 4. **Founder or Product owner** to make sure their users get best version of the apps.
 
 Ultimately, using Crusher will help you ship fast, and without bugs. Everyone gets to be happy in the end.
-
 
 :::info Info
 Crusher is designed mainly for Devs/QA, and to offer a better testing workflow. At certain times, you might need to dev support;
@@ -71,7 +60,6 @@ There are variety of stuff crusher can do
 8. **Concurrency:** Run all the test in parallel and decrease your test build time significantly.
 
 9. T**est on multiple configurations:** Create test in one place and run it on multiple configurations.
-
 
 ## What sets us apart?
 

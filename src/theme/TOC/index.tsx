@@ -8,8 +8,7 @@ export default function TOC({ toc, editUrl, ...props }) {
 
   // if (isEmpty) return null;
 
-  const basic = [{ value: 'Overview', id: 'use-crusher', children: Array(0), level: 3 }]
-
+  const basic = [{ value: 'Overview', id: 'use-crusher', children: Array(0), level: 3 }];
 
   return (
     <div className="toc-wrapper">

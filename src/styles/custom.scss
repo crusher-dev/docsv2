@@ -33,16 +33,15 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/Gilroy-Regular.woff2") format('woff2');
+  src: url('/fonts/Gilroy-Regular.woff2') format('woff2');
 }
-
 
 @font-face {
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("/fonts/Gilroy-Medium.woff2") format('woff2');
+  src: url('/fonts/Gilroy-Medium.woff2') format('woff2');
 }
 
 @font-face {
@@ -50,30 +49,20 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("/fonts/Gilroy-SemiBold.woff2") format('woff2');
+  src: url('/fonts/Gilroy-SemiBold.woff2') format('woff2');
 }
-
 
 @font-face {
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url("/fonts/Gilroy-Bold.woff2") format('woff2');
+  src: url('/fonts/Gilroy-Bold.woff2') format('woff2');
 }
 
-
 body {
-  font-family: 'Gilroy',
-    -apple-system,
-    /* Firefox supports this but not yet `system-ui` */
-    'Segoe UI',
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji' !important;
+  font-family: 'Gilroy', -apple-system, /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji' !important;
 }
 
 h1,
@@ -82,18 +71,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Ubuntu',
-    -apple-system,
-    /* Firefox supports this but not yet `system-ui` */
-    'Segoe UI',
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji' !important;
+  font-family: 'Ubuntu', -apple-system, /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji' !important;
 }
-
 
 :root {
   --ifm-background-color: var(--token-primary-bg-c);
@@ -102,15 +82,14 @@ h6 {
   --ifm-navbar-padding-vertical: 0;
   --ifm-navbar-item-padding-vertical: 0;
 
-  --ifm-font-family-base: 'Ubuntu', -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-    'Segoe UI emoji';
+  --ifm-font-family-base: 'Ubuntu', -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI emoji';
 
-  --ifm-heading-font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-    'Segoe UI emoji' !important;
+  --ifm-heading-font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI emoji' !important;
   --ifm-font-family-monospace: 'SFMono-Regular', 'Roboto Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04Ljk5OTg4IDVMNC45OTk4OCAxTDAuOTk5ODc4IDUiIHN0cm9rZT0iIzAzMDYwQiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K');
-
 
   --ifm-font-color-base: #fefefe;
   //#region ----------- Z Indices ------------
@@ -120,8 +99,6 @@ h6 {
   --ifm-heading-vertical-rhythm-bottom: 1;
   //#endregion
 }
-
-
 
 // html[data-theme='light'] {
 //   --token-primary-bg-c: #fff;
@@ -141,13 +118,12 @@ h6 {
 //   --ifm-font-color-base: var(--c-carbon-90);
 // }
 html[data-theme='light'] {
-  --token-primary-bg-c: #0D0D0D;
+  --token-primary-bg-c: #0d0d0d;
   --token-secondary-bg-c: #0a0b0e;
-
 
   --code-block-bg-c: #171b20;
 
-  --ifm-link-color: #AE46FF;
+  --ifm-link-color: #ae46ff;
   --ifm-color-primary: #8166b9;
   //rgb value is c-blue-70
   --ifm-link-hover-color: #8e2bda;
@@ -167,14 +143,14 @@ html[data-theme='light'] {
 }
 
 html[data-theme='dark'] {
-  --token-primary-bg-c: #0D0D0D;
+  --token-primary-bg-c: #0d0d0d;
   --token-secondary-bg-c: #0a0b0e;
 
   --markdown-text-intro-c: #949494 !important;
-  --markdown-bold-c: #E2E2E2 !important;
+  --markdown-bold-c: #e2e2e2 !important;
   --code-block-bg-c: #171b20;
 
-  --ifm-link-color: #AE46FF;
+  --ifm-link-color: #ae46ff;
   --ifm-color-primary: #8166b9;
   //rgb value is c-blue-70
   --ifm-link-hover-color: #8e2bda;
@@ -246,7 +222,7 @@ figure {
   margin: 0;
 }
 
-figure>* {
+figure > * {
   display: block;
   margin: 0 auto;
 }
@@ -309,8 +285,6 @@ iframe {
   text-decoration: none;
 }
 
-
-
 .token.selector,
 .token.char,
 .token.function,
@@ -323,9 +297,7 @@ iframe {
   display: none !important;
 }
 
-
-
-#__docusaurus [class^=searchBox_] {
+#__docusaurus [class^='searchBox_'] {
   flex-grow: 1;
   max-width: 14rem !important;
   padding-right: 0 !important;
@@ -333,10 +305,9 @@ iframe {
   max-width: 3.4rem !important;
   padding-right: 0 !important;
   padding-left: 24px;
-
 }
 
-#__docusaurus [class^=searchBox_] .DocSearch-Button-Placeholder {
+#__docusaurus [class^='searchBox_'] .DocSearch-Button-Placeholder {
   display: none;
 }
 
@@ -388,18 +359,16 @@ iframe {
   align-items: center;
   font-weight: 600;
   margin-left: 20px;
-
-
 }
-
 
 :root {
   --ifm-background-color: var(--token-primary-bg-c);
   --ifm-navbar-link-hover-color: initial;
   --ifm-navbar-padding-vertical: 0;
   --ifm-navbar-item-padding-vertical: 0;
-  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI emoji";
-  --ifm-font-family-monospace: "gilroy";
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI emoji';
+  --ifm-font-family-monospace: 'gilroy';
   --ifm-menu-link-sublist-icon: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04Ljk5OTg4IDVMNC45OTk4OCAxTDAuOTk5ODc4IDUiIHN0cm9rZT0iIzAzMDYwQiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
   --z-sidebar: 2000;
   --z-backdrop: 1100;
@@ -409,20 +378,20 @@ iframe {
   --admonition-bar-tip-c-bg: #369150 !important;
 }
 
-#__docusaurus [class^=docSidebarContainer]>a {
+#__docusaurus [class^='docSidebarContainer'] > a {
   border-bottom: 1px solid #131313;
   height: calc(var(--ifm-navbar-height) + 1px);
-  background: #0B0B0B;
+  background: #0b0b0b;
 }
 
-#__docusaurus [class^=docSidebarContainer] {
+#__docusaurus [class^='docSidebarContainer'] {
   border-inline-end: 0px solid var(--sidebar-border-c);
 }
 
-#__docusaurus [class^=sidebar_] {
+#__docusaurus [class^='sidebar_'] {
   padding: 60px 20px 0px 20px !important;
   border-right: none;
-  background: #0B0B0B;
+  background: #0b0b0b;
   padding-inline-end: 16px;
   padding-inline-start: 16px;
 
@@ -435,7 +404,6 @@ iframe {
   letter-spacing: 0.2px;
   margin-bottom: 2px;
 }
-
 
 #__docusaurus .menu__link {
   border-radius: 8px;
@@ -457,11 +425,9 @@ iframe {
   display: none;
 }
 
-#__docusaurus [class^=docSidebarContainer] {
+#__docusaurus [class^='docSidebarContainer'] {
   width: 280px !important;
 }
-
-
 
 #__docusaurus .menu__link--sublist {
   padding-left: 16px !important;
@@ -470,15 +436,15 @@ iframe {
 
 #__docusaurus .menu__link {
   padding: 8px 16px;
-  letter-spacing: .2px
+  letter-spacing: 0.2px;
 }
 
 #__docusaurus .menu__list-item .menu__list .menu__link {
   padding-left: 37px;
 }
 
-#__docusaurus .theme-doc-sidebar-item-category-level-1>.menu__link {
-  font-size: .88rem;
+#__docusaurus .theme-doc-sidebar-item-category-level-1 > .menu__link {
+  font-size: 0.88rem;
 }
 
 .markdown p,
@@ -489,8 +455,8 @@ iframe {
   line-height: 200% !important;
 }
 
-.markdown>header+p+p,
-.markdown>header+p {
+.markdown > header + p + p,
+.markdown > header + p {
   font-size: 14.5px;
   letter-spacing: 0.5px;
   line-height: 200%;
@@ -511,14 +477,14 @@ iframe {
 
 .menu__list-item--collapsed .menu__link--sublist:after,
 .theme-doc-sidebar-item-category .menu__link--sublist:after {
-  zoom: .65;
+  zoom: 0.65;
 }
 
 .admonition .admonition-content p code {
   background: #111519;
 }
 
-.admonition-content>p {
+.admonition-content > p {
   line-height: 200% !important;
 }
 
@@ -528,36 +494,33 @@ iframe {
 
 .markdown h1 {
   --ifm-h1-font-size: 26px !important;
-  color: #E2E2E2;
+  color: #e2e2e2;
 }
 
 .markdown h2 {
   font-size: 1.7rem !important;
-  color: #E2E2E2;
+  color: #e2e2e2;
 }
-
 
 .markdown h3 {
   font-size: 1.6rem;
-  color: #E2E2E2;
+  color: #e2e2e2;
 }
-
 
 .markdown h4 {
   font-size: 1.4rem;
-  color: #E2E2E2;
+  color: #e2e2e2;
 }
 
 .markdown h5 {
   font-size: 1.25rem;
-  color: #E2E2E2;
+  color: #e2e2e2;
 }
 
 .markdown h6 {
   font-size: 1rem;
-  color: #E2E2E2;
+  color: #e2e2e2;
 }
-
 
 .markdown p,
 .markdown li,
@@ -565,7 +528,7 @@ iframe {
   line-height: 170%;
 }
 
-pre[class*=language-] {
+pre[class*='language-'] {
   padding: 0.25em 0.5em;
 }
 
@@ -594,14 +557,11 @@ pre[class*=language-] {
 }
 
 .admonition::before {
-
   width: 0px !important;
-
 }
 
-
-.admonition-content>p {
-  font-size: .9rem;
+.admonition-content > p {
+  font-size: 0.9rem;
   color: #d9d8d8;
 }
 
@@ -613,13 +573,12 @@ pre[class*=language-] {
   padding-left: 0;
 }
 
-
 .navbar__toggle {
   -webkit-appearance: button;
   margin-left: auto;
 }
 
-pre[class*=language-] {
+pre[class*='language-'] {
   border: 1px solid #ffffff14;
   background: #ffffff0a;
 }
@@ -631,7 +590,7 @@ pre[class*=language-] {
 .token.regex,
 .token.keyword,
 .token.important {
-  color: #BF8DFF;
+  color: #bf8dff;
 }
 
 .token.selector,
@@ -646,7 +605,7 @@ pre[class*=language-] {
   color: #cfcfcf;
 }
 
-:not(pre)>code {
+:not(pre) > code {
   background: none !important;
 }
 
@@ -658,7 +617,7 @@ pre[class*=language-] {
 .token.regex,
 .token.keyword,
 .token.important {
-  color: #BF8DFF;
+  color: #bf8dff;
 }
 
 .token.string,
@@ -677,10 +636,10 @@ pre[class*=language-] {
 .token.number,
 .token.constant,
 .token.symbol {
-  color: #BF8DFF;
+  color: #bf8dff;
 }
 
-pre[class*=language-] {
+pre[class*='language-'] {
   border: 1px solid rgba(255, 255, 255, 0.0784313725);
   background: rgb(16 16 16);
   padding: 0.25em 1.5em;
@@ -690,7 +649,7 @@ pre[class*=language-] {
 #__docusaurus .menu__link--sublist::after {
   position: absolute;
   right: 40px;
-  zoom: .8;
+  zoom: 0.8;
 }
 
 .menu__link {
@@ -733,7 +692,7 @@ pre[class*=language-] {
   width: 20px !important;
 
   path {
-    color: #AE46FF !important;
+    color: #ae46ff !important;
   }
 }
 

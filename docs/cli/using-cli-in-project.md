@@ -4,10 +4,7 @@ title: Using CLI within Project
 
 <head>
   <title>Basic usage | Maintain a Global Configuration File</title>
-  <meta
-    name="description"
-    content="Crusher.dev"
-  />
+  <meta name="description" content="Crusher.dev" />
 </head>
 
 When running crusher-cli for the first time, we need to link your project. You can choose to create a new project or set it up with an existing project.
@@ -16,7 +13,7 @@ Crusher seamlessly integrates with git-enabled projects.
 
 ## Setting up
 
-To get started, the first thing you need to do is initialize and link your project with crusher.  To do that, go to your project directory and run this command,
+To get started, the first thing you need to do is initialize and link your project with crusher. To do that, go to your project directory and run this command,
 
 ```shell
 npx crusher-cli init
@@ -26,7 +23,7 @@ Running this command will start the following process,
 
 - You&#39;ll be asked to log in/sign up to link your crusher account
 - CLI will download and extract the latest version of the recorder
--  If you run this command in a non-git directory/project, you&#39;ll be asked to select a project.
+- If you run this command in a non-git directory/project, you&#39;ll be asked to select a project.
 
 :::note **Note**:
 During the setup, we will save configuration files at `~/.crusher/config.json` (global config) and `[project-dir]/.crusher/config.json` (project config)

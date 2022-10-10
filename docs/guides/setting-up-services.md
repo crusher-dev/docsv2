@@ -1,6 +1,6 @@
 ---
 title: 🔌 Proxy config for local dev & environment
-sidebar_label: 🔌 Setup proxy for local dev 
+sidebar_label: 🔌 Setup proxy for local dev
 ---
 
 Often, cloud environment offers faster test execution in an isolated environment. Doing so is easy, you just need to expose your local service to crusher test agents depending on your use-case such as,
@@ -8,7 +8,6 @@ Often, cloud environment offers faster test execution in an isolated environment
 1. [**Testing local development**](#testing-local-development): You want to run test against your local service. Super-helpful during development.
 
 2. **Setting up configuration for different env**: You created test for localhost:3000, and now want to run it on https://stage.your-domain.com
-
 
 ## Testing local development
 
@@ -22,13 +21,13 @@ In `<project_dir>/.crusher/config.js` add following code, and restart crusher
   }]
 ```
 
-
-Example: Check  [sample config file](https://github.com/crusherdev/docsv2/blob/ft-new/.crusher/config.json) with proxy. 
+Example: Check [sample config file](https://github.com/crusherdev/docsv2/blob/ft-new/.crusher/config.json) with proxy.
 
 :::info &nbsp;&nbsp; How will it work?
-1. A local tunnel will be created using cloudflare argo. 
+
+1. A local tunnel will be created using cloudflare argo.
 2. Test runner will use that tunnel to run test, and intercept requests made to localhost:3000 and re-route to the tunnel.
-:::
+   :::
 
 ## FAQ
 

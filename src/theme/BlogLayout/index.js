@@ -10,7 +10,7 @@ import Layout from '@theme/Layout';
 import BlogSidebar from '@theme/BlogSidebar';
 
 function BlogLayout(props) {
-  const {sidebar, toc, children, ...layoutProps} = props;
+  const { sidebar, toc, children, ...layoutProps } = props;
   const hasSidebar = sidebar && sidebar.items.length > 0;
   return (
     <Layout {...layoutProps}>
@@ -27,12 +27,11 @@ function BlogLayout(props) {
               'col--9 col--offset-1': !hasSidebar,
             })}
             itemScope
-            itemType="http://schema.org/Blog">
+            itemType="http://schema.org/Blog"
+          >
             {children}
 
-            <div>
-              sdff
-            </div>
+            <div>sdff</div>
           </main>
           {toc && <div className="col col--2">{toc}</div>}
         </div>

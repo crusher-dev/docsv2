@@ -5,10 +5,7 @@ sidebar_label: 🧑‍🚀 Overview
 
 <head>
   <title>Cruhser CLI : Crusher Docs</title>
-  <meta
-    name="description"
-    content="Crusher.dev"
-  />
+  <meta name="description" content="Crusher.dev" />
 </head>
 
 The Crusher command-line interface ([CLI](/docs/reference/glossary#cli)) is the go-to CLI for developers to create and run test for their project.
@@ -17,9 +14,8 @@ You can create test locally and run them on crusher server with few commands.
 
 ## Installation
 
-
-
 To create a test
+
 ```shell
 npx crusher-cli test:create
 ```
@@ -29,11 +25,11 @@ And run test with
 ```shell
 npx crusher-cli test:run
 ```
- The Crusher CLI works with node > v10
 
+The Crusher CLI works with node > v10
 
 :::tip
-You can also use `npm install crusher-cli` or `yarn add crusher-cli`, but it is not recommeded as we provide continuous updates to improce  experience
+You can also use `npm install crusher-cli` or `yarn add crusher-cli`, but it is not recommeded as we provide continuous updates to improce experience
 :::
 
 ## Help

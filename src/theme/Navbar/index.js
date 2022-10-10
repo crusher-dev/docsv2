@@ -36,18 +36,16 @@ function useNavbarItems() {
 
 function splitNavItemsByPosition(items) {
   const leftItems = items.filter(
-    (item) => (item.position ?? DefaultNavItemPosition) === 'left' && item.type !== "search",
+    (item) => (item.position ?? DefaultNavItemPosition) === 'left' && item.type !== 'search'
   );
   const rightItems = items.filter(
-    (item) => (item.position ?? DefaultNavItemPosition) === 'right' && item.type !== "search",
+    (item) => (item.position ?? DefaultNavItemPosition) === 'right' && item.type !== 'search'
   );
-  const searchItem = items.filter(
-    (item) => item.type === "search",
-  );
+  const searchItem = items.filter((item) => item.type === 'search');
   return {
     leftItems,
     rightItems,
-    searchItem
+    searchItem,
   };
 }
 
@@ -91,7 +89,7 @@ function useColorModeToggle() {
   const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
   const toggle = useCallback(
     (e) => (e.target.checked ? setDarkTheme() : setLightTheme()),
-    [setLightTheme, setDarkTheme],
+    [setLightTheme, setDarkTheme]
   );
   return {
     isDarkTheme,
@@ -154,11 +152,7 @@ function NavbarMobileSidebar({ sidebarShown, toggleSidebar }) {
   return (
     <div className="navbar-sidebar">
       <div className="navbar-sidebar__brand">
-        <Logo
-          className="navbar__brand"
-          imageClassName="navbar__logo"
-          titleClassName="navbar__title"
-        />
+        <Logo className="navbar__brand" imageClassName="navbar__logo" titleClassName="navbar__title" />
         {!colorModeToggle.disabled && (
           <Toggle
             className={styles.navbarSidebarToggle}
@@ -166,25 +160,18 @@ function NavbarMobileSidebar({ sidebarShown, toggleSidebar }) {
             onChange={colorModeToggle.toggle}
           />
         )}
-        <button
-          type="button"
-          className="clean-btn navbar-sidebar__close"
-          onClick={toggleSidebar}>
-          <IconClose
-            color="var(--ifm-color-emphasis-600)"
-            className={styles.navbarSidebarCloseSvg}
-          />
+        <button type="button" className="clean-btn navbar-sidebar__close" onClick={toggleSidebar}>
+          <IconClose color="var(--ifm-color-emphasis-600)" className={styles.navbarSidebarCloseSvg} />
         </button>
       </div>
 
-      <div>
-
-      </div>
+      <div></div>
 
       <div
         className={clsx('navbar-sidebar__items', {
           'navbar-sidebar__items--show-secondary': secondaryMenu.shown,
-        })}>
+        })}
+      >
         <div className="navbar-sidebar__item menu">
           <ul className="menu__list">
             {items.map((item, i) => (
@@ -195,13 +182,11 @@ function NavbarMobileSidebar({ sidebarShown, toggleSidebar }) {
 
         <div className="navbar-sidebar__item menu">
           {items.length > 0 && (
-            <button
-              type="button"
-              className="clean-btn navbar-sidebar__back"
-              onClick={secondaryMenu.hide}>
+            <button type="button" className="clean-btn navbar-sidebar__back" onClick={secondaryMenu.hide}>
               <Translate
                 id="theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel"
-                description="The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)">
+                description="The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+              >
                 ← Back to main menu
               </Translate>
             </button>
@@ -233,18 +218,13 @@ function Navbar() {
         'navbar-sidebar--show': mobileSidebar.shown,
         [styles.navbarHideable]: hideOnScroll,
         [styles.navbarHidden]: hideOnScroll && !isNavbarVisible,
-      })}>
+      })}
+    >
       <div className="navbar_mobile">
-        <Logo
-          className="navbar__brand_mobile"
-          imageClassName="navbar__logo"
-          titleClassName="navbar__title"
-        />
+        <Logo className="navbar__brand_mobile" imageClassName="navbar__logo" titleClassName="navbar__title" />
 
         {searchItem.map((item, i) => {
-          return (
-            <NavbarItem {...item} key={i} />
-          )
+          return <NavbarItem {...item} key={i} />;
         })}
 
         {(items?.length > 0 || activeDocPlugin) && (
@@ -254,11 +234,11 @@ function Navbar() {
             type="button"
             tabIndex={0}
             onClick={mobileSidebar.toggle}
-            onKeyDown={mobileSidebar.toggle}>
+            onKeyDown={mobileSidebar.toggle}
+          >
             <IconMenu />
           </button>
         )}
-
       </div>
 
       <div className="navbar__inner navbar_desktop">
@@ -267,56 +247,34 @@ function Navbar() {
             <NavbarItem {...item} key={i} />
           ))}
         </div>
-        <div className="search_middle">
-
-        </div>
+        <div className="search_middle"></div>
         <div className="navbar__items navbar__items--right">
           {searchItem.map((item, i) => {
-            return (
-              <NavbarItem {...item} key={i} />
-            )
+            return <NavbarItem {...item} key={i} />;
           })}
           {rightItems.map((item, i) => {
             return (
-              <div className={item.label} >
+              <div className={item.label}>
                 <NavbarItem {...item} key={i} />
               </div>
-            )
+            );
           })}
           {!colorModeToggle.disabled && (
-            <Toggle
-              className={styles.toggle}
-              checked={colorModeToggle.isDarkTheme}
-              onChange={colorModeToggle.toggle}
-            />
+            <Toggle className={styles.toggle} checked={colorModeToggle.isDarkTheme} onChange={colorModeToggle.toggle} />
           )}
           <a href="https://crusher.dev">
-            <div className="testing_button">
-              Signup
-            </div>
+            <div className="testing_button">Signup</div>
           </a>
-
-
-
         </div>
       </div>
 
-      <div
-        role="presentation"
-        className="navbar-sidebar__backdrop"
-        onClick={mobileSidebar.toggle}
-      />
+      <div role="presentation" className="navbar-sidebar__backdrop" onClick={mobileSidebar.toggle} />
 
       {mobileSidebar.shouldRender && (
-        <NavbarMobileSidebar
-          sidebarShown={mobileSidebar.shown}
-          toggleSidebar={mobileSidebar.toggle}
-        />
+        <NavbarMobileSidebar sidebarShown={mobileSidebar.shown} toggleSidebar={mobileSidebar.toggle} />
       )}
     </nav>
   );
 }
-
-
 
 export default Navbar;

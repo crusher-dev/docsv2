@@ -1,21 +1,30 @@
 module.exports = {
   docs: [
     {
-      type: "doc",
-      label: "🦖 Overview",
-      id: "index",
+      type: 'doc',
+      label: '🦖 Overview',
+      id: 'index',
     },
     {
       type: 'category',
       label: '🧑‍🚀 Getting Started',
       collapsed: false,
-      items: ['getting-started/what-is-crusher', 'getting-started/how-crusher-works', 'getting-started/create-your-first-test', 'getting-started/using-cli-within-project'],
+      items: [
+        'getting-started/what-is-crusher',
+        'getting-started/how-crusher-works',
+        'getting-started/create-your-first-test',
+        'getting-started/using-cli-within-project',
+      ],
     },
     {
       type: 'category',
       label: '🧱 Deploy crusher',
       collapsed: true,
-      items: ['development/docker-deploy-locally', 'development/setting-up-development-env','development/architecture'],
+      items: [
+        'development/docker-deploy-locally',
+        'development/setting-up-development-env',
+        'development/architecture',
+      ],
     },
     {
       type: 'category',
@@ -27,13 +36,13 @@ module.exports = {
       type: 'category',
       label: '🏄 Setting up',
       collapsed: true,
-      items: [ "setting-up/manage-alerts"]
+      items: ['setting-up/manage-alerts'],
     },
     {
       type: 'category',
       label: '⚽ Integration',
       collapsed: true,
-      items: ['integrations/with-vercel', 'integrations/with-ci-cd','integrations/with-jenkins'],
+      items: ['integrations/with-vercel', 'integrations/with-ci-cd', 'integrations/with-jenkins'],
     },
     {
       type: 'category',
@@ -54,13 +63,7 @@ module.exports = {
       type: 'category',
       label: 'CLI Documentation',
       collapsed: true,
-      items: [
-        'cli',
-        'cli/using-cli-in-project',
-        'cli/custom-host',
-        'cli/global-option',
-        'cli/project-options',
-      ],
+      items: ['cli', 'cli/using-cli-in-project', 'cli/custom-host', 'cli/global-option', 'cli/project-options'],
     },
     {
       type: 'category',

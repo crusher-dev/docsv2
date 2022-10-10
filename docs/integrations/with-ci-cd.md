@@ -3,7 +3,7 @@ title: Integrating Crusher tests with CI/CD
 sidebar_label: With CI/CD
 ---
 
-1.) Go to [*Crusher Settings Page > Integration*](https://app.crusher.dev/settings/project/integrations).
+1.) Go to [_Crusher Settings Page > Integration_](https://app.crusher.dev/settings/project/integrations).
 
 2.) Copy command in CI/CD section.
 

@@ -18,7 +18,10 @@ export const UseCrusher = ({ children, color }) => (
             > npx <span className="crusherDevLabel">
                     crusher.dev</span></div>
 
-                <CopyIcon height={20} width={20} /> </div>
+                <CopyIcon height={20} width={20} onClick={() => {
+                    copy("npx crusher.dev");
+                    alert("copied to clipboard")
+                }} /> </div>
 
             <div id="download">or download binary </div>
         </CommandInput>
@@ -120,4 +123,14 @@ function CopyIcon(props) {
             />
         </svg>
     );
+}
+
+function copy(text) {
+    var input = document.createElement('input');
+    input.setAttribute('value', text);
+    document.body.appendChild(input);
+    input.select();
+    var result = document.execCommand('copy');
+    document.body.removeChild(input);
+    return result;
 }

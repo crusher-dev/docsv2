@@ -8,4 +8,3 @@ The official [Ionic](https://ionicframework.com) documentation, built with [Docu
 
 - [Contributing Guide](./CONTRIBUTING.md) :flashlight:
 <!-- - [Project Board](https://github.com/ionic-team/ionic-docs/projects/3) :pushpin: -->
-
