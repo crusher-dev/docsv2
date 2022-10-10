@@ -11,20 +11,21 @@ import useWindowSize from '@theme/hooks/useWindowSize';
 import DocPaginator from '@theme/DocPaginator';
 import DocVersionBanner from '@theme/DocVersionBanner';
 import Seo from '@theme/Seo';
-import type {Props} from '@theme/DocItem';
+import type { Props } from '@theme/DocItem';
 import DocItemFooter from '@theme/DocItemFooter';
 import TOC from '@theme/TOC';
 import TOCCollapsible from '@theme/TOCCollapsible';
-import {MainHeading} from '@theme/Heading';
+import { MainHeading } from '@theme/Heading';
 import styles from './styles.module.css';
-import {ThemeClassNames} from '@docusaurus/theme-common';
+import { ThemeClassNames } from '@docusaurus/theme-common';
 
 // CUSTOM CODE
 import DocDemo from '@components/global/DocDemo'
+import { css } from '@emotion/css';
 
 export default function DocItem(props: Props): JSX.Element {
-  const {content: DocContent, versionMetadata} = props;
-  const {metadata, frontMatter} = DocContent;
+  const { content: DocContent, versionMetadata } = props;
+  const { metadata, frontMatter } = DocContent;
   const {
     image,
     keywords,
@@ -42,7 +43,7 @@ export default function DocItem(props: Props): JSX.Element {
   const { metadata: { editUrl } } = DocContent;
   //#endregion
 
-  const {description, title} = metadata;
+  const { description, title } = metadata;
 
   // We only add a title if:
   // - user asks to hide it with frontmatter
@@ -55,18 +56,19 @@ export default function DocItem(props: Props): JSX.Element {
   const canRenderTOC =
     !hideTableOfContents && DocContent.toc && DocContent.toc.length > 0;
 
-  const renderTocDesktop =
-    canRenderTOC && (windowSize === 'desktop' || windowSize === 'ssr');
 
   return (
     <>
-      <Seo {...{title, description, keywords, image}} />
+      <Seo {...{ title, description, keywords, image }} />
+
 
       <div className="row">
+
         <div
           className={clsx('col', {
             [styles.docItemCol]: !hideTableOfContents,
           })}>
+
           <DocVersionBanner versionMetadata={versionMetadata} />
           <div className={styles.docItemContainer}>
             <article>
@@ -100,6 +102,13 @@ export default function DocItem(props: Props): JSX.Element {
                 See https://github.com/facebook/docusaurus/pull/4882#issuecomment-853021120
                 */}
                 {shouldAddTitle && <MainHeading>{title}</MainHeading>}
+
+
+                <div className={breadCrumbCSS}>
+                  <a href="https://docs.crusher.dev">Home</a>
+                  <span id="separator">></span>
+                  <a href="https://docs.crusher.dev">Docs</a>
+                </div>
 
                 <DocContent />
               </div>
@@ -152,7 +161,29 @@ export default function DocItem(props: Props): JSX.Element {
         </div>
         {/* -------------- */}
 
-      </div>
+      </div >
     </>
   );
 }
+
+
+const breadCrumbCSS = css`
+letter-spacing: 0.02em;
+
+color: #848484;
+margin-top: -17px !important;
+margin-bottom: 32px !important;
+
+a{
+  font-size: 11.5px;
+  color: #848484;
+  :hover{
+    text-decoration: underline;
+  }
+}
+
+#separator{
+  margin: 0 4px;
+  font-size: 10px;
+}
+`

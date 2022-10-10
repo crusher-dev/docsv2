@@ -34,33 +34,6 @@ type DocPageContentProps = {
   readonly children: ReactNode;
 };
 
-function GithubSVG(props) {
-  return (
-    <svg
-      width={19}
-      height={18}
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
-      <g clipPath="url(#prefix__clip0_657_286)">
-        <path
-          d="M9.607.303A8.72 8.72 0 006.85 17.297c.436.08.577-.19.577-.42v-1.622c-2.426.527-2.931-1.03-2.931-1.03-.397-1.007-.969-1.275-.969-1.275-.79-.542.06-.53.06-.53.876.06 1.337.899 1.337.899.778 1.332 2.04.947 2.538.724.077-.563.303-.948.553-1.165-1.936-.222-3.972-.97-3.972-4.31 0-.953.34-1.73.898-2.34-.09-.221-.389-1.108.085-2.309 0 0 .732-.234 2.398.894a8.363 8.363 0 012.183-.293c.74.003 1.487.1 2.184.293 1.665-1.128 2.396-.894 2.396-.894.474 1.201.176 2.089.086 2.308.559.61.897 1.389.897 2.34 0 3.35-2.04 4.088-3.981 4.303.312.27.598.801.598 1.615v2.393c0 .232.14.504.582.418A8.722 8.722 0 009.607.303z"
-          fill="#fff"
-        />
-      </g>
-      <defs>
-        <clipPath id="prefix__clip0_657_286">
-          <path
-            fill="#fff"
-            transform="translate(.887 .303)"
-            d="M0 0h17.44v17.44H0z"
-          />
-        </clipPath>
-      </defs>
-    </svg>
-  );
-}
 
 function DocPageContent({
   currentDocRoute,
@@ -68,6 +41,7 @@ function DocPageContent({
   children,
 }: DocPageContentProps): JSX.Element {
   const { pluginId, version } = versionMetadata;
+
 
   const sidebarName = currentDocRoute.sidebar;
   const sidebar = sidebarName
@@ -151,16 +125,7 @@ function DocPageContent({
         <div>
           {/* CUSTOM CODE - navbar placement */}
           <Navbar />
-          {/* <div className={subMenu}>
-             <div className='linksbox'>
-              <div className='active'><a href="/" style={{color: '#fff'}}>Using Crusher</a></div>
-                <div><a href="/cli" style={{color: '#fff'}}>CLI</a></div>
-             </div>
 
-             <div className='github-button'>
-               <GithubSVG style={{marginRight: 8}}></GithubSVG>Github
-             </div>
-           </div> */}
           <main
             className={clsx(styles.docMainContainer, {
               [styles.docMainContainerEnhanced]:
@@ -176,7 +141,9 @@ function DocPageContent({
                   [styles.docItemWrapperEnhanced]: hiddenSidebarContainer,
                 },
               )}>
-              <MDXProvider components={MDXComponents}>{children}</MDXProvider>
+
+              <MDXProvider components={MDXComponents}>
+                {children}</MDXProvider>
             </div>
 
 
