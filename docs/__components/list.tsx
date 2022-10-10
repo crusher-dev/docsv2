@@ -1,36 +1,36 @@
 import React from "react";
 
-import styled from '@emotion/styled'
-
+import styled from "@emotion/styled";
 
 export const UseCrusher = ({ children, color }) => (
-    <div
-        className="useCrusher_in_project">
-
-
+    <div className="useCrusher_in_project">
         <CommandInput>
             <div className="flex justify-between" id="command-heading">
                 <div>use crusher in a project</div>
-                <div className="demo-video">play demo video</div>
+                <div className="demo-video">play demo</div>
             </div>
 
-            <div id="command" className="flex items-center justify-between"><div>
-            > npx <span className="crusherDevLabel">
-                    crusher.dev</span></div>
-
-                <CopyIcon height={20} width={20} onClick={() => {
-                    copy("npx crusher.dev");
-                    alert("copied to clipboard")
-                }} /> </div>
+            <div id="command" className="flex items-center justify-between">
+                <div>
+          > npx <span className="crusherDevLabel">crusher.dev</span>
+                </div>
+                <CopyIcon
+                    height={20}
+                    width={20}
+                    onClick={() => {
+                        copy("npx crusher.dev");
+                        alert("copied to clipboard");
+                    }}
+                />{" "}
+            </div>
 
             <div id="download">or download binary </div>
         </CommandInput>
 
-
         <WorkflowList>
             <div className="flex items-center justify-between heading-section">
                 <div className="heading">
-                    & then integrate with workflow
+                    & integrate in workflow
                     <span className="optional">(optional)</span>
                 </div>
                 <div className="duration">3 mins</div>
@@ -38,156 +38,173 @@ export const UseCrusher = ({ children, color }) => (
         </WorkflowList>
 
         <ItemListBox>
-            <Item><ChekSVG className="check" />create few test <span className="docs">docs</span></Item>
-            <Item><ChekSVG className="check" />run crusher test with each commit <span className="docs">docs</span></Item>
-            <Item><ChekSVG className="check" />monitor production <span className="docs">docs</span></Item>
-            <Item><ChekSVG className="check" />get alerts on slack/discord <span className="docs">docs</span></Item>
+            <Item>
+                <ChekSVG className="check" />
+                create some test <span className="docs">docs</span>
+            </Item>
+            <Item>
+                <ChekSVG className="check" />
+                run crusher test with each commit <span className="docs">docs</span>
+            </Item>
+            <Item>
+                <ChekSVG className="check" />
+                monitor production <span className="docs">docs</span>
+            </Item>
+            <Item>
+                <ChekSVG className="check" />
+                get alerts on slack/discord <span className="docs">docs</span>
+            </Item>
         </ItemListBox>
     </div>
 );
 
 const Item = styled.div`
-                color: #ABABAB;
-                display: flex;
-                align-items: center;
-                font-size: 14px;
-                :hover{
-                    cursor: pointer;
-                    color: #ae46ff;
-                    .docs{
-                        display: block;
-                        color: #ae46ff;
-                    }
-                }
-                .check{
-                    margin-right: 12px;
-                }
+  color: #ababab;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  :hover {
+    cursor: pointer;
+    color: #ae46ff;
+    .docs {
+      display: block;
+      color: #ae46ff;
+    }
+  }
+  .check {
+    margin-right: 12px;
+  }
 
-                .docs{
-                    display: none;
-                    margin-left:08px;
-                    font-size: 12px;
-                }
-`
-
+  .docs {
+    display: none;
+    margin-left: 08px;
+    font-size: 12px;
+  }
+`;
 
 const ItemListBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 14px;
 
-display: flex;
-flex-direction: column;
-gap: 16px;
-margin-top: 14px;
+  margin-left: -24px;
+  width: 618px;
+  max-width: 100%;
+  padding: 24px;
 
-margin-left: -24px;
-width: 618px;
-max-width: 100%;
-padding:24px;
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid #1e1f1f;
+  border-radius: 20px;
+  margin-bottom: 40px;
 
-background: rgba(0, 0, 0, 0.15);
-border: 1px solid #1E1F1F;
-border-radius: 20px;
-margin-bottom: 40px;
-
-`
+  @media (max-width: 600px) {
+    margin-left: 0px !important;
+  }
+`;
 
 const WorkflowList = styled.div`
-margin-top: 56px;
+  margin-top: 56px;
 
-
-.heading-section{
+  .heading-section {
     width: 588px;
     max-width: 100%;
-}
-.heading{
+  }
+  .heading {
     font-size: 16px;
     font-weight: 500;
 
-    color: #7A7A7A;
-    .optional{
-        color: #363636;
-        margin-left: 8px;
-        font-size: 13px;
+    color: #7a7a7a;
+    .optional {
+      color: #363636;
+      margin-left: 8px;
+      font-size: 13px;
     }
-}
+  }
 
-.duration{
+  .duration {
     font-size: 12px;
     font-weight: 500;
 
     color: #363636;
-}
-    
+  }
 
-`
+  @media (max-width: 600px) {
+    .optional {
+      display: none;
+    }
+  }
+`;
 
 const CommandInput = styled.div`
+  margin-top: 44px;
+  #command-heading {
+    width: 588px;
+    max-width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 32px;
+  }
 
-    margin-top: 44px;
-    #command-heading{
-        width: 588px;
-        max-width: 100%;
-        font-size: 15px;
-        font-weight: 500;
-        margin-top: 32px;
-   
-    }
+  #download {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
 
-    #download{
-
-        font-family: 'Gilroy';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.03em;
-
-color: #626262;
-    }
-  #command{
+    color: #626262;
+  }
+  #command {
     margin-left: -24px;
     width: 618px;
     max-width: 100%;
     padding: 12px 16px 12px 24px;
     gap: 8px;
-    
-    
-    color: #8B8B8B;
+
+    color: #8b8b8b;
 
     height: 46px;
     font-size: 16px;
 
-    #copy-icon:hover{
-        cursor: pointer;
-        path{
-            fill: white;
-        }
+    #copy-icon:hover {
+      cursor: pointer;
+      path {
+        fill: white;
+      }
     }
 
-    
-    background: #0C0C0C;
-    border: 1px solid #1E1F1F;
+    background: #0c0c0c;
+    border: 1px solid #1e1f1f;
     border-radius: 12px;
     font-weight: 500;
     margin-top: 16px;
     margin-bottom: 06px;
 
-    .crusherDevLabel{
-        color: rgba(184, 255, 95, 1);
+    .crusherDevLabel {
+      color: rgba(184, 255, 95, 1);
     }
   }
 
-  .demo-video{
+  .demo-video {
     letter-spacing: 0.04em;
     font-size: 13px;
     font-weight: 400;
     cursor: pointer;
-    :hover{
-        color: #ae46ff;
+    :hover {
+      color: #ae46ff;
     }
 
-color: #7A7A7A;
+    color: #7a7a7a;
   }
-`
+
+  @media (max-width: 600px) {
+    #command {
+      margin-left: 0px;
+    }
+  }
+`;
 
 function CopyIcon(props) {
     return (
@@ -217,11 +234,11 @@ function CopyIcon(props) {
 }
 
 function copy(text) {
-    var input = document.createElement('input');
-    input.setAttribute('value', text);
+    var input = document.createElement("input");
+    input.setAttribute("value", text);
     document.body.appendChild(input);
     input.select();
-    var result = document.execCommand('copy');
+    var result = document.execCommand("copy");
     document.body.removeChild(input);
     return result;
 }
