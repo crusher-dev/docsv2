@@ -26,6 +26,5 @@ import {UseCrusher } from './__components/list.tsx'
 </head>
 
 Crusher is all in one testing platform for developers. You can create test, integrate in project with few simple steps.
-### use crusher
 
 <UseCrusher/>

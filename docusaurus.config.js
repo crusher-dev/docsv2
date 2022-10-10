@@ -80,6 +80,7 @@ module.exports = {
     },
   },
   plugins: [
+    'docusaurus-tailwindcss',
     'docusaurus-plugin-sass',
     [
       'docusaurus-plugin-module-alias',
