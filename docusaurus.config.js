@@ -3,7 +3,7 @@ const path = require('path');
 const BASE_URL = '';
 
 module.exports = {
-  title: 'Crusher Docs',
+  title: 'Crusher docs',
   tagline:
     'Crusher is low-code testing platform, build test remarkably fast. Ship high quality product, faster than ever before.',
   url: 'https:/crusher.dev',
