@@ -38,6 +38,13 @@ html[data-theme='dark'] {
   --navbar-dropdown-icon: var(--ifm-menu-link-sublist-icon);
 }
 
+.navbar {
+  border-left: 1px solid #1c1c1c;
+  backdrop-filter: blur(3px);
+  background: rgb(11 11 11 / 41%);
+}
+
+
 //overrides
 #__docusaurus {
   >.navbar {

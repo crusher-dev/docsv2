@@ -5,28 +5,28 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, {ReactNode, useState, useCallback} from 'react';
-import {MDXProvider} from '@mdx-js/react';
+import React, { ReactNode, useState, useCallback } from 'react';
+import { MDXProvider } from '@mdx-js/react';
 
 import renderRoutes from '@docusaurus/renderRoutes';
-import type {PropVersionMetadata} from '@docusaurus/plugin-content-docs-types';
+import type { PropVersionMetadata } from '@docusaurus/plugin-content-docs-types';
 import Layout from '@theme/Layout';
 import DocSidebar from '@theme/DocSidebar';
 import MDXComponents from '@theme/MDXComponents';
 import NotFound from '@theme/NotFound';
-import type {DocumentRoute} from '@theme/DocItem';
-import type {Props} from '@theme/DocPage';
+import type { DocumentRoute } from '@theme/DocItem';
+import type { Props } from '@theme/DocPage';
 import IconArrow from '@theme/IconArrow';
 import BackToTopButton from '@theme/BackToTopButton';
-import {matchPath} from '@docusaurus/router';
-import {translate} from '@docusaurus/Translate';
+import { matchPath } from '@docusaurus/router';
+import { translate } from '@docusaurus/Translate';
 import Navbar from '@theme/Navbar';
 
 import clsx from 'clsx';
 import styles from './styles.module.css';
-import {ThemeClassNames, docVersionSearchTag} from '@docusaurus/theme-common';
+import { ThemeClassNames, docVersionSearchTag } from '@docusaurus/theme-common';
 import Head from '@docusaurus/Head';
-import {css} from "@emotion/css";
+import { css } from "@emotion/css";
 
 type DocPageContentProps = {
   readonly currentDocRoute: DocumentRoute;
@@ -67,7 +67,7 @@ function DocPageContent({
   versionMetadata,
   children,
 }: DocPageContentProps): JSX.Element {
-  const {pluginId, version} = versionMetadata;
+  const { pluginId, version } = versionMetadata;
 
   const sidebarName = currentDocRoute.sidebar;
   const sidebar = sidebarName
@@ -167,7 +167,7 @@ function DocPageContent({
                 hiddenSidebarContainer || !sidebar,
             })}>
 
-           
+
             <div
               className={clsx(
                 'container padding-top--md padding-bottom--lg',
@@ -182,8 +182,8 @@ function DocPageContent({
 
           </main>
 
-          <FooterDoc/>
-          
+          <FooterDoc />
+
         </div>
       </div>
     </Layout>
@@ -247,6 +247,7 @@ const style = css`
   background: #0a0a0b;
   width: 100%;
   padding: 32px 0;
+  border-left: 1px solid #1c1c1c;
   overflow: hidden;
 `
 
@@ -436,72 +437,72 @@ function FooterDoc() {
           Was this doc helpful?
         </div>
         <div className={feedback}>
-          <div className='button'><LikeSVG style={{marginRight: 12}}/>yes</div>
-          <div className='button'><DisLikeSVG style={{marginRight: 12}}/>could be better</div>
+          <div className='button'><LikeSVG style={{ marginRight: 12 }} />yes</div>
+          <div className='button'><DisLikeSVG style={{ marginRight: 12 }} />could be better</div>
         </div>
       </div>
       <div className={sidebarStyle}>
-        <div style={{ marginRight: 12, fontSize: 12}}>
+        <div style={{ marginRight: 12, fontSize: 12 }}>
           by
         </div>
-   
-      <div className='userImageBlock'>
-        <img src="https://avatars.githubusercontent.com/u/6849438?v=4" className='userImage'/>
-      </div>
+
+        <div className='userImageBlock'>
+          <img src="https://avatars.githubusercontent.com/u/6849438?v=4" className='userImage' />
+        </div>
 
       </div>
     </div>
 
     <div className={`${bottomContainer} row`}>
-    
-    <div
+
+      <div
         className={footerBottomStyle}>
 
-          <div style={{display: 'flex'}}>
-            <div className='first-block'>
-              <div className='menu-heading'>Reference</div>
-              {/* <div className='menu-item'>
+        <div style={{ display: 'flex' }}>
+          <div className='first-block'>
+            <div className='menu-heading'>Reference</div>
+            {/* <div className='menu-item'>
                  <EditSVG style={{marginRight: 12}}/> Edit this page
               </div> */}
-              <div className='menu-item'>
-                 <a  style={linkStyle} href="https://github.com/crusherdev/crusher/issues/new/choose">
-                 <QuestionSVG style={{marginRight: 12}}/> Raise an issue
-                 </a>
-              </div>
-            </div>
-
-            <div className='second-block'>
-              <div className='menu-heading'>Get involved</div>
-              <div className='menu-item'>
-              <a style={linkStyle} href="https://github.com/crusherdev/crusher/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.yml">
-                 <EditSVG style={{marginRight: 12}}/> Request a feature
-                 </a>
-              </div>
-              <a style={linkStyle} href="mailto:himanshu@crusher.dev?subject=Regarding Crusher" css={linkCss}>
-              <div className='menu-item'>
-                 <QuestionSVG style={{marginRight: 12}}/> Get in touch
-              </div>
+            <div className='menu-item'>
+              <a style={linkStyle} href="https://github.com/crusherdev/crusher/issues/new/choose">
+                <QuestionSVG style={{ marginRight: 12 }} /> Raise an issue
               </a>
             </div>
-            
           </div>
 
-     </div>
+          <div className='second-block'>
+            <div className='menu-heading'>Get involved</div>
+            <div className='menu-item'>
+              <a style={linkStyle} href="https://github.com/crusherdev/crusher/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.yml">
+                <EditSVG style={{ marginRight: 12 }} /> Request a feature
+              </a>
+            </div>
+            <a style={linkStyle} href="mailto:himanshu@crusher.dev?subject=Regarding Crusher" css={linkCss}>
+              <div className='menu-item'>
+                <QuestionSVG style={{ marginRight: 12 }} /> Get in touch
+              </div>
+            </a>
+          </div>
 
-     <div className={footerBottomSidebar}>
+        </div>
 
-      <div className='first-block'>
-              <div className='menu-heading'>Other</div>
-              {/* <div className='menu-item'>
+      </div>
+
+      <div className={footerBottomSidebar}>
+
+        <div className='first-block'>
+          <div className='menu-heading'>Other</div>
+          {/* <div className='menu-item'>
                  Join discord
               </div> */}
-              <div className='menu-item'>
-                <a href="https://github.com/crusherdev/crusher" style={linkStyle}>
-                  Follow on Github
-                 </a>
-              </div>
-            </div>
-       </div>
+          <div className='menu-item'>
+            <a href="https://github.com/crusherdev/crusher" style={linkStyle}>
+              Follow on Github
+            </a>
+          </div>
+        </div>
+      </div>
 
     </div>
 
@@ -562,7 +563,7 @@ function EditSVG(props) {
 
 function DocPage(props: Props): JSX.Element {
   const {
-    route: {routes: docRoutes},
+    route: { routes: docRoutes },
     versionMetadata,
     location,
   } = props;
@@ -581,7 +582,7 @@ function DocPage(props: Props): JSX.Element {
       <DocPageContent
         currentDocRoute={currentDocRoute}
         versionMetadata={versionMetadata}>
-        {renderRoutes(docRoutes, {versionMetadata})}
+        {renderRoutes(docRoutes, { versionMetadata })}
       </DocPageContent>
     </>
   );

@@ -21,6 +21,7 @@
 .docPage,
 .docMainContainer {
   display: flex;
+  border-left: 1px solid #1c1c1c;
   width: 100%;
 }
 
@@ -72,6 +73,7 @@
   .expandSidebarButtonIcon {
     transform: rotate(0);
   }
+
   html[dir='rtl'] .expandSidebarButtonIcon {
     transform: rotate(180deg);
   }
@@ -82,8 +84,6 @@
   }
 
   .docItemWrapperEnhanced {
-    max-width: calc(
-      var(--ifm-container-width) + var(--doc-sidebar-width)
-    ) !important;
+    max-width: calc(var(--ifm-container-width) + var(--doc-sidebar-width)) !important;
   }
 }
