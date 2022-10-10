@@ -4,13 +4,17 @@ import React from 'react';
 
 export default function TOC({ toc, editUrl, ...props }) {
   const isEmpty = toc.length <= 0;
+  // console.log(toc, props)
 
-  if (isEmpty) return null;
+  // if (isEmpty) return null;
+
+  const basic = [{ value: 'Overview', id: 'use-crusher', children: Array(0), level: 3 }]
+
 
   return (
     <div className="toc-wrapper">
       <h2>On this page</h2>
-      <OriginalTOC toc={toc} {...props} />
+      <OriginalTOC toc={isEmpty ? basic : toc} {...props} />
       <EditThisPage editUrl={editUrl} />
     </div>
   );

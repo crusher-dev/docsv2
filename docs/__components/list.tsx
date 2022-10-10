@@ -40,6 +40,7 @@ const CommandInput = styled.div`
         font-size: 16px;
         font-weight: 500;
         margin-top: 20px;
+   
     }
 
     #download{
@@ -59,6 +60,7 @@ color: #626262;
     max-width: 100%;
     padding: 12px 16px 12px 24px;
     gap: 8px;
+    
     
     color: #8B8B8B;
 
