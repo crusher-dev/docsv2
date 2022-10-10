@@ -61,7 +61,9 @@
 }
 
 body {
-  font-family: 'Gilroy', -apple-system, /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', Roboto,
+  font-family: 'Gilroy', -apple-system,
+    /* Firefox supports this but not yet `system-ui` */
+    'Segoe UI', Roboto,
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji' !important;
 }
 
@@ -71,7 +73,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Ubuntu', -apple-system, /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', Roboto,
+  font-family: 'Ubuntu', -apple-system,
+    /* Firefox supports this but not yet `system-ui` */
+    'Segoe UI', Roboto,
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji' !important;
 }
 
@@ -222,7 +226,7 @@ figure {
   margin: 0;
 }
 
-figure > * {
+figure>* {
   display: block;
   margin: 0 auto;
 }
@@ -305,7 +309,13 @@ iframe {
   max-width: 3.4rem !important;
   padding-right: 0 !important;
   padding-left: 24px;
+
+  @media only screen and (max-width: 600px) {
+
+    padding-left: 10px;
+  }
 }
+
 
 #__docusaurus [class^='searchBox_'] .DocSearch-Button-Placeholder {
   display: none;
@@ -378,7 +388,7 @@ iframe {
   --admonition-bar-tip-c-bg: #369150 !important;
 }
 
-#__docusaurus [class^='docSidebarContainer'] > a {
+#__docusaurus [class^='docSidebarContainer']>a {
   border-bottom: 1px solid #131313;
   height: calc(var(--ifm-navbar-height) + 1px);
   background: #0b0b0b;
@@ -443,7 +453,7 @@ iframe {
   padding-left: 37px;
 }
 
-#__docusaurus .theme-doc-sidebar-item-category-level-1 > .menu__link {
+#__docusaurus .theme-doc-sidebar-item-category-level-1>.menu__link {
   font-size: 0.88rem;
 }
 
@@ -455,8 +465,8 @@ iframe {
   line-height: 200% !important;
 }
 
-.markdown > header + p + p,
-.markdown > header + p {
+.markdown>header+p+p,
+.markdown>header+p {
   font-size: 14.5px;
   letter-spacing: 0.5px;
   line-height: 200%;
@@ -484,7 +494,7 @@ iframe {
   background: #111519;
 }
 
-.admonition-content > p {
+.admonition-content>p {
   line-height: 200% !important;
 }
 
@@ -560,7 +570,7 @@ pre[class*='language-'] {
   width: 0px !important;
 }
 
-.admonition-content > p {
+.admonition-content>p {
   font-size: 0.9rem;
   color: #d9d8d8;
 }
@@ -605,7 +615,7 @@ pre[class*='language-'] {
   color: #cfcfcf;
 }
 
-:not(pre) > code {
+:not(pre)>code {
   background: none !important;
 }
 

@@ -28,7 +28,7 @@ html[data-theme='dark'] {
 //overrides
 #__docusaurus {
   [class^='docSidebarContainer'] {
-    background: var(--token-primary-bg-c);
+    background: red;
 
     position: sticky;
     top: 0;
@@ -39,7 +39,7 @@ html[data-theme='dark'] {
 
     border-inline-end: 1px solid var(--sidebar-border-c);
 
-    > a {
+    >a {
       display: flex;
       align-items: center;
       height: var(--ifm-navbar-height);
@@ -59,7 +59,7 @@ html[data-theme='dark'] {
     padding-inline-end: var(--sidebar-spacing-horizontal);
     padding-block-start: 1rem;
 
-    > .menu {
+    >.menu {
       overflow-x: initial;
       padding-block-end: 2rem;
       padding: 0;
@@ -95,6 +95,7 @@ html[data-theme='dark'] {
       &:not(:first-child) {
         margin-block-start: 0;
       }
+
       .menu__list {
         .menu__link {
           padding-inline-start: calc(var(--dropdown-icon-width) + var(--dropdown-icon-gap));
@@ -120,6 +121,7 @@ html[data-theme='dark'] {
     }
 
     &:not(.menu__link--active):not(.menu__link--sublist) {
+
       &:hover,
       &:active,
       &:focus {
@@ -154,7 +156,7 @@ html[data-theme='dark'] {
   }
 
   .theme-doc-sidebar-item-category-level-1 {
-    > .menu__link {
+    >.menu__link {
       color: var(--sidebar-category-c);
 
       font-weight: 600;
