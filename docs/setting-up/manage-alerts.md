@@ -40,7 +40,7 @@ If your team is using slack, setting up slack alerts can be the best method for 
 
 1. &nbsp; Get notified as soon as anything goes wrong.
 2. &nbsp; Complete visibility across the whole team
-   :::
+:::
 
 ### I don't see my slack channel in the dropdown?
 

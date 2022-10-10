@@ -17,7 +17,7 @@ In `<project_dir>/.crusher/config.js` add following code, and restart crusher
 "proxy": [{
     "name": "frontend",
     "url": "http://localhost:3000/", // <-- Url of your local service
-    "intercept": "localhost:3000" // <-- Url our test-runner should re-route to your local-service
+    "intercept": "localhost:3000" // <-- Url our 
   }]
 ```
 
@@ -27,7 +27,7 @@ Example: Check [sample config file](https://github.com/crusherdev/docsv2/blob/ft
 
 1. A local tunnel will be created using cloudflare argo.
 2. Test runner will use that tunnel to run test, and intercept requests made to localhost:3000 and re-route to the tunnel.
-   :::
+:::
 
 ## FAQ
 
