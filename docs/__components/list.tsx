@@ -12,14 +12,14 @@ export const UseCrusher = ({ children, color }) => (
 
             <div id="command" className="flex items-center justify-between">
                 <div>
-          > npx <span className="crusherDevLabel">crusher.dev</span>
+                    <span className="arrow">  ></span> npx <span className="crusherDevLabel">crusher.dev</span>
                 </div>
                 <CopyIcon
                     height={20}
                     width={20}
                     onClick={() => {
                         copy("npx crusher.dev");
-                        alert("copied to clipboard");
+                        alert("copied command to clipboard");
                     }}
                 />{" "}
             </div>
@@ -33,7 +33,7 @@ export const UseCrusher = ({ children, color }) => (
                     & integrate in workflow
                     <span className="optional">(optional)</span>
                 </div>
-                <div className="duration">3 mins</div>
+                <div className="duration">7 mins</div>
             </div>
         </WorkflowList>
 
@@ -114,7 +114,7 @@ const WorkflowList = styled.div`
     font-size: 16px;
     font-weight: 500;
 
-    color: #7a7a7a;
+    color: #d7dde1;
     .optional {
       color: #363636;
       margin-left: 8px;
@@ -163,10 +163,16 @@ const CommandInput = styled.div`
     padding: 12px 16px 12px 24px;
     gap: 8px;
 
-    color: #8b8b8b;
+    .arrow{
+        font-size: 12px;
+        color: grey;
+    }
+
+    color: #dfdfdf;
 
     height: 46px;
     font-size: 16px;
+    letter-spacing: .4px;
 
     #copy-icon:hover {
       cursor: pointer;

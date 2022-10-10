@@ -20,6 +20,8 @@ import { UseCrusher } from './__components/list.tsx';
   <meta property="og:url" content="https://docs.crusher.dev/" />
 </head>
 
-Crusher is all in one testing platform for developers. You can create test, integrate in project with few simple steps.
+Crusher is all in one testing platform for developers. It makes testing powerful and streless for you.
+
+Create test using low-code or code with playwright.
 
 <UseCrusher />
