@@ -10,7 +10,7 @@ import DocsCard from '@components/global/DocsCard';
 import DocsCards from '@components/global/DocsCards';
 import CrusherFeatures from '@components/page/index';
 import { UseCrusher } from './__components/list.tsx';
-
+import {AccordionDemo} from '@components/global/FAQ/faq.tsx';
 <head>
   <title>Crusher Docs</title>
   <meta name="description" content="Crusher.dev" />
@@ -25,3 +25,7 @@ Crusher is all in one testing platform for developers. It makes testing powerful
 Create test using low-code or code with playwright.
 
 <UseCrusher />
+
+<AccordionDemo question={"Is Crusher open source?"} open={false}>
+Create test using low-code or code with playwright.
+</AccordionDemo>

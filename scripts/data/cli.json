@@ -7,12 +7,16 @@
   "commands": [
     {
       "name": "init",
-      "namespace": ["crusher-cli"],
+      "namespace": [
+        "crusher-cli"
+      ],
       "summary": "Initializes crusher in your project",
       "description": "`crusher-cli test:init` will setup crusher configs in your project.",
       "footnotes": [],
       "groups": [],
-      "exampleCommands": ["npx crusher-cli init"],
+      "exampleCommands": [
+        "npx crusher-cli init"
+      ],
       "aliases": [],
       "inputs": [],
       "options": [
@@ -20,7 +24,10 @@
           "name": "token",
           "type": "string",
           "summary": "Specify custom user token",
-          "groups": ["advanced", "flags"],
+          "groups": [
+            "advanced",
+            "flags"
+          ],
           "aliases": [],
           "spec": {
             "value": "token"
@@ -30,7 +37,10 @@
           "name": "project-id",
           "type": "number",
           "summary": "Specify custom project id where the test will be created",
-          "groups": ["advanced", "flags"],
+          "groups": [
+            "advanced",
+            "flags"
+          ],
           "aliases": [],
           "spec": {
             "value": "project-id"
@@ -40,12 +50,17 @@
     },
     {
       "name": "test:create",
-      "namespace": ["crusher-cli"],
+      "namespace": [
+        "crusher-cli"
+      ],
       "summary": "Record and create tests effortlessly",
       "description": "`crusher-cli test:create` will open up a recorder and allow you to record your test.",
       "footnotes": [],
       "groups": [],
-      "exampleCommands": ["npx crusher-cli test:create", "npx crusher-cli test:create --name Hello world"],
+      "exampleCommands": [
+        "npx crusher-cli test:create",
+        "npx crusher-cli test:create --name Hello world"
+      ],
       "aliases": [],
       "inputs": [],
       "options": [
@@ -53,7 +68,9 @@
           "name": "name",
           "type": "string",
           "summary": "The name of the test",
-          "groups": ["flags"],
+          "groups": [
+            "flags"
+          ],
           "aliases": [],
           "spec": {
             "value": "Current Date"
@@ -63,7 +80,10 @@
           "name": "token",
           "type": "string",
           "summary": "Specify custom user token",
-          "groups": ["advanced", "flags"],
+          "groups": [
+            "advanced",
+            "flags"
+          ],
           "aliases": [],
           "spec": {
             "value": "token"
@@ -73,7 +93,10 @@
           "name": "project-id",
           "type": "number",
           "summary": "Specify custom project id where the test will be created",
-          "groups": ["advanced", "flags"],
+          "groups": [
+            "advanced",
+            "flags"
+          ],
           "aliases": [],
           "spec": {
             "value": "project-id"
@@ -83,7 +106,9 @@
     },
     {
       "name": "test:run",
-      "namespace": ["crusher-cli"],
+      "namespace": [
+        "crusher-cli"
+      ],
       "summary": "Run tests in your project",
       "description": "`crusher-cli test:run` will run the saved tests in your project and display the results.",
       "footnotes": [],
@@ -100,7 +125,10 @@
           "name": "project-id",
           "type": "number",
           "summary": "Specify custom project id where the test will be created",
-          "groups": ["advanced", "flags"],
+          "groups": [
+            "advanced",
+            "flags"
+          ],
           "aliases": [],
           "spec": {
             "value": "project-id"
@@ -110,7 +138,9 @@
           "name": "browsers",
           "type": "string",
           "summary": "List of browsers to run test on (seperated by comma)",
-          "groups": ["flags"],
+          "groups": [
+            "flags"
+          ],
           "aliases": [],
           "spec": {
             "value": "chromium,firefox,safari"
@@ -120,7 +150,10 @@
           "name": "token",
           "type": "string",
           "summary": "Specify custom user token",
-          "groups": ["advanced", "flags"],
+          "groups": [
+            "advanced",
+            "flags"
+          ],
           "aliases": [],
           "spec": {
             "value": "token"
@@ -130,60 +163,80 @@
     },
     {
       "name": "token",
-      "namespace": ["crusher-cli"],
+      "namespace": [
+        "crusher-cli"
+      ],
       "summary": "Get crusher access token",
       "description": "`crusher-cli token` will return crusher access token",
       "footnotes": [],
       "groups": [],
-      "exampleCommands": ["npx crusher-cli token"],
+      "exampleCommands": [
+        "npx crusher-cli token"
+      ],
       "aliases": [],
       "inputs": [],
       "options": []
     },
     {
       "name": "login",
-      "namespace": ["crusher-cli"],
+      "namespace": [
+        "crusher-cli"
+      ],
       "summary": "Login",
       "description": "`crusher-cli login` will log you in to your crusher account.",
       "footnotes": [],
       "groups": [],
-      "exampleCommands": ["npx crusher-cli login"],
+      "exampleCommands": [
+        "npx crusher-cli login"
+      ],
       "aliases": [],
       "inputs": [],
       "options": []
     },
     {
       "name": "logout",
-      "namespace": ["crusher-cli"],
+      "namespace": [
+        "crusher-cli"
+      ],
       "summary": "Logout the current authenticated user",
       "description": "`crusher-cli logout` will log you out of crusher.",
       "footnotes": [],
       "groups": [],
-      "exampleCommands": ["npx crusher-cli logout"],
+      "exampleCommands": [
+        "npx crusher-cli logout"
+      ],
       "aliases": [],
       "inputs": [],
       "options": []
     },
     {
       "name": "whoami",
-      "namespace": ["crusher-cli"],
+      "namespace": [
+        "crusher-cli"
+      ],
       "summary": "Returns info about the authenticated user",
       "description": "`crusher-cli whoami` will return details of the current authenticated user.",
       "footnotes": [],
       "groups": [],
-      "exampleCommands": ["npx crusher-cli whoami"],
+      "exampleCommands": [
+        "npx crusher-cli whoami"
+      ],
       "aliases": [],
       "inputs": [],
       "options": []
     },
     {
       "name": "info",
-      "namespace": ["crusher-cli"],
+      "namespace": [
+        "crusher-cli"
+      ],
       "summary": "Returns info about the current initialized project",
       "description": "`crusher-cli info` will return details of the current project initialized.",
       "footnotes": [],
       "groups": [],
-      "exampleCommands": ["npx crusher-cli info"],
+      "exampleCommands": [
+        "npx crusher-cli info"
+      ],
       "aliases": [],
       "inputs": [],
       "options": []
