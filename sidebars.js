@@ -42,7 +42,7 @@ module.exports = {
       type: 'category',
       label: '⚽ Integration',
       collapsed: true,
-      items: ['integrations/with-vercel', 'integrations/with-ci-cd', 'integrations/with-jenkins'],
+      items: ['integrations/with-vercel', 'integrations/with-ci-cd'],
     },
     {
       type: 'category',
