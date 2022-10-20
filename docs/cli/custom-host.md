@@ -7,7 +7,7 @@ sidebar_label: Run tests with a custom host
 
 1. How to run tests with a different host with CLI?
 2. Setting up monitoring with different hosts/environments
-   :::
+:::
    Testing workflow is not always limited to running tests for one domain/host. Depending on your use case, you may want to run your tests for,
 
 - Staging/testing environment

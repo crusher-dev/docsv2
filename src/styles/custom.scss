@@ -532,6 +532,11 @@ iframe {
   color: #e2e2e2;
 }
 
+.markdown strong,
+.markdown b {
+  color: var(--markdown-text-intro-c);
+}
+
 .markdown p,
 .markdown li,
 .markdown .tabs-container {

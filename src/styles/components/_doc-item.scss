@@ -12,6 +12,7 @@
 
 //overrides
 #__docusaurus {
+
   //#region ------------ DocItem -------------
   [class*='docItemCol_'] {
     max-width: initial;
@@ -29,6 +30,7 @@
   }
 
   [class*='docMainContainer_'] {
+
     .doc-demo-wrapper {
       @media (max-width: 1364px) {
         display: none;
@@ -52,9 +54,9 @@
       }
     }
 
-    > .container {
-      > .row {
-        > .col {
+    >.container {
+      >.row {
+        >.col {
           display: flex;
           justify-content: center;
 

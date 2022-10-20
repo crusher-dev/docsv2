@@ -3,7 +3,7 @@ title: What is Crusher?
 sidebar_label: What is Crusher?
 ---
 
-import AppWizard from '@components/page/intro/AppWizard';
+import Comparison from '@components/page/intro/Comparison';
 
 <head>
   <title>What is Crusher?</title>
@@ -13,62 +13,27 @@ import AppWizard from '@components/page/intro/AppWizard';
   />
 </head>
 
-Crusher is low-code framework to create fast and reliable e2e tests for web apps and websites.
-It's easy to integrate in your project and powerful to handle both simple and complex use cases.
+Crusher is all-inon-e framework to create tests with low-code. Fast + staility is our focus.
 
-Just create reliable e2e tests in mins and run it when you push new changes.
+Our journey with testing was daunting, so we built crusher with best in class tools for ourselves. It's an all-in-one framework for testing.
 
-## Who uses Crusher?
+<Comparison/>
 
-Crusher is used by Engineers, QAs, product manager, founder. It's a robust tool for everyone involved in product development.
+<br/>
 
-Team use crusher for variety of use cases, like:
+Should you use Crusher? Probably yes, if you're anyone who's building. 
 
-1. **Developers looking to ship software fast**, without waiting for QA approval or fixing bugs again and again.
+If you have your own framework setup, then evaluate crusher with few test before switching.
 
-2. **QA Manager doing manual QA** looking to automate their workflow.
 
-3. **VP/Manager** who want their team to focus on shipping software and not on fixing bugs.
+**Core features**
 
-4. **Founder or Product owner** to make sure their users get best version of the apps.
+1. **Low-code /code support for test creation like:** Login flow, etc.
 
-Ultimately, using Crusher will help you ship fast, and without bugs. Everyone gets to be happy in the end.
+2. **Create UI and text base chceks:**
 
-:::info Info
-Crusher is designed mainly for Devs/QA, and to offer a better testing workflow. At certain times, you might need to dev support;
-We're happy to help in those cases.
-:::
-
-## What can you do with Crusher?
-
-There are variety of stuff crusher can do
-
-1. **Write functional test:** Create e2e functional test in few mins
-
-2. **Create UI and text assertion:** Test UI and add text assertion.
-
-3. **Multibrowser support.** Run test in multiple browsers.
+3. **3+browser support.** 
 
 4. **CI integration:** Run test from local machine or CI
 
-5. **Monitor production** for stability.
-
-6. **Chain tests together.** Run test in sequence
-
-7. **Extensbility**: Use custom code to test complex use cases
-
-8. **Concurrency:** Run all the test in parallel and decrease your test build time significantly.
-
-9. T**est on multiple configurations:** Create test in one place and run it on multiple configurations.
-
-## What sets us apart?
-
-There are four features that set us apart
-
-1. **Low-code approach 🎯** to create test. Create both simple and powerful tests.
-
-2. **Blazing fast test creation**. You can literally create test in <2 mins.
-
-3. **E2E integrated tool**. Plug and play solution for all your testing need.
-
-4. **Developer first** and **[Open source](https://github.com/crusherdev/crusher) approach**.
+5. **Test on multiple configurations:** Create test in one place and run it on multiple configurations.
