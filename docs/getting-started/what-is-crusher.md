@@ -47,7 +47,7 @@ If you have your own framework setup, then evaluate crusher with few test before
 
 3. **E2E integrated tool**. Plug and play solution for all your testing need.
 
-4. **Developer first** and **[Open source](https://github.com/crusherdev/crusher) approach**.
+4. **Developer first** and [Open source](https://github.com/crusherdev/crusher) approach.
 
 <!-- 
 ## Who uses Crusher?
