@@ -9,20 +9,15 @@ const SelectElementContainer = () => {
     return (
         <div style={{padding: "6px 0px"}}>
             <div>
-                <CodeBlock className={"language-javascript"}>{`// Waits automatically till the element is visible, with default timeout (30s)
-let element = await crusherSdk.page.quer\ySelector("selector");
-
+                <CodeBlock className={"language-javascript"}>{`const { page } = crusherSdk;
+// Waits till the element is visible, with default timeout (30s)
+let element = await page.waitForSelector("#button");
  
 `}
 
-{`// Waits automatically till the element is visible, with 5s timeout
-let element = await crusherSdk.page.querySelector("selector", { timeout: 5000 });
- 
+{`// Waits till the element is visible, with 5s timeout
+let element = await page.waitForSelector("#button", { timeout: 5000 });
 `}
-
-{`// Doesn't wait, returns null if no element found
-let element = await crusherSdk.page.querySelector("selector", { waitUntil: null })`}
-
                 </CodeBlock>
             </div>
             <div className={timeoutCss}>Default timeout (30s)</div>
@@ -30,19 +25,113 @@ let element = await crusherSdk.page.querySelector("selector", { waitUntil: null 
     )
 };
 
+const ClickOnElement = () => {
+    return (
+        <div style={{padding: "6px 0px"}}>
+            <div>
+                <CodeBlock className={"language-javascript"}>{`const { page } = crusherSdk;
+// Select an element and click on it
+const element = await crusherSdk.page.waitForSelector("selector");
+await element.click();
+ 
+`}
 
+{`// Click on an element directly
+await crusherSdk.page.click("selector");
+`}
+
+
+                </CodeBlock>
+            </div>
+            <div className={timeoutCss}>Default timeout (30s)</div>
+        </div>
+    )
+}
+
+const HoverOnElement = () => {
+    return (
+        <div style={{padding: "6px 0px"}}>
+            <div>
+                <CodeBlock className={"language-javascript"}>{`// Select an element and hover on it
+const element = await crusherSdk.page.waitForSelector("selector");
+await element.hover();
+ 
+`}
+
+{`// Hover on an element directly
+await crusherSdk.page.hover("selector");
+`}
+
+
+                </CodeBlock>
+            </div>
+            <div className={timeoutCss}>Default timeout (30s)</div>
+        </div>
+    )
+}
+
+const ScreenshotOfElement = () => {
+    return (
+        <div style={{padding: "6px 0px"}}>
+            <div>
+                <CodeBlock className={"language-javascript"}>{`// Select an element and take screenshot
+const element = await crusherSdk.page.waitForSelector("selector");
+await element.screenshot();
+`}
+
+                </CodeBlock>
+            </div>
+            <div className={timeoutCss}>Default timeout (30s)</div>
+        </div>
+    )
+} 
 const MousePageContainer = () => {
     return (
         <div style={{padding: "6px 0px"}}>
             <div>
                 <CodeBlock className={"language-javascript"}>{`// Using ‘page.mouse’ to trace a 100x100 square.
+const { page } = crusherSdk;
 await page.mouse.move(0, 0);
 await page.mouse.down();
 await page.mouse.move(0, 100);
 await page.mouse.move(100, 100);
 await page.mouse.move(100, 0);
-await page.mouse.move(0, 0);
 await page.mouse.up();`}
+
+                </CodeBlock>
+            </div>
+            <div className={timeoutCss}>Default timeout (30s)</div>
+        </div>
+    )
+};
+const KeyboardPageContainer = () => {
+    return (
+        <div style={{padding: "6px 0px"}}>
+            <div>
+                <CodeBlock className={"language-javascript"}>{`// Typing something and copying all the text to clipboard
+const { page } = crusherSdk;
+ 
+await page.keyboard.type("Hello World");
+await page.keyboard.press('Shift+KeyA');
+await page.keyboard.press('Control+KeyC');
+`}
+
+                </CodeBlock>
+            </div>
+            <div className={timeoutCss}>Default timeout (30s)</div>
+        </div>
+    )
+};
+const AssertionsOnElement = () => {
+    return (
+        <div style={{padding: "6px 0px"}}>
+            <div>
+                <CodeBlock className={"language-javascript"}>{`const { page } = crusherSdk;
+ 
+const pageTitle = await page.title();
+expect(pageTitle.length).toBeGreaterThan(10);
+expect(pageTitle).toBe("Custom code usecases | Crusher docs");
+`}
 
                 </CodeBlock>
             </div>
@@ -57,15 +146,15 @@ const timeoutCss = css`
 `;
 const coreItems = [
     { id: "Selecting", content: (<SelectElementContainer/>) },
-    { id: "Click", content: "Mouse" },
-    { id: "Hover", content: "Mouse" },
-    { id: "Screenshot", content: "Mouse" },
-    { id: "Assertions", content: "Mouse" },
+    { id: "Click", content: (<ClickOnElement/>) },
+    { id: "Hover", content: (<HoverOnElement/>) },
+    { id: "Screenshot", content: (<ScreenshotOfElement/>) },
+    { id: "Assertions", content: (<AssertionsOnElement/>) },
 ];
 
 const pageItems = [
     { id: "Mouse", content: (<MousePageContainer/>) },
-    { id: "Keyboard", content: "Keyboard" },
+    { id: "Keyboard", content: (<KeyboardPageContainer/>) },
 ];
 
 
