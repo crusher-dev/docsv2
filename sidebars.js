@@ -48,7 +48,7 @@ module.exports = {
       type: 'category',
       label: '🏄‍♂️ Advanced',
       collapsed: true,
-      items: ['advanced/custom-code-usecases', 'advanced/making-network-requests', 'advanced/writing-custom-selectors'],
+      items: ['advanced/custom-code-usecases', 'advanced/custom-code-usecases-1', 'advanced/making-network-requests', 'advanced/writing-custom-selectors'],
     },
     {
       type: 'category',

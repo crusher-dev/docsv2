@@ -36,6 +36,7 @@ export default function DocItem(props: Props): JSX.Element {
     //#region ------- CUSTOM CODE --------
     demoUrl,
     demoSourceUrl,
+    shouldHideMeta
     //#endregion
   } = frontMatter;
 
@@ -70,7 +71,7 @@ export default function DocItem(props: Props): JSX.Element {
           })}>
 
           <DocVersionBanner versionMetadata={versionMetadata} />
-          <div className={styles.docItemContainer}>
+          <div style={{ maxWidth: shouldHideMeta ? "94%" : 'undefined' }} className={styles.docItemContainer}>
             <article>
               {versionMetadata.badge && (
                 <span
@@ -94,25 +95,32 @@ export default function DocItem(props: Props): JSX.Element {
                 />
               )}
 
-              <div
-                className={clsx(ThemeClassNames.docs.docMarkdown, 'markdown')}>
-                {/*
-                Title can be declared inside md content or declared through frontmatter and added manually
-                To make both cases consistent, the added title is added under the same div.markdown block
-                See https://github.com/facebook/docusaurus/pull/4882#issuecomment-853021120
-                */}
-                {shouldAddTitle && <MainHeading>{title}</MainHeading>}
+              {shouldHideMeta ? (
+                  <div
+                           className={clsx(ThemeClassNames.docs.docMarkdown, 'markdown')}>
+                                    <DocContent />
+                   </div>
+              ) : (
+                  <div
+                  className={clsx(ThemeClassNames.docs.docMarkdown, 'markdown')}>
+                    {/*
+                    Title can be declared inside md content or declared through frontmatter and added manually
+                    To make both cases consistent, the added title is added under the same div.markdown block
+                    See https://github.com/facebook/docusaurus/pull/4882#issuecomment-853021120
+                    */}
+                    {shouldAddTitle && <MainHeading>{title}</MainHeading>}
 
 
-                <div className={breadCrumbCSS}>
-                  <a href="https://docs.crusher.dev">Home</a>
-                  <span id="separator">></span>
-                  <a href="https://docs.crusher.dev">Docs</a>
+                    <div className={breadCrumbCSS}>
+                      <a href="https://docs.crusher.dev">Home</a>
+                      <span id="separator">></span>
+                      <a href="https://docs.crusher.dev">Docs</a>
+                    </div>
+
+                    <DocContent />
                 </div>
-
-                <DocContent />
-              </div>
-
+              )}
+        
               <DocItemFooter {...props} />
             </article>
 
@@ -149,7 +157,7 @@ export default function DocItem(props: Props): JSX.Element {
           </div>
         )} */}
         <div className="end">
-          {!demoUrl && !hideTableOfContents && DocContent.toc && (
+          {!demoUrl && !shouldHideMeta && !hideTableOfContents && DocContent.toc && (
             <TOC
               toc={DocContent.toc}
               minHeadingLevel={tocMinHeadingLevel}
