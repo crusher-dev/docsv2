@@ -71,7 +71,7 @@ export default function DocItem(props: Props): JSX.Element {
           })}>
 
           <DocVersionBanner versionMetadata={versionMetadata} />
-          <div style={{ maxWidth: shouldHideMeta ? "94%" : 'undefined' }} className={styles.docItemContainer}>
+          <div style={{ maxWidth: shouldHideMeta ? "95%" : 'undefined' }} className={styles.docItemContainer}>
             <article>
               {versionMetadata.badge && (
                 <span

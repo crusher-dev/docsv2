@@ -4,30 +4,31 @@ import React, { useState } from 'react';
 import styles from './index.module.scss';
 import { css } from '@emotion/css'
 
-function TabItem({ key, children }) {
-
-  return (<div>{children}</div>)
-
+function TabItem({ key, children, ...props }) {
+  return (<div {...props}>{children}</div>)
 }
 
-export default function CodeBlock(props) {
+export default function CodeBlock({items, title, callback, ...props}) {
+  if(!items) return null;
+
+  const tabItems = items.map((item, index) => {
+    return (
+      <TabItem onClick={callback.bind(this, item.id)} key={item.id}>{item.content}</TabItem>
+    )
+  });
+
   return (
     <div {...props} >
 
       <div className={contentBox}>
         <div className='content-section'>
           <div className='heading'>
-            Core utilities
+            {title}
           </div>
 
 
           <Tab>
-            <TabItem key="overview">
-              sdfdsfsdfsd
-            </TabItem>
-            <TabItem key="overview2">
-              sdfsdsdf
-            </TabItem>
+            {tabItems}
           </Tab>
 
 
@@ -142,7 +143,7 @@ margin-top: 20px;
 }
 
 .content{
-  padding: 12px 28px;
+  padding: 12px 20px;
 
 
   font-weight: 400;
