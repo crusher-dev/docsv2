@@ -1,6 +1,6 @@
 ---
-title: What is Crusher?
-sidebar_label: What is Crusher?
+title: What is crusher?
+sidebar_label: What is crusher?
 ---
 
 import Comparison from '@components/page/intro/Comparison';
@@ -13,9 +13,16 @@ import Comparison from '@components/page/intro/Comparison';
   />
 </head>
 
+
 Crusher is all-in one testing framework, use low-code to create fast stable test.
 
+<img src="https://i.imgur.com/fkY2m6F.png" />
+<br/>
+
 Our testing journey was daunting, so we built crusher with best in class tools for ourselves. It's an all-in-one framework for testing.
+
+
+
 
 <Comparison/>
 

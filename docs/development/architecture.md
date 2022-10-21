@@ -1,6 +1,6 @@
 ---
 title: 🏭 Architecture
-sidebar_label: 🏭 Architecture
+sidebar_label: Architecture
 ---
 
 Crusher is open source testing framework, we are creating seamless testing workflow.

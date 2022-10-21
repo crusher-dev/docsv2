@@ -1,6 +1,6 @@
 ---
-title: Understanding Crusher
-sidebar_label: How Crusher works?
+title: Architecture
+sidebar_label: Architecture
 ---
 
 import { Blaze, Fast, Terminal } from '@components/page/index';

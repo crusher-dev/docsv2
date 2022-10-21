@@ -6,8 +6,7 @@ sidebar_label: 🐳 Docker deploy
 We want to make it super easy for anyone to install Crusher locally. This is the best option if you're looking to try Crusher locally.
 
 :::danger
-This might not be stable. As this has not been looked on for slightly long time.
-Deployment process for services such as crusher-app, etc has changed.
+This is not be stable. We're pretty swamped, this will be updated soon.
 :::
 
 #### Requirement

@@ -24,7 +24,7 @@ export const UseCrusher = ({ children, color }) => (
         />{" "}
       </div>
 
-      <div id="download">or download binary </div>
+      {/* <div id="download">or download binary </div> */}
     </CommandInput>
 
     <WorkflowList>

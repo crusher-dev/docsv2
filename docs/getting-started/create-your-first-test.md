@@ -12,8 +12,6 @@ import CrusherFeatures from '@components/page/index';
 
 Crusher is e2e testing platform for developers/QA, that allows you to create, manage and run test for your project.
 
-<img src="https://i.imgur.com/fkY2m6F.png" />
-
 ## Using CLI
 
 <div style={{ fontSize: 12, marginBottom: 24 }}>Estimated time: 2 mins | Recommended</div>

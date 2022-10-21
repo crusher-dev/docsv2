@@ -7,25 +7,16 @@ module.exports = {
     },
     {
       type: 'category',
-      label: '🧑‍🚀 Getting Started',
+      label: '🧑‍🚀 Getting started',
       collapsed: false,
       items: [
-        'getting-started/what-is-crusher',
-        'getting-started/how-crusher-works',
         'getting-started/create-your-first-test',
-        'getting-started/using-cli-within-project',
-      ],
-    },
-    {
-      type: 'category',
-      label: '🧱 Deploy crusher',
-      collapsed: true,
-      items: [
-        'development/docker-deploy-locally',
-        'development/setting-up-development-env',
+        'getting-started/what-is-crusher',
         'development/architecture',
+
       ],
     },
+
     {
       type: 'category',
       label: '💡 Guides',
@@ -52,11 +43,22 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Others',
+      label: 'Misc',
       collapsed: true,
       items: ['advanced/faq'],
     },
+    {
+      type: 'category',
+      label: '🧱 Contribute',
+      collapsed: true,
+      items: [
+        'development/docker-deploy-locally',
+        'development/setting-up-development-env',
+        'getting-started/how-crusher-works',
+      ],
+    },
   ],
+
 
   cli: [
     {
