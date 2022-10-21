@@ -172,7 +172,7 @@ const CommandInput = styled.div`
     color: #dfdfdf;
 
     height: 46px;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: .4px;
 
     #copy-icon:hover {
@@ -190,7 +190,7 @@ const CommandInput = styled.div`
     margin-bottom: 06px;
 
     .crusherDevLabel {
-      color: rgba(184, 255, 95, 1);
+      color: #ABFF56;
     }
   }
 

@@ -11,6 +11,7 @@ import DocsCards from '@components/global/DocsCards';
 import CrusherFeatures from '@components/page/index';
 import { UseCrusher } from './__components/list.tsx';
 import {AccordionDemo} from '@components/global/FAQ/faq.tsx';
+import css from '@emotion/react';
 <head>
   <title>Crusher Docs</title>
   <meta name="description" content="Crusher.dev" />
@@ -20,16 +21,11 @@ import {AccordionDemo} from '@components/global/FAQ/faq.tsx';
   <meta property="og:url" content="https://docs.crusher.dev/" />
 </head>
 
-Crusher is all in one testing platform for developers. It makes testing powerful and streless for you.
+Crusher is <span className="highlight_cyan">all in one testing framework</span>. It includes test recorder(local app), test runner and web app for you.
 
-Create test using low-code or code with playwright.
+It's e2e solution for testing web apps, we use playwright as base + lot of stuff around it. You can record test with low-code or write in JS code format<span className="highlight_red">*</span>. 
 
 <UseCrusher />
 
-<!-- <AccordionDemo question={"Is Crusher open source?"} open={false}>
-Crusher is all in one testing platform for developers. It makes testing powerful and streless for you.
-<br/>
-Create test using low-code or code with playwright.
-<br/>
-Create test using low-code or code with playwright.
-</AccordionDemo> -->
+
+<span className="highlight_red">*</span> = Feature coming soon
