@@ -14,47 +14,35 @@ import Comparison from '@components/page/intro/Comparison';
 </head>
 
 
-Crusher is all-in one testing framework, use low-code to create fast stable test.
+Crusher is all-in-one testing framework to create fast and reliable e2e tests for web apps and websites. 
 
 <img src="https://i.imgur.com/fkY2m6F.png" />
 <br/>
 
-Our testing journey was daunting, so we built crusher with best in class tools for ourselves. It's an all-in-one framework for testing.
-
-
-
+Our testing journey was daunting, so we built crusher with best in class tools to improve testing experience. 
 
 <Comparison/>
 
-<br/>
+### Core features
 
-Should you use Crusher? Probably yes, if you're anyone who's building and looking to test. 
-
-If you have your own framework setup, then evaluate crusher with few test before switching.
-
-
-### Core feature
-
-1. **Low-code /code support for test creation like:** Login flow, etc.
-
-2. **Create UI and text base chceks:**
-
-3. **3+browser support** as crusher is built on top of playwright
-
-4. **CI integration:** Run test from local machine or CI
-
-5. **Test on multiple configurations:** Create test in one place and run it on multiple configurations.
-
+- **Low-code /code support for test creation like:** Login flow, etc.
+- **Create UI and text base checks:**
+- **3+ browser support** as crusher is built on top of playwright
+- **CI integration:** Run test from local machine or CI
+- **Test on multiple configurations:** Create test in one place and run it on multiple configurations.
 
 ### Approach
 
 1. **Easy test creation 🎯** with low-code. We have support for only code based test
-
 2. **Blazing fast test creation & running**
-
 3. **E2E integrated tool**. Plug and play solution for all your testing need.
-
 4. **Developer first** and [Open source](https://github.com/crusherdev/crusher) approach.
+
+
+#### **Should you use Crusher?**
+Definitely yes, if you either:
+- want to make sure you stay on top of breaking bugs. 
+- or are frustated with existing testing frameworks
 
 <!-- 
 ## Who uses Crusher?
