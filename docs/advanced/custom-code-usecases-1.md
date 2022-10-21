@@ -1,6 +1,6 @@
 ---
-title: Custom code usecases
-sidebar_label: Writing Custom Code
+title: Code basic
+sidebar_label: Custom code
 shouldHideMeta: true
 ---
 

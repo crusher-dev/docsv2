@@ -7,7 +7,7 @@ import CodeBlock from "../theme/CodeBlock";
 
 const SelectElementContainer = () => {
     return (
-        <div style={{padding: "6px 0px"}}>
+        <div style={{ padding: "6px 0px" }}>
             <div>
                 <CodeBlock className={"language-javascript"}>{`const { page } = crusherSdk;
 // Waits till the element is visible, with default timeout (30s)
@@ -15,7 +15,7 @@ let element = await page.waitForSelector("#button");
  
 `}
 
-{`// Waits till the element is visible, with 5s timeout
+                    {`// Waits till the element is visible, with 5s timeout
 let element = await page.waitForSelector("#button", { timeout: 5000 });
 `}
                 </CodeBlock>
@@ -27,7 +27,7 @@ let element = await page.waitForSelector("#button", { timeout: 5000 });
 
 const ClickOnElement = () => {
     return (
-        <div style={{padding: "6px 0px"}}>
+        <div style={{ padding: "6px 0px" }}>
             <div>
                 <CodeBlock className={"language-javascript"}>{`const { page } = crusherSdk;
 // Select an element and click on it
@@ -36,7 +36,7 @@ await element.click();
  
 `}
 
-{`// Click on an element directly
+                    {`// Click on an element directly
 await crusherSdk.page.click("selector");
 `}
 
@@ -50,7 +50,7 @@ await crusherSdk.page.click("selector");
 
 const HoverOnElement = () => {
     return (
-        <div style={{padding: "6px 0px"}}>
+        <div style={{ padding: "6px 0px" }}>
             <div>
                 <CodeBlock className={"language-javascript"}>{`// Select an element and hover on it
 const element = await crusherSdk.page.waitForSelector("selector");
@@ -58,7 +58,7 @@ await element.hover();
  
 `}
 
-{`// Hover on an element directly
+                    {`// Hover on an element directly
 await crusherSdk.page.hover("selector");
 `}
 
@@ -72,7 +72,7 @@ await crusherSdk.page.hover("selector");
 
 const ScreenshotOfElement = () => {
     return (
-        <div style={{padding: "6px 0px"}}>
+        <div style={{ padding: "6px 0px" }}>
             <div>
                 <CodeBlock className={"language-javascript"}>{`// Select an element and take screenshot
 const element = await crusherSdk.page.waitForSelector("selector");
@@ -84,10 +84,10 @@ await element.screenshot();
             <div className={timeoutCss}>Default timeout (30s)</div>
         </div>
     )
-} 
+}
 const MousePageContainer = () => {
     return (
-        <div style={{padding: "6px 0px"}}>
+        <div style={{ padding: "6px 0px" }}>
             <div>
                 <CodeBlock className={"language-javascript"}>{`// Using ‘page.mouse’ to trace a 100x100 square.
 const { page } = crusherSdk;
@@ -106,7 +106,7 @@ await page.mouse.up();`}
 };
 const KeyboardPageContainer = () => {
     return (
-        <div style={{padding: "6px 0px"}}>
+        <div style={{ padding: "6px 0px" }}>
             <div>
                 <CodeBlock className={"language-javascript"}>{`// Typing something and copying all the text to clipboard
 const { page } = crusherSdk;
@@ -124,13 +124,13 @@ await page.keyboard.press('Control+KeyC');
 };
 const AssertionsOnElement = () => {
     return (
-        <div style={{padding: "6px 0px"}}>
+        <div style={{ padding: "6px 0px" }}>
             <div>
                 <CodeBlock className={"language-javascript"}>{`const { page } = crusherSdk;
  
 const pageTitle = await page.title();
 expect(pageTitle.length).toBeGreaterThan(10);
-expect(pageTitle).toBe("Custom code usecases | Crusher docs");
+expect(pageTitle).toBe("Crusher docs");
 `}
 
                 </CodeBlock>
@@ -143,18 +143,19 @@ expect(pageTitle).toBe("Custom code usecases | Crusher docs");
 const timeoutCss = css`
     color: #414141;
     margin-left: 4px;
+    font-size: 12px;
 `;
 const coreItems = [
-    { id: "Selecting", content: (<SelectElementContainer/>) },
-    { id: "Click", content: (<ClickOnElement/>) },
-    { id: "Hover", content: (<HoverOnElement/>) },
-    { id: "Screenshot", content: (<ScreenshotOfElement/>) },
-    { id: "Assertions", content: (<AssertionsOnElement/>) },
+    { id: "Selecting", content: (<SelectElementContainer />) },
+    { id: "Click", content: (<ClickOnElement />) },
+    { id: "Hover", content: (<HoverOnElement />) },
+    { id: "Screenshot", content: (<ScreenshotOfElement />) },
+    { id: "Assertions", content: (<AssertionsOnElement />) },
 ];
 
 const pageItems = [
-    { id: "Mouse", content: (<MousePageContainer/>) },
-    { id: "Keyboard", content: (<KeyboardPageContainer/>) },
+    { id: "Mouse", content: (<MousePageContainer />) },
+    { id: "Keyboard", content: (<KeyboardPageContainer />) },
 ];
 
 
@@ -167,17 +168,23 @@ const CustomCodePage = () => {
         <div className={containerCss}>
             <div className={'flex items-center'} classaName={headerCss}>
                 <div>
-                    <MainHeading style={{margin:0, padding: 0}}>Custom code usecases</MainHeading>
-                    <div className={headerDescriptionCss}>Write performant reliable test using SDK. Or use it in no-code test</div>
+                    <MainHeading style={{ margin: 0, padding: 0 }}>Custom code usecases</MainHeading>
+                    <div className={headerDescriptionCss}>
+                        Extend your test with code steps
+                    </div>
                 </div>
-                <div style={{marginLeft: "auto"}} className="flex">
+                {/* <div style={{ marginLeft: "auto" }} className="flex">
                     <input className={searchInputCss} type="text" placeholder="search APIs" />
-                </div>
+                </div> */}
+            </div>
+            <div className={description}>
+                Crusher use playwright as base + modified utiliy on top of it as CrusherSDK.
+                Currently supports in low-code, code steps files are coming soon.
             </div>
             <div className={contentCss}>
-                <div className={'flex'} style={{gap: 24}}>
-                    <Comparison callback={handleTabCallback} items={coreItems} title={"Core utilities"} className={"flex-1"}/>
-                    <Comparison callback={handleTabCallback} items={pageItems} title={"Page utilities"} className={"flex-1"}/>
+                <div className={'flex comparison-group'}>
+                    <Comparison callback={handleTabCallback} items={coreItems} title={"Core utilities"} className={"flex-1"} />
+                    <Comparison callback={handleTabCallback} items={pageItems} title={"Page utilities"} className={"flex-1"} />
 
                 </div>
 
@@ -186,9 +193,35 @@ const CustomCodePage = () => {
     )
 };
 
-const contentCss= css`
+const description = css`
+    padding-top: 12px;
+    color: #737373;
+    font-size: 14px;
+`
+
+const contentCss = css`
     margin-top: 36px;
     width: 100%;
+    .comparison-group{
+        gap: 40px;
+        dipsplay: flex;
+        >div{
+            flex: 1;
+            width: 50%;
+
+            @media screen and (max-width: 600px){
+                width: initial;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        .comparison-group{
+            flex-direction: column;
+        }
+
+    }
+    
 `;
 const containerCss = css`
     padding-top: 40px;
@@ -199,11 +232,12 @@ const containerCss = css`
 const headerCss = css`
     width: 100%;
     padding-bottom; 20px;
+
 `;
 const headerDescriptionCss = css`
-    padding-top: 8px;
+    padding-top: 12px;
     color: #737373;
-    font-size: 13px;
+    font-size: 14px;
 `;
 const searchInputCss = css`
     background: rgba(0, 0, 0, 0.11);

@@ -1,5 +1,4 @@
-#edit-this-page {
-}
+#edit-this-page {}
 
 #support-page {
   background: rgb(200 200 200 / 1%);
@@ -12,6 +11,7 @@
 .footer-container-box {
   width: 100%;
   padding: 0 16px;
+  max-width: 700px;
 }
 
 .footer-container-box .heading {

@@ -8,8 +8,8 @@ function TabItem({ key, children, ...props }) {
   return (<div {...props}>{children}</div>)
 }
 
-export default function CodeBlock({items, title, callback, ...props}) {
-  if(!items) return null;
+export default function CodeBlock({ items, title, callback, ...props }) {
+  if (!items) return null;
 
   const tabItems = items.map((item, index) => {
     return (
@@ -108,13 +108,13 @@ width: 100%;
 
 background: #0F0F0F;
 border: 1px solid #1E1F1F;
-border-radius: 20px;
+border-radius: 10px;
 overflow: hidden;
 margin-top: 20px;
 
 .heading-box{
-  padding-left: 20px;
-  background: #0F0F0F;
+  padding-left: 28px;
+  background: #0000002b;
   border-bottom: 1px solid #1E1F1F;
   display: flex;
   gap: 20px;
@@ -124,7 +124,7 @@ margin-top: 20px;
 
 .item{
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 21px;
 
   cursor: pointer;
@@ -132,13 +132,13 @@ margin-top: 20px;
   letter-spacing: 0.03em;
 
   :hover{
-    border-bottom: 2px solid #A45CFF;
-    color: #A45CFF;
+    border-bottom: 2px solid #d041ff;
+    color: #d041ff;
   }
 }
 .selected{
-  border-bottom: 2px solid #A45CFF;
-  color: #A45CFF;
+  border-bottom: 2px solid #d041ff;
+  color: #d041ff;
 
 }
 
@@ -152,6 +152,25 @@ margin-top: 20px;
 
 
   letter-spacing: 0.03em;
+
+  pre[class*=language-]{
+    border-color: transparent !important;
+    background: transparent;
+    font-size: 12px;
+    margin-left: -20px;
+    width: calc(100% + 40px;)
+    margin-top: -12px;
+  }
+
+  pre code{
+    font-size: 12px;
+  }
+  .token.function, .token.builtin, .token.inserted {
+    color: #89e750;
+  }
+  .token.comment, .token.prolog, .token.doctype, .token.cdata {
+    font-size: 10px;
+}
 }
 
 
