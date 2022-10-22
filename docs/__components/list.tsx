@@ -1,7 +1,6 @@
 import React from "react";
 
 import styled from "@emotion/styled";
-
 export const UseCrusher = ({ children, color }) => (
   <div className="useCrusher_in_project">
     <CommandInput>

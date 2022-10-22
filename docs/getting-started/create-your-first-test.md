@@ -17,24 +17,24 @@ Crusher is e2e testing platform for developers/QA engineer, that allows you to c
 <br/>
 <Tabs>
   <TabItem value="developers" label="Developers" attributes={{className: "tab-item"}} default>
-
-
-In git repo, run
-
+  <blockquote style={{background: "rgba(0, 0, 0, .15)", padding: "12px  16px", borderRadius: 2}}>
+    <div><b>PREREQUISITES</b></div>
+    <ul style={{ paddingLeft: 16 }}>
+      <li>
+        <a href="https://nodejs.org/en/download/">Node.js</a>: Only versions above v10.0.0 are supported. Recommended version: v16.x
+      </li>
+      <li><a href="https://docs.npmjs.com/cli/v6/commands/npm-install">npm</a> or npx to run the CLI</li>
+    </ul>
+  </blockquote>
+Run the below command inside your git repo,
 
 ```shell
 npx crusher.dev
 ```
-
-
-This is the recommended way for developers. Make sure you've npx/nodejs installed.
-
- If not, then install [nodejs](https://nodejs.org/en/download/) first.
-
   </TabItem>
   <TabItem value="starters" label="Others" attributes={{className: "tab-item"}}>
 
-Download binaries to use with Crusher. This way is recommended for non-programmers.
+ <br/> 
 
 | Operation System | Download Link                                                                    |
 | ---------------- | -------------------------------------------------------------------------------- |
@@ -49,7 +49,7 @@ Download and install native recorder. This is recommeded if you're not a develop
 <iframe style={{borderRadius: 10, border: '1px solid #1d1d1d'}} width="640" height="416" src="https://www.loom.com/embed/4d7671daaea5401c89731d2f7c333388?" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
-## Running the test
+### Running the test
 
 Using CLI - Once you have created your first test, you can run it with CLI directly.
 
