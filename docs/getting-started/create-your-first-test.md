@@ -13,7 +13,7 @@ import TabItem from '@theme/TabItem';
 </head>
 
 Crusher is e2e testing platform for developers/QA, that allows you to create, manage and run test for your project.
-
+<br/>
 <Tabs>
   <TabItem value="developers" label="Developers" attributes={{className: "tab-item"}} default>
   <blockquote style={{background: "rgba(0, 0, 0, .15)", padding: "12px  16px", borderRadius: 2}}>
@@ -49,7 +49,7 @@ Download and install native recorder. This is recommeded if you're not a develop
 <iframe style={{borderRadius: 10, border: '1px solid grey'}} width="640" height="416" src="https://www.loom.com/embed/4d7671daaea5401c89731d2f7c333388" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
-## Running the test
+### Running the test
 
 Once you have created your first test, you can run it with CLI directly.
 
