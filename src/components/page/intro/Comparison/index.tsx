@@ -26,7 +26,7 @@ export default function Comparison(props) {
 
       <div className={box}>
         <div className={header}><PassedSVG height={14} width={14} />Our focus</div>
-        <Step>- Make testing super fast & robust</Step>
+        <Step>- Make testing fast & robust</Step>
         <Step>- Support low-code/code tests</Step>
         <Step>- Single integrated solution</Step>
         <Step>- Based on JS</Step>
