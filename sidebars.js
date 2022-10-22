@@ -2,12 +2,12 @@ module.exports = {
   docs: [
     {
       type: 'doc',
-      label: '🦖 Overview',
+      label: '🦖 Intro',
       id: 'index',
     },
     {
       type: 'category',
-      label: '🧑‍🚀 Getting started',
+      label: '🧑‍🚀 Overview',
       collapsed: false,
       items: [
         'getting-started/create-your-first-test',
