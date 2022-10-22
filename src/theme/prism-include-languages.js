@@ -25,7 +25,7 @@ const prismIncludeLanguages = (PrismObject) => {
         {
           pattern: /(^|[^a-z0-9])(npx)(?=[\s\n]|$)/,
           lookbehind: true,
-          	alias: 'class-name'
+          	alias: 'npx-color'
         }
       ],
       keyword: [
@@ -34,6 +34,7 @@ const prismIncludeLanguages = (PrismObject) => {
         {
           pattern: /(^|[^a-z0-9])(crusher\.dev|crusher-cli|crusher-debug)(?=[\s\n]|$)/,
           lookbehind: true,
+          alias: "crusher-command"
         }
       ],
       function: [
