@@ -18,7 +18,7 @@ Crusher is e2e testing platform for developers/QA engineer, that allows you to c
 <Tabs>
   <TabItem value="developers" label="Developers" attributes={{className: "tab-item"}} default>
   <blockquote style={{background: "rgba(0, 0, 0, .15)", padding: "12px  16px", borderRadius: 2}}>
-    <div><b>PREREQUISITES</b></div>
+    <div><b>Prerequisites</b></div>
     <ul style={{ paddingLeft: 16 }}>
       <li>
         <a href="https://nodejs.org/en/download/">Node.js</a>: Only versions above v10.0.0 are supported. Recommended version: v16.x
