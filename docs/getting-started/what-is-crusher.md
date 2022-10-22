@@ -16,10 +16,10 @@ import Comparison from '@components/page/intro/Comparison';
 
 Crusher is all-in-one testing framework to create fast and reliable e2e tests for web apps and websites. 
 
-<img src="https://i.imgur.com/fkY2m6F.png" />
 <br/>
 
 Our testing journey was daunting, so we built crusher with best in class tools to improve testing experience. 
+
 
 <Comparison/>
 

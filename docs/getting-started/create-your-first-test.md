@@ -19,7 +19,9 @@ Crusher is e2e testing platform for developers/QA, that allows you to create, ma
   <TabItem value="developers" label="Developers" attributes={{className: "tab-item"}} default>
 
 <br/>
-Crusher can integrate in your git repo seamlessly. In your git repo, run
+In git repo, run
+
+<br/> <br/>
 
 ```shell
 npx crusher.dev
@@ -31,7 +33,7 @@ This is the recommended way for developers. Make sure you've npx/nodejs installe
  If not, then install [nodejs](https://nodejs.org/en/download/) first.
 
   </TabItem>
-  <TabItem value="starters" label="Non-developers" attributes={{className: "tab-item"}}>
+  <TabItem value="starters" label="Others" attributes={{className: "tab-item"}}>
 
  <br/> 
 
@@ -43,6 +45,10 @@ This is the recommended way for developers. Make sure you've npx/nodejs installe
 Download and install native recorder. This is recommeded if you're not a developers or don't have access to the repo.
   </TabItem>
 </Tabs>
+
+###  Recording first test
+<iframe style={{borderRadius: 10, border: '1px solid grey'}} width="640" height="416" src="https://www.loom.com/embed/4d7671daaea5401c89731d2f7c333388" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 
 ## Running the test
 
