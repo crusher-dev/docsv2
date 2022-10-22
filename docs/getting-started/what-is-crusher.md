@@ -13,35 +13,32 @@ import Comparison from '@components/page/intro/Comparison';
   />
 </head>
 
-
-Crusher is all-in-one testing framework to create fast and reliable e2e tests for web apps and websites. 
+Crusher is all-in-one testing framework to create fast and reliable e2e tests for web apps and websites.
 
 <br/>
 
-Our testing journey was daunting, so we built crusher with best in class tools to improve testing experience. 
-
+Our testing journey was daunting, so we built Crusher with best-in-class tools to improve the testing experience.
 
 <Comparison/>
 
 ### Core features
 
-- **Low-code /code support for test creation like:** Login flow, etc.
-- **Create UI and text base checks:**
-- **3+ browser support** as crusher is built on top of playwright
+- **Low-code / code support for test creation like** Login flow, etc.
+- **Create UI and text assertion checks**
+- **3+ browsers supported** as crusher is built on top of playwright
 - **CI integration:** Run test from local machine or CI
-- **Test on multiple configurations:** Create test in one place and run it on multiple configurations.
+- **Test on multiple environments:** Create tests in one place and run it on different configurations.
 
 ### Approach
 
-1. **Easy test creation 🎯** with low-code. We have support for only code based test
+1. **Easy test creation 🎯** with low-code/code-only approach
 2. **Blazing fast test creation & running**
-3. **E2E integrated tool**. Plug and play solution for all your testing need.
+3. **E2E integrated tool** - Plug and play solution for all your testing needs.
 4. **Developer first** and [Open source](https://github.com/crusherdev/crusher) approach.
-
 
 #### **Should you use Crusher?**
 Definitely yes, if you either:
-- want to make sure you stay on top of breaking bugs. 
+- want to stay on top of breaking bugs
 - or are frustated with existing testing frameworks
 
 <!-- 
