@@ -3,16 +3,23 @@ title: Architecture
 sidebar_label: Architecture
 ---
 
-## Overview
-Crusher replaces many tools with one e2e framework. We're opinionated and building features to make e2e workflow easy.
+Crusher is all-in-one solutionm it replace many tools in testing workflow. We're opinionated and building features to make e2e workflow easy.
 
-At crusher, we work across various tech in following manner.
+At high level, it has 3 component
+
+- <span className="highlight_green">Crusher app</span> -  local app to run and record test in project
+
+-  <span className="highlight_green">Test executor</span> -  infra for running test across web browser
+
+-  <span className="highlight_green">Web app</span> -  to manager test, viewing report, share it in team.
+
+### Architecture
 
 <a href="/img/architecture/high-level-architecture.svg" target="_blank">
   <img src="/img/architecture/high-level-architecture.svg" />
 </a>
 
-### Core Components
+### High level section
 - **Frontend** - React (using Nextjs), Jotai, SWR, Tailwind + emotion.
 - **Backend** - Express, typescript, routing controller, typedi, Prisma.
 - **Test runner & Worker**
