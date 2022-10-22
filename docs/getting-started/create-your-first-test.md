@@ -14,9 +14,6 @@ import TabItem from '@theme/TabItem';
 
 Crusher is e2e testing platform for developers/QA, that allows you to create, manage and run test for your project.
 
-<br/>
-
-
 <Tabs>
   <TabItem value="developers" label="Developers" attributes={{className: "tab-item"}} default>
   <blockquote style={{background: "rgba(0, 0, 0, .15)", padding: "12px  16px", borderRadius: 2}}>
