@@ -18,18 +18,22 @@ Crusher is e2e testing platform for developers/QA, that allows you to create, ma
 <Tabs>
   <TabItem value="developers" label="Developers" attributes={{className: "tab-item"}} default>
 
+<br/>
 Crusher can integrate in your git repo seamlessly. In your git repo, run
 
 ```shell
 npx crusher.dev
 ```
 
+
 This is the recommended way for developers. Make sure you've npx/nodejs installed.
 
  If not, then install [nodejs](https://nodejs.org/en/download/) first.
 
   </TabItem>
-  <TabItem value="starters" label="Starters" attributes={{className: "tab-item"}}>
+  <TabItem value="starters" label="Non-developers" attributes={{className: "tab-item"}}>
+
+ <br/> 
 
 | Operation System | Download Link                                                                    |
 | ---------------- | -------------------------------------------------------------------------------- |
