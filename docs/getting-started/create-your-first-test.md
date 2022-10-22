@@ -22,7 +22,9 @@ Crusher can integrate in your git repo seamlessly. In your git repo, run
 npx crusher-cli test:create
 ```
 
-This is the recommended way for developers. Make sure you've npx/nodejs installed. If not, then install [nodejs](https://nodejs.org/en/download/) first.
+This is the recommended way for developers. Make sure you've npx/nodejs installed.
+
+ If not, then install [nodejs](https://nodejs.org/en/download/) first.
 
 ## Or install recorder
 
