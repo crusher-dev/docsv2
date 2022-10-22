@@ -12,6 +12,7 @@ module.exports = {
       items: [
         'getting-started/create-your-first-test',
         'getting-started/what-is-crusher',
+        'getting-started/features',
         'development/architecture',
 
       ],
