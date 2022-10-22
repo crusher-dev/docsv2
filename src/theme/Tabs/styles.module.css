@@ -13,7 +13,7 @@
   color: #8e8ea9 !important;
   font-weight: bold !important;
   font-size: 13px !important;
-  border: 1px solid rgba(0, 0, 0, 0) !important;
+  border: .5px solid rgba(0, 0, 0, 0) !important;
 
   border-color: rgba(255, 255, 255, .3) !important;
 
@@ -31,6 +31,6 @@
 
 
 .tabItemActive {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
   color: rgb(188, 82, 240) !important;
 }
