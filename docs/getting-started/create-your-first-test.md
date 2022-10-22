@@ -12,7 +12,7 @@ import TabItem from '@theme/TabItem';
   <meta name="description" />
 </head>
 
-Crusher is e2e testing platform for developers/QA engineer, that allows you to create, manage and run test for your project.
+Crusher is e2e testing platform for developers/QA engineer, that allows you to create, manage and run tests for your project.
 
 <br/>
 <Tabs>
