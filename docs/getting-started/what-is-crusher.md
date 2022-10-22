@@ -62,7 +62,7 @@ Team use crusher for variety of use cases, like:
 Ultimately, using Crusher will help you ship fast, and without bugs. Everyone gets to be happy in the end.
 
 :::info Info
-Crusher is designed mainly for Devs/QA, and to offer a better testing workflow. At certain times, you might need to dev support;
+Crusher is designed mainly for Devs/QA engineer, and to offer a better testing workflow. At certain times, you might need to dev support;
 We're happy to help in those cases.
 :::
 

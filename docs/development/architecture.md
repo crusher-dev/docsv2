@@ -7,9 +7,9 @@ Crusher is all-in-one solutionm it replace many tools in testing workflow. We're
 
 At high level, it has 3 component
 
-- <span className="highlight_green">Crusher app</span> -  local app to run and record test in project
+- <span className="highlight_green">Crusher app</span> -  local app to run and record tests in project
 
--  <span className="highlight_green">Test executor</span> -  infra for running test across web browser
+-  <span className="highlight_green">Test executor</span> - running test across web browser using configuration
 
 -  <span className="highlight_green">Web app</span> -  to manager test, viewing report, share it in team.
 
