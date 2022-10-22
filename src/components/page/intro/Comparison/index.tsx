@@ -33,7 +33,7 @@ export default function Comparison(props) {
       </div>
 
       <div className={box}>
-        <div className={header}><FailedSVG height={14} width={14} />We'll ignore</div>
+        <div className={header}><FailedSVG height={14} width={14} />We'll not focus on</div>
         <Step>- industry jargons</Step>
         <Step>- traditional standards/APIs</Step>
       </div>
