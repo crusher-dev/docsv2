@@ -18,10 +18,9 @@ Crusher is e2e testing platform for developers/QA, that allows you to create, ma
 <Tabs>
   <TabItem value="developers" label="Developers" attributes={{className: "tab-item"}} default>
 
-<br/>
+
 In git repo, run
 
-<br/> <br/>
 
 ```shell
 npx crusher.dev
@@ -35,7 +34,7 @@ This is the recommended way for developers. Make sure you've npx/nodejs installe
   </TabItem>
   <TabItem value="starters" label="Others" attributes={{className: "tab-item"}}>
 
- <br/> 
+Download binaries to use with Crusher. This way is recommended for non-programmers.
 
 | Operation System | Download Link                                                                    |
 | ---------------- | -------------------------------------------------------------------------------- |
@@ -47,7 +46,7 @@ Download and install native recorder. This is recommeded if you're not a develop
 </Tabs>
 
 ###  Recording first test
-<iframe style={{borderRadius: 10, border: '1px solid grey'}} width="640" height="416" src="https://www.loom.com/embed/4d7671daaea5401c89731d2f7c333388" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe style={{borderRadius: 10, border: '1px solid #1d1d1d'}} width="640" height="416" src="https://www.loom.com/embed/4d7671daaea5401c89731d2f7c333388" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 ## Running the test
