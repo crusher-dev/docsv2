@@ -19,7 +19,7 @@ Crusher is e2e testing platform for developers/QA, that allows you to create, ma
 Crusher can integrate in your git repo seamlessly. In your git repo, run
 
 ```shell
-npx crusher-cli test:create
+npx crusher.dev
 ```
 
 This is the recommended way for developers. Make sure you've npx/nodejs installed.
