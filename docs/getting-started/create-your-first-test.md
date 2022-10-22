@@ -31,6 +31,7 @@ Run the below command inside your git repo,
 ```shell
 npx crusher.dev
 ```
+
   </TabItem>
   <TabItem value="starters" label="Others" attributes={{className: "tab-item"}}>
 
