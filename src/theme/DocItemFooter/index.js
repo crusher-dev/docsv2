@@ -43,7 +43,7 @@ function CommunityAndFeedback({ editUrl }) {
     script.setAttribute('data-emit-metadata', '1');
     script.setAttribute('data-input-position', 'top');
     script.setAttribute('crossorigin', 'anonymous');
-    script.setAttribute('data-theme', 'dark');
+    script.setAttribute('data-theme', 'https://6l5gcn.sse.codesandbox.io/style.css');
     script.src = 'https://giscus.app/client.js';
     script.async = true;
     script.defer = true;
@@ -92,7 +92,7 @@ function CommunityAndFeedback({ editUrl }) {
         </div>
       </div>
 
-      <div style={{ marginTop: 32, fontWeight: 600 }}>Have questions?</div>
+      <div style={{ marginTop: 32, fontWeight: 600 }}>Comment/Discuss</div>
       <div>
         <div id="comments"></div>
 
