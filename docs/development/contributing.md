@@ -1,6 +1,6 @@
 ---
-title: 🐳 Contributing
-sidebar_label: Contributing
+title: Contribute to Crsusher
+sidebar_label: Overview
 ---
 
 Crusher is being run as open source solution.

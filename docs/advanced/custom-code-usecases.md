@@ -1,6 +1,6 @@
 ---
-title: Core function 
-sidebar_label: Code basics
+title: Custom code usecases
+sidebar_label: Usecases
 ---
 
 This guide is to walk you through, on how-to use custom code

@@ -52,7 +52,6 @@ module.exports = {
         'development/contributing',
         'development/docker-deploy-locally',
         'development/setting-up-development-env',
-        'getting-started/how-crusher-works',
       ],
     },
   ],

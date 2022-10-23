@@ -1,6 +1,6 @@
 ---
 title: 🐳 Docker deploy
-sidebar_label: 🐳 Docker deploy
+sidebar_label: Docker deploy
 ---
 
 We want to make it super easy for anyone to install Crusher locally. This is the best option if you're looking to try Crusher locally.

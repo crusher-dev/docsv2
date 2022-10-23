@@ -24,7 +24,7 @@ In `<project_dir>/.crusher/config.js` add following code, and restart crusher
   }]
 ```
 
-Example: Check [sample config file](https://github.com/crusherdev/docsv2/blob/ft-new/.crusher/config.json) with proxy.
+Example: Check [sample config file](https://github.com/crusherdev/docsv2/blob/main/.crusher/config.json) with proxy.
 
 :::info &nbsp;&nbsp; How will it work?
 
@@ -38,10 +38,7 @@ Example: Check [sample config file](https://github.com/crusherdev/docsv2/blob/ft
 No, If you're running test locally one by one. If you're running test on CI, this can be the simplest way to test.
 
 ** Is this alternative to preview env?**<br/>
-Yes
-
-** I am not able to page after using proxy?**<br/>
-Wait for few seconds. There might be DNS caching at some levels.
+Yes.
 
 ** Is proxy secure?**<br/>
 Proxy is e2e secured by cloudflare argo. If you have business use case, get in touch to learn more. We will add support for private namespace in future

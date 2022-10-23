@@ -1,6 +1,6 @@
 ---
-title: 🧱 Developing locally
-sidebar_label: 🧱 Developing locally
+title: Developing locally
+sidebar_label: Developing locally
 ---
 
 Crusher is integrated system based on javascript environment. We've made it very simple to contribute and fix a bugs
