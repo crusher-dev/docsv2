@@ -1,15 +1,18 @@
 ---
-title: 🔌 Proxy config for local dev & environment
-sidebar_label: 🔌 Setup proxy for local dev
+title: 🚇 Test locally with tunnel proxy 
+sidebar_label: 🚇 Test locally with tunnel proxy 
 ---
 
-Often, cloud environment offers faster test execution in an isolated environment. Doing so is easy, you just need to expose your local service to crusher test agents depending on your use-case such as,
+Running test locally can be slow, or running test in machine like CI can be tough.
 
-1. [**Testing local development**](#testing-local-development): You want to run test against your local service. Super-helpful during development.
+With crusher, you can enable it with few config. We use cloudflare warp to create tunnel and then use it to test
 
-2. **Set up configuration for different env**: You created test for localhost:3000, and now want to run it on https://stage.your-domain.com
+This can be helpful
+1. [**Testing on local machine**](#testing-local-development): Run test against your local service. Super-fast execution.
 
-## Testing local development
+2. **Test on CI**: After building, expose local port to run test.
+
+## Enabling tunnel proxy  
 
 In `<project_dir>/.crusher/config.js` add following code, and restart crusher
 
@@ -31,11 +34,14 @@ Example: Check [sample config file](https://github.com/crusherdev/docsv2/blob/ft
 
 ## FAQ
 
-** Is using proxy required?**<br/>
-If you're running test locally, No. If you're running test on cloud, and want to test local env then you need expose it to crusher test agent's.
+** Is using tunnel proxy required?**<br/>
+No, If you're running test locally one by one. If you're running test on CI, this can be the simplest way to test.
+
+** Is this alternative to preview env?**<br/>
+Yes
 
 ** I am not able to page after using proxy?**<br/>
 Wait for few seconds. There might be DNS caching at some levels.
 
 ** Is proxy secure?**<br/>
-Proxy is e2e secured by cloudflare argo. If you have business use case, get in touch to learn more.
+Proxy is e2e secured by cloudflare argo. If you have business use case, get in touch to learn more. We will add support for private namespace in future
