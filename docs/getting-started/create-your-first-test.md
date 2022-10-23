@@ -58,4 +58,4 @@ Using CLI - Once you have created your first test, you can run it with CLI direc
 npx crusher-cli test:run
 ```
 
- Using APP - In app or frontend click on test run test by opening app `npx crusher-cli .`
+ Using App - In app or frontend click on test run test by opening app `npx crusher-cli .`
