@@ -15,15 +15,15 @@ This feature is available both in <a href="#in-desktop-app">local app</a> and at
 
 ### Link your github repo
 
-To enable alerts on slack, 
+We require you to link your github repo to your Crusher project,
 
-- Go to project settings -> Integration
-
+- Go to project Settings -> Integration
 - Click connect in github integration
 
 <img src="https://i.imgur.com/MxcfD6R.png"/>
 <br/>
-- Choose github repo.
+
+- Select your github repo
 
 ### Setup github actions
 <Tabs>
@@ -76,15 +76,11 @@ steps:
     run: npx crusher.dev test:run && kill -9 $!`}
     </CodeBlock>
   </TabItem>
-  <TabItem value="netlify" label="Vue.js" attributes={{ className: "tab-item"}}>
-  </TabItem>
-  <TabItem value="angular" label="Angular" attributes={{ className: "tab-item"}}>
-  </TabItem>
 </Tabs>
 
 
 ### Checks on commit & PR
 
-You can received update on github message when build is run corresponding to commit.
+Create a pull request and to see Crusher in action
 
 <img src="https://i.imgur.com/6n75mP1.png" style={{opacity: ".8", borderRadius: 16, marginTop: 20}}/>
