@@ -6,7 +6,7 @@ sidebar_label: Run tests with a custom host
 :::note What you'll learn?
 
 1. How to run tests with a different host with CLI?
-2. Setting up monitoring with different hosts/environments
+2. Set up monitoring with different hosts/environments
 :::
    Testing workflow is not always limited to running tests for one domain/host. Depending on your use case, you may want to run your tests for,
 
@@ -35,7 +35,7 @@ npx crusher-cli test:run --host https://custom.host.com
 
 ## Setup monitoring with different environments
 
-Another use-case that you might be looking out for, is setting up monitoring or periodic test runs for your different environments.
+Another use-case that you might be looking out for, is Set up monitoring or periodic test runs for your different environments.
 
 :::tip 🦖 &nbsp;&nbsp;Usecases
 
@@ -75,7 +75,7 @@ If you have already created an environment in your project, you can skip this se
 </ol>
 All done! Now the only thing remaining is to setup monitoring for your environment
 
-### Setting up monitoring
+### Set up monitoring
 
 To setup monitoring:
 

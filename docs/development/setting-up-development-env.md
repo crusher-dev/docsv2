@@ -18,7 +18,7 @@ We also use two data services
 
 **Note**: Crusher only support linux (ubuntu majorly) and MacOS as of now for development
 
-### Setting up local environment
+### Set up local environment
 
 <h6>1) Clone the repo</h6>
 
@@ -83,7 +83,7 @@ pm2 stop
 
 ### Supported OS
 
-The source code has been built and tested on **Ubuntu** and **macOS**. We haven't tested the building source code on other systems, so if you encounter any issues setting up for a different OS, feel free to file an issue for it.
+The source code has been built and tested on **Ubuntu** and **macOS**. We haven't tested the building source code on other systems, so if you encounter any issues Set up for a different OS, feel free to file an issue for it.
 
 :::tip
 If you don't want to do all the setup chores, you can click on `Open in Gitpod` inside _README.md_ and use gitpod for development.

@@ -11,7 +11,7 @@ When running crusher-cli for the first time, we need to link your project. You c
 
 Crusher seamlessly integrates with git-enabled projects.
 
-## Setting up
+## Set up
 
 To get started, the first thing you need to do is initialize and link your project with crusher. To do that, go to your project directory and run this command,
 

@@ -28,10 +28,9 @@ export const FeatureItem = ({label, feature}) => {
 
 <FeatureItem label="📁 Test files" feature="Create tests with playwright + crusher SDK"/>
 
-
 <FeatureItem label="👨🏽‍💻 Developer first" feature=""/>
 
-<FeatureItem label="🕹️ All primitive actions supported" feature=""/>
+<FeatureItem label="🕹️ Major primitive actions supported" feature=""/>
 
 <FeatureItem label="📇 Git integration" feature=""/>
 

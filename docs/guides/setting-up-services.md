@@ -7,7 +7,7 @@ Often, cloud environment offers faster test execution in an isolated environment
 
 1. [**Testing local development**](#testing-local-development): You want to run test against your local service. Super-helpful during development.
 
-2. **Setting up configuration for different env**: You created test for localhost:3000, and now want to run it on https://stage.your-domain.com
+2. **Set up configuration for different env**: You created test for localhost:3000, and now want to run it on https://stage.your-domain.com
 
 ## Testing local development
 

@@ -1,5 +1,5 @@
 ---
-title: Setting up crusher for development
+title: Set up crusher for development
 sidebar_label: Installation Guide
 ---
 
@@ -11,7 +11,7 @@ This guide will go through everything you need to do in order to setup crusher p
 ### Prerequisites
 
 :::info
-Once done, keep a note of your Redis and Postgres credentials. You'll need it when setting up environment variables for the crusher.
+Once done, keep a note of your Redis and Postgres credentials. You'll need it when Set up environment variables for the crusher.
 :::
 There are only two things that you need to begin with the setup,
 
@@ -37,9 +37,9 @@ There are only two things that you need to begin with the setup,
 
 ### Supported OS
 
-The source code has been built and tested on **Ubuntu** and **macOS**. We haven't tested the building source code on other systems, so if you encounter any issues setting up for a different OS, feel free to file an issue for it.
+The source code has been built and tested on **Ubuntu** and **macOS**. We haven't tested the building source code on other systems, so if you encounter any issues Set up for a different OS, feel free to file an issue for it.
 
-### Setting up
+### Set up
 
 To get started, follow the steps below:
 
