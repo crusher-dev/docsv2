@@ -1,9 +1,20 @@
 ---
-title: Code basic
-sidebar_label: Custom code
+title: Code Overview
+sidebar_label: Overview
 shouldHideMeta: true
 ---
 
-import { CustomCodePage } from "@site/src/pages/customCode.tsx";
+import { CustomCodePage, CustomCodeHeader } from "@site/src/pages/customCode.tsx";
 
-<CustomCodePage/>
+<div  style={{ paddingTop: 40, fontFamily: 'Gilroy'}}>
+<CustomCodeHeader/>
+</div>
+
+:::note
+Crusher uses <a href="https://playwright.dev">Playwright</a> at the base for automation + modified wrapper on top of it (a.k.a CrusherSDK). <br/>
+We currently support this only in low-code mode, <b>code steps files are coming soon</b>.
+:::
+
+<div style={{ fontFamily: 'Gilroy'}}>
+    <CustomCodePage/>
+</div>
