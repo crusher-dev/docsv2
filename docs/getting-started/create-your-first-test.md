@@ -47,7 +47,7 @@ Download and install native recorder. This is recommeded if you're not a develop
 </Tabs>
 
 ###  Recording first test
-<iframe style={{borderRadius: 10, border: '1px solid #1d1d1d'}} width="640" height="416" src="https://www.loom.com/embed/4d7671daaea5401c89731d2f7c333388?" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe style={{borderRadius: 10, border: '1px solid #1d1d1d'}} width="640" height="416" src="https://www.loom.com/embed/4d7671daaea5401c89731d2f7c333388?t=20" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 ### Running the test

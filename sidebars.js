@@ -1,20 +1,22 @@
 module.exports = {
   docs: [
     {
-      type: 'doc',
-      label: '🦖 Intro',
-      id: 'index',
+      type: 'category',
+      label: '🦖 Overview',
+      collapsed: false,
+      items: [
+        'overview/index',
+        'overview/features',
+        'development/architecture',
+      ],
     },
     {
       type: 'category',
-      label: '🧑‍🚀 Overview',
+      label: '🚀 Getting Started',
       collapsed: false,
       items: [
         'getting-started/create-your-first-test',
         'getting-started/what-is-crusher',
-        'getting-started/features',
-        'development/architecture',
-
       ],
     },
 
