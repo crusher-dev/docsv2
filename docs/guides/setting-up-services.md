@@ -1,15 +1,14 @@
 ---
 title: 🚇 Test locally with tunnel proxy 
-sidebar_label: 🚇 Test locally with tunnel proxy 
+sidebar_label: Test locally with tunnel proxy 
 ---
 
 Running test locally can be slow, or running test in machine like CI can be tough.
 
 With crusher, you can enable it with few config. We use cloudflare warp to create tunnel and then use it to test
 
-This can be helpful
+This can be helpful if you are,
 1. [**Testing on local machine**](#testing-local-development): Run test against your local service. Super-fast execution.
-
 2. **Test on CI**: After building, expose local port to run test.
 
 ## Enabling tunnel proxy  
@@ -34,11 +33,9 @@ Example: Check [sample config file](https://github.com/crusherdev/docsv2/blob/ma
 
 ## FAQ
 
-** Is using tunnel proxy required?**<br/>
+- ** Is using tunnel proxy required?**<br/>
 No, If you're running test locally one by one. If you're running test on CI, this can be the simplest way to test.
-
-** Is this alternative to preview env?**<br/>
+- ** Is this alternative to preview env?**<br/>
 Yes.
-
-** Is proxy secure?**<br/>
+- ** Is proxy secure?**<br/>
 Proxy is e2e secured by cloudflare argo. If you have business use case, get in touch to learn more. We will add support for private namespace in future
