@@ -38,9 +38,9 @@ module.exports = {
     },
     {
       type: 'category',
-      label: '🏄‍♂️ Advanced',
+      label: '🏄‍♂️ Code',
       collapsed: true,
-      items: ['advanced/custom-code-usecases', 'advanced/custom-code-usecases-1', 'advanced/making-network-requests', 'advanced/writing-custom-selectors'],
+      items: ['advanced/custom-code-usecases-1', 'advanced/custom-code-usecases', 'advanced/making-network-requests', 'advanced/writing-custom-selectors'],
     },
     {
       type: 'category',
@@ -53,6 +53,7 @@ module.exports = {
       label: '🧱 Contribute',
       collapsed: true,
       items: [
+        'development/contributing',
         'development/docker-deploy-locally',
         'development/setting-up-development-env',
         'getting-started/how-crusher-works',

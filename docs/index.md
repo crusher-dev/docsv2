@@ -21,9 +21,9 @@ import css from '@emotion/react';
   <meta property="og:url" content="https://docs.crusher.dev/" />
 </head>
 
-Crusher is <span className="highlight_cyan">all in one testing framework</span>. It includes test recorder(local app), test runner and web app for you.
+Crusher is <span className="highlight_cyan">all in one testing framework</span>. It includes everything w.r.t to e2e testing, like test recorder(local app), test runner and web app for you.
 
-It's e2e solution for testing web apps, we use playwright as base + lot of stuff around it. You can record test with low-code or write in JS code format<span className="highlight_red">*</span>. 
+We use playwright as base + lot of stuff around it. You can record low-code tests or write in JS code<span className="highlight_red">*</span>. 
 
 <UseCrusher />
 

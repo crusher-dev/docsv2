@@ -5,9 +5,9 @@ sidebar_label: Architecture
 
 Crusher is all-in-one solutionm it replace many tools in testing workflow. We're opinionated and building features to make e2e workflow easy.
 
-At high level, it has 3 component
+At top level, it has 3 component
 
-- <span className="highlight_green">Crusher app</span> -  local app to run and record tests in project
+- <span className="highlight_green">Crusher app</span> - local app to record and run tests in project
 
 -  <span className="highlight_green">Test executor</span> - running test across web browser using configuration
 
