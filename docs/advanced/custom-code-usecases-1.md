@@ -4,7 +4,7 @@ sidebar_label: Overview
 shouldHideMeta: true
 ---
 
-import { CustomCodePage, CustomCodeHeader } from "@site/src/pages/customCode.tsx";
+import { CustomCodePage, CustomCodeHeader } from "@theme/customCode";
 
 <div  style={{ paddingTop: 40, fontFamily: 'Gilroy'}}>
 <CustomCodeHeader/>
