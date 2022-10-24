@@ -7,10 +7,10 @@ Running test locally can be slow, or running test in machine like CI can be toug
 
 With crusher, you can enable it with few config. We use cloudflare warp to create tunnel and then use it to test
 
-This can be helpful
+This can be helpful while
 1. [**Testing on local machine**](#testing-local-development): Run test against your local service. Super-fast execution.
 
-2. **Test on CI**: After building, expose local port to run test.
+2. **Testing on CI**: After building, expose local port to run test.
 
 ## Enabling tunnel proxy  
 
