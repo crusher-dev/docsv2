@@ -15,6 +15,7 @@ module.exports = {
       en: { label: 'English' },
     },
   },
+  staticDirectories: ['public'],
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'https://app.crusher.dev/assets/img/favicon.png',
