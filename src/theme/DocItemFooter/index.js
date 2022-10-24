@@ -43,7 +43,7 @@ function CommunityAndFeedback({ editUrl }) {
     script.setAttribute('data-emit-metadata', '1');
     script.setAttribute('data-input-position', 'top');
     script.setAttribute('crossorigin', 'anonymous');
-    script.setAttribute('data-theme', 'https://6l5gcn.sse.codesandbox.io/style.css');
+    script.setAttribute('data-theme', 'https://crusher.dev/docs/comment_style.css');
     script.src = 'https://giscus.app/client.js';
     script.async = true;
     script.defer = true;
