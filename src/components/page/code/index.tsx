@@ -50,7 +50,7 @@ gap: 20px;
 .heading{
   font-family: 'Gilroy';
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0.03em;
 
   color: #FFFFFF;

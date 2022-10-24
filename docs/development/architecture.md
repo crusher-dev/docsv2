@@ -16,7 +16,7 @@ At top level, it has 3 component
 ### Architecture
 
 <a href="/img/architecture/high-level-architecture.svg" target="_blank">
-  <img src="/img/architecture/high-level-architecture.svg" />
+  <img src="/img/architecture/high-level-architecture.svg" style={{borderRadius: 4}} />
 </a>
 
 ### High level section

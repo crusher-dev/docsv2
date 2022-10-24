@@ -1,6 +1,6 @@
 ---
-title: Intro
-sidebar_label: 🦖  Intro
+title: Introduction
+sidebar_label: Introduction
 slug: /
 image: /img/meta/open-graph.png
 hide_table_of_contents: false
@@ -9,7 +9,7 @@ hide_table_of_contents: false
 import DocsCard from '@components/global/DocsCard';
 import DocsCards from '@components/global/DocsCards';
 import CrusherFeatures from '@components/page/index';
-import { UseCrusher } from './__components/list.tsx';
+import { UseCrusher } from '../__components/list.tsx';
 import {AccordionDemo} from '@components/global/FAQ/faq.tsx';
 import css from '@emotion/react';
 <head>

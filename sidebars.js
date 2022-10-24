@@ -1,20 +1,22 @@
 module.exports = {
   docs: [
     {
-      type: 'doc',
-      label: '🦖 Intro',
-      id: 'index',
+      type: 'category',
+      label: '🦖 Overview',
+      collapsed: false,
+      items: [
+        'overview/index',
+        'overview/features',
+        'development/architecture',
+      ],
     },
     {
       type: 'category',
-      label: '🧑‍🚀 Overview',
+      label: '🚀 Getting Started',
       collapsed: false,
       items: [
         'getting-started/create-your-first-test',
         'getting-started/what-is-crusher',
-        'getting-started/features',
-        'development/architecture',
-
       ],
     },
 
@@ -34,7 +36,7 @@ module.exports = {
       type: 'category',
       label: '🏄‍♂️ Code',
       collapsed: true,
-      items: ['advanced/custom-code-usecases-1', 'advanced/custom-code-usecases', 'advanced/making-network-requests', 'advanced/writing-custom-selectors'],
+      items: ['advanced/custom-code-usecases-1','advanced/making-network-requests', 'advanced/writing-custom-selectors'],
     },
     {
       type: 'category',
@@ -50,7 +52,6 @@ module.exports = {
         'development/contributing',
         'development/docker-deploy-locally',
         'development/setting-up-development-env',
-        'getting-started/how-crusher-works',
       ],
     },
   ],

@@ -159,38 +159,36 @@ const pageItems = [
 ];
 
 
+export const CustomCodeHeader = () => {
+    return (
+        <div className={'flex items-center'} className={headerCss}>
+        <div>
+            <MainHeading style={{ margin: 0, padding: 0 }}>Code Overview</MainHeading>
+            <div className={headerDescriptionCss}>
+                Extend your test with code steps
+            </div>
+        </div>
+        {/* <div style={{ marginLeft: "auto" }} className="flex">
+            <input className={searchInputCss} type="text" placeholder="search APIs" />
+        </div> */}
+    </div>
+    );
+};
+
+
 const CustomCodePage = () => {
 
     const handleTabCallback = (id) => {
         // alert("Clicked on " + id);
     }
     return (
-        <div className={containerCss}>
-            <div className={'flex items-center'} classaName={headerCss}>
-                <div>
-                    <MainHeading style={{ margin: 0, padding: 0 }}>Custom code usecases</MainHeading>
-                    <div className={headerDescriptionCss}>
-                        Extend your test with code steps
-                    </div>
-                </div>
-                {/* <div style={{ marginLeft: "auto" }} className="flex">
-                    <input className={searchInputCss} type="text" placeholder="search APIs" />
-                </div> */}
-            </div>
-            <div className={description}>
-                Crusher use playwright as base + modified utiliy on top of it as CrusherSDK.
-                Currently supports in low-code, code steps files are coming soon.
-            </div>
             <div className={contentCss}>
                 <div className={'flex comparison-group'}>
                     <Comparison callback={handleTabCallback} items={coreItems} title={"Core utilities"} className={"flex-1"} />
                     <Comparison callback={handleTabCallback} items={pageItems} title={"Page utilities"} className={"flex-1"} />
-
                 </div>
-
             </div>
-        </div>
-    )
+    );
 };
 
 const description = css`
