@@ -13,7 +13,7 @@ module.exports = {
     {
       type: 'category',
       label: '🚀 Getting Started',
-      collapsed: false,
+      collapsed: true,
       items: [
         'getting-started/create-your-first-test',
         'getting-started/what-is-crusher',
@@ -40,12 +40,6 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Misc',
-      collapsed: true,
-      items: ['advanced/faq'],
-    },
-    {
-      type: 'category',
       label: '🧱 Contribute',
       collapsed: true,
       items: [
@@ -53,6 +47,11 @@ module.exports = {
         'development/docker-deploy-locally',
         'development/setting-up-development-env',
       ],
+    },
+    {
+      type: "doc",
+      id: "advanced/faq",
+      label: "FAQ"
     },
   ],
 
