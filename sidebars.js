@@ -24,7 +24,7 @@ module.exports = {
       type: 'category',
       label: '💡 Guides',
       collapsed: true,
-      items: ['guides/setting-up-services'],
+      items: ['guides/setting-up-services', 'guides/using-email-apis'],
     },
     {
       type: 'category',
