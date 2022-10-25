@@ -10,7 +10,6 @@ This is not be stable. We're pretty swamped, this will be updated soon.
 :::
 
 #### Requirement
-
 Make sure you've machine with 3 vCPU and 4GB RAM available (minimum).
 
 Recommened - 4 vCPU and 4GB RAM available (minimum).

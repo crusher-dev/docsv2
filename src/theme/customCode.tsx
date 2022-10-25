@@ -183,6 +183,11 @@ const CustomCodePage = () => {
     }
     return (
             <div className={contentCss}>
+                <CodeBlock className={"language-javascript"}>{`type CrusherSdk = {
+  page: require('playwright').Page; // <--- same as playwright page class
+  sleep: (seconds) => Promise<void>;
+  context: CrusherContext;  // shared across all the steps
+}`}</CodeBlock>
                 <div className={'flex comparison-group'}>
                     <Comparison callback={handleTabCallback} items={coreItems} title={"Core utilities"} className={"flex-1"} />
                     <Comparison callback={handleTabCallback} items={pageItems} title={"Page utilities"} className={"flex-1"} />
