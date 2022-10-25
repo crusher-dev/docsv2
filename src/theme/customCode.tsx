@@ -163,7 +163,7 @@ export const CustomCodeHeader = () => {
     return (
         <div className={'flex items-center'} className={headerCss}>
         <div>
-            <MainHeading style={{ margin: 0, padding: 0 }}>Code Overview</MainHeading>
+            <MainHeading style={{ margin: 0, padding: 0 }}>Code Usecases</MainHeading>
             <div className={headerDescriptionCss}>
                 Extend your test with code steps
             </div>
@@ -183,11 +183,7 @@ const CustomCodePage = () => {
     }
     return (
             <div className={contentCss}>
-                <CodeBlock className={"language-javascript"}>{`type CrusherSdk = {
-  page: require('playwright').Page; // <--- same as playwright page class
-  sleep: (seconds) => Promise<void>;
-  context: CrusherContext;  // shared across all the steps
-}`}</CodeBlock>
+
                 <div className={'flex comparison-group'}>
                     <Comparison callback={handleTabCallback} items={coreItems} title={"Core utilities"} className={"flex-1"} />
                     <Comparison callback={handleTabCallback} items={pageItems} title={"Page utilities"} className={"flex-1"} />

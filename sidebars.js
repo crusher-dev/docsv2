@@ -36,7 +36,7 @@ module.exports = {
       type: 'category',
       label: '🏄‍♂️ Code',
       collapsed: true,
-      items: ['advanced/custom-code-usecases-1','advanced/making-network-requests', 'advanced/writing-custom-selectors'],
+      items: [ 'code/writing-custom-code', 'advanced/custom-code-usecases-1', 'advanced/making-network-requests', 'advanced/writing-custom-selectors'],
     },
     {
       type: 'category',
