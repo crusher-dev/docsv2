@@ -2,6 +2,8 @@
 title: Writing custom selectors with crusher
 sidebar_label: Writing custom selectors
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 :::note What you'll learn?
 
@@ -14,24 +16,17 @@ sidebar_label: Writing custom selectors
 
 Depending on your web app and your needs, there are different approaches you can choose when writing selectors.
 
-- [Using text Selectors](#using-text-selectors)
-- [Using CSS Selectors](#using-css-selectors)
-- [Using XPath Selectors](#using-xpath)
 
-## Using Text selectors
+<Tabs>
+  <TabItem value="developers" label="Text Selectors" attributes={{className: "tab-item"}} default>
 
 :::tip 🦖 &nbsp;&nbsp;Pros:
 
 1. No need to go through the DOM tree to write text selectors.
 2. Easily locate elements without any id/classNames.
 :::
-   There are two ways to match elements using text selectors:
-   <ol style={{ paddingLeft: '45px' }}>
-     <li>Elements containing some text</li>
-     <li>Elements containing exactly the same text</li>
-   </ol>
 
-### Elements containing some text
+#### Elements containing some text
 
 ```
 text=Hello world
@@ -39,7 +34,7 @@ text=Hello world
 
 This will match all the elements containing this text inside them.
 
-### Elements containing exactly the same text
+#### Elements containing exactly the same text
 
 ```
 text="Hello world"
@@ -47,7 +42,8 @@ text="Hello world"
 
 This will match all the elements containing exactly the same text ("Hello world"). E.g a "Hello world" button.
 
-## Using CSS Selectors
+  </TabItem>
+  <TabItem value="css-selectors" label="CSS Selectors" attributes={{className: "tab-item"}}>
 
 :::tip 🦖 &nbsp;&nbsp;Pros:
 
@@ -65,9 +61,9 @@ CSS Selectors are the standard and powerful way to match elements for web applic
 
 If you want to know more about CSS selectors, Mozilla provides excellent documentation [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
 
-## Using XPath
-
-XPath was originally developed for XML documents but it also supports HTML documents. You can make use of XPath with crusher like,
+  </TabItem>
+  <TabItem value="xpath-selectors" label="XPath Selectors" attributes={{className: "tab-item"}}>
+  XPath was originally developed for XML documents but it also supports HTML documents. You can make use of XPath with crusher like,
 
 1. `//button[@class='button']`: This xPath will select all items with the "button" class.
 2. `//button[@id='button']`: This xPath will select elements with the id "button"
@@ -77,6 +73,8 @@ XPath was originally developed for XML documents but it also supports HTML docum
 6. `//.button[3]`: Select the third element with ".button" class
 
 Here's the cheatsheet for XPath, if you are interested in going deeper [https://devhints.io/xpath](https://devhints.io/xpath)
+  </TabItem>
+</Tabs>
 
 ## Resources
 
