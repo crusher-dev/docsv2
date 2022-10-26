@@ -4,12 +4,7 @@
     "proxy": [
         {
             "name": "frontend",
-            "url": "http://localhost:3001/",
-            "intercept": "localhost:3001"
-        },
-        {
-            "name": "frontend-1-7",
-            "url": "http://localhost:3000",
+            "url": "http://localhost:3000/",
             "intercept": "localhost:3000"
         }
     ]
