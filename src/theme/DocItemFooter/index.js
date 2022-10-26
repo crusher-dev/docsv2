@@ -35,6 +35,7 @@ function CommunityAndFeedback({ editUrl }) {
     const commentBox = document.querySelector('#comments');
     const script = document.createElement('script');
 
+    script.setAttribute('id', 'giscuss-comment-box');
     script.setAttribute('data-category-id', 'DIC_kwDOG24pmc4COFWH');
     script.setAttribute('data-repo', 'crusherdev/docsv2');
     script.setAttribute('data-mapping', 'pathname');
