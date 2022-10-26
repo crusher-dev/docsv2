@@ -22,8 +22,9 @@ import css from '@emotion/react';
 </head>
 
 Crusher is <span className="highlight_cyan">all in one testing framework</span>. It includes everything w.r.t to e2e testing, like test recorder(local app), test runner and web app for you.
+We have two goals:- 1.) to make <span className="highlight_cyan">test creation simple</span> and 2.) make testing <span className="highlight_cyan">robust</span> over time.
 
-We use playwright as base + lot of stuff around it. You can record low-code tests or write in JS code<span className="highlight_red">*</span>. 
+We use playwright as base + wrapper/patches around it. You can record low-code tests or write in JS code<span className="highlight_red">*</span>. 
 
 <UseCrusher />
 
