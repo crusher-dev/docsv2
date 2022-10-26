@@ -15,8 +15,8 @@ test:create [options]
 ## Examples
 
 ```shell
-npx crusher-cli test:create
-npx crusher-cli test:create --name Hello world
+npx crusher.devtest:create
+npx crusher.devtest:create --name Hello world
 ```
 
 ## Options

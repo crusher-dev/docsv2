@@ -14,5 +14,5 @@ login [options]
 ## Examples
 
 ```shell
-npx crusher-cli login
+npx crusher.devlogin
 ```

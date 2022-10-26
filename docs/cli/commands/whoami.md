@@ -14,5 +14,5 @@ whoami [options]
 ## Examples
 
 ```shell
-npx crusher-cli whoami
+npx crusher.devwhoami
 ```

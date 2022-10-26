@@ -55,7 +55,7 @@ Download and install native recorder. This is recommeded if you're not a develop
 Using CLI - Once you have created your first test, you can run it with CLI directly.
 
 ```shell
-npx crusher-cli test:run
+npx crusher.devtest:run
 ```
 
- Using App - In app or frontend click on test run test by opening app `npx crusher-cli .`
+ Using App - In app or frontend click on test run test by opening app `npx crusher.dev.`

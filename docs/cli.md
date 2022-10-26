@@ -17,13 +17,13 @@ You can create test locally and run them on crusher server with few commands.
 To create a test
 
 ```shell
-npx crusher-cli test:create
+npx crusher.devtest:create
 ```
 
 And run test with
 
 ```shell
-npx crusher-cli test:run
+npx crusher.devtest:run
 ```
 
 The Crusher CLI works with node > v10
@@ -37,9 +37,9 @@ You can also use `npm install crusher-cli` or `yarn add crusher-cli`, but it is 
 To get help just write
 
 ```shell
-npx crusher-cli  --help
-npx crusher-cli  <command> --help
-npx crusher-cli  <command> <subcommand> --help
+npx crusher.dev --help
+npx crusher.dev <command> --help
+npx crusher.dev <command> <subcommand> --help
 ```
 
 <!-- TODO: image? -->
@@ -52,7 +52,7 @@ The Crusher CLI is built with [TypeScript](/docs/reference/glossary#typescript) 
 
 To troubleshoot issues with the Crusher CLI, the following may be useful:
 
-- Make sure the latest version of the Crusher CLI is installed. Get the installed version by running `npx crusher-cli --version`.
+- Make sure the latest version of the Crusher CLI is installed. Get the installed version by running `npx crusher.dev--version`.
 - Make sure the latest Node LTS is installed. See [Node & npm](/docs/intro/environment#node-npm) environment setup.
 - The crusher cli will require internet connection for saving and running test.
 - Crusher cli works with only .git enabled repositories.

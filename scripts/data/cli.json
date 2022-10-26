@@ -15,7 +15,7 @@
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "npx crusher-cli init"
+        "npx crusher.devinit"
       ],
       "aliases": [],
       "inputs": [],
@@ -58,8 +58,8 @@
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "npx crusher-cli test:create",
-        "npx crusher-cli test:create --name Hello world"
+        "npx crusher.devtest:create",
+        "npx crusher.devtest:create --name Hello world"
       ],
       "aliases": [],
       "inputs": [],
@@ -114,9 +114,9 @@
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "npx crusher-cli test:run",
-        "npx crusher-cli test:run --host staging.test-app.com",
-        "npx crusher-cli test:run --browsers chromium,firefox,safari"
+        "npx crusher.devtest:run",
+        "npx crusher.devtest:run --host staging.test-app.com",
+        "npx crusher.devtest:run --browsers chromium,firefox,safari"
       ],
       "aliases": [],
       "inputs": [],
@@ -171,7 +171,7 @@
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "npx crusher-cli token"
+        "npx crusher.devtoken"
       ],
       "aliases": [],
       "inputs": [],
@@ -187,7 +187,7 @@
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "npx crusher-cli login"
+        "npx crusher.devlogin"
       ],
       "aliases": [],
       "inputs": [],
@@ -203,7 +203,7 @@
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "npx crusher-cli logout"
+        "npx crusher.devlogout"
       ],
       "aliases": [],
       "inputs": [],
@@ -219,7 +219,7 @@
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "npx crusher-cli whoami"
+        "npx crusher.devwhoami"
       ],
       "aliases": [],
       "inputs": [],
@@ -235,7 +235,7 @@
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "npx crusher-cli info"
+        "npx crusher.devinfo"
       ],
       "aliases": [],
       "inputs": [],

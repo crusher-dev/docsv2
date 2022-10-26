@@ -14,5 +14,5 @@ logout [options]
 ## Examples
 
 ```shell
-npx crusher-cli logout
+npx crusher.devlogout
 ```

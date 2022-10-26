@@ -14,5 +14,5 @@ info [options]
 ## Examples
 
 ```shell
-npx crusher-cli info
+npx crusher.devinfo
 ```

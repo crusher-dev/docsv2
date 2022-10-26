@@ -15,9 +15,9 @@ test:run [options]
 ## Examples
 
 ```shell
-npx crusher-cli test:run
-npx crusher-cli test:run --host staging.test-app.com
-npx crusher-cli test:run --browsers chromium,firefox,safari
+npx crusher.devtest:run
+npx crusher.devtest:run --host staging.test-app.com
+npx crusher.devtest:run --browsers chromium,firefox,safari
 ```
 
 ## Options

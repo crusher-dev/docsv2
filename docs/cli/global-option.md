@@ -16,7 +16,7 @@ During setup, we create configuration files at `~/.crusher/config.json` and `[pr
 ### Setup new crusher project
 
 ```shell
-npx crusher-cli init
+npx crusher.devinit
 ```
 
 It'll create a new project and create config files. We use origin in .git to identify the project. You can use same command to reinit the project.

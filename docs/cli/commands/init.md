@@ -17,7 +17,7 @@ init [options]
 ## Examples
 
 ```shell
-npx crusher-cli init
+npx crusher.devinit
 ```
 
 ## Advanced Options

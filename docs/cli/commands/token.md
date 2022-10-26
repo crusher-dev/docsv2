@@ -14,5 +14,5 @@ token [options]
 ## Examples
 
 ```shell
-npx crusher-cli token
+npx crusher.devtoken
 ```

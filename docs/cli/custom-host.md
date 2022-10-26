@@ -24,7 +24,7 @@ With crusher, you can easily do all this in minutes
 ## Using `--host` flag
 
 ```shell
-npx crusher-cli test:run --host https://custom.host.com
+npx crusher.devtest:run --host https://custom.host.com
 ```
 
 :::tip 🦖 &nbsp;&nbsp;Usecases
