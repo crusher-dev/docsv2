@@ -5,7 +5,7 @@ export const UseCrusher = ({ children, color }) => (
   <div className="useCrusher_in_project">
     <CommandInput>
       <div className="flex justify-between" id="command-heading">
-        <div>use crusher in a project</div>
+        <div>create new test</div>
         <div className="demo-video">play demo</div>
       </div>
 

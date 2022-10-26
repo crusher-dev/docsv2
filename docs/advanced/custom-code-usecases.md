@@ -11,7 +11,9 @@ to create complex workflows.
 After selecting the custom code action from the sidebar, a modal will with editor
 will open up.
 
-<img src={require('@site/static/img/custom-code/modal.png').default} />
+<iframe style={{borderRadius: 10, border: '1px solid #1d1d1d'}} width="640" height="416" 
+src="https://www.loom.com/embed/97edfee760e047d1b31d650bcdb85a17" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 
 All the custom-code and logic would go inside the `validate()` function in the editor.
 This function is then executed in a sandbox environment (for security) and determines

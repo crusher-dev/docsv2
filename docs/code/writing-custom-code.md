@@ -7,7 +7,10 @@ sidebar_label: Overview
 2. Write the code inside the `validate` function
 3. Click "Save & Run"
 
-<img src={require('@site/static/img/code/code.png').default} />
+
+<iframe style={{borderRadius: 10, border: '1px solid #1d1d1d'}} width="640" height="416" 
+src="https://www.loom.com/embed/97edfee760e047d1b31d650bcdb85a17?hide_share=true&hide_owner=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 
 ##### What is `validate()` function?
 
