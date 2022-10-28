@@ -30,7 +30,7 @@ module.exports = {
       type: 'category',
       label: '⚽ Integration',
       collapsed: true,
-      items: ['setting-up/manage-alerts', 'setting-up/github', 'integrations/with-vercel', 'integrations/with-ci-cd'],
+      items: ['setting-up/manage-alerts', 'setting-up/github', 'integrations/with-vercel'],
     },
     {
       type: 'category',

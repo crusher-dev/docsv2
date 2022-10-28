@@ -10,22 +10,16 @@ This feature is available both in <a href="#in-desktop-app">local app</a> and at
 You can choose to get alerts on slack whenever test build is finished. 
 
 ### Set up slack alerts
-
-To enable alerts on slack, 
-
 - Go to project settings -> Integration
-
 - Click on toggle button.
 
 <img src="https://i.imgur.com/MxcfD6R.png"/>
 <br/>
-<p>- Select channels for notification and error alerts.</p>
 
+- Select channels for notification and error alerts.
 
 ### In desktop app
 
-To enable alerts on slack, 
 - Go to project settings -> Integrations
-
 - Click on link button
 <img src="https://i.imgur.com/7xhoQyZ.png"/>
