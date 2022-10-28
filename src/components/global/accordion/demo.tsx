@@ -124,7 +124,7 @@ export const AccordionDemo = () => {
       </AccordionItem>
 
       <AccordionItem value="item-2">
-        <AccordionTrigger>Link your github repo to vercel</AccordionTrigger>
+        <AccordionTrigger>Link your github repo</AccordionTrigger>
         <AccordionContent>
           <li>Go to Project settings -> Integration</li>
           <li>Click connect in github integration</li>
